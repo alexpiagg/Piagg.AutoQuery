@@ -107,6 +107,7 @@
             this.dtpFim.Name = "dtpFim";
             this.dtpFim.Size = new System.Drawing.Size(114, 20);
             this.dtpFim.TabIndex = 1;
+            this.dtpFim.Value = new System.DateTime(2015, 12, 2, 0, 0, 0, 0);
             // 
             // dtpInicio
             // 
@@ -116,6 +117,7 @@
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(114, 20);
             this.dtpInicio.TabIndex = 0;
+            this.dtpInicio.Value = new System.DateTime(2015, 12, 2, 0, 0, 0, 0);
             // 
             // dgvMaster
             // 
@@ -241,11 +243,11 @@
             // 
             this.txtValorTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtValorTotal.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtValorTotal.Enabled = false;
             this.txtValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorTotal.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtValorTotal.Location = new System.Drawing.Point(497, 268);
             this.txtValorTotal.Name = "txtValorTotal";
+            this.txtValorTotal.ReadOnly = true;
             this.txtValorTotal.Size = new System.Drawing.Size(110, 20);
             this.txtValorTotal.TabIndex = 6;
             this.txtValorTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -254,11 +256,11 @@
             // 
             this.txtValorTotalDet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtValorTotalDet.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txtValorTotalDet.Enabled = false;
             this.txtValorTotalDet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorTotalDet.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtValorTotalDet.Location = new System.Drawing.Point(497, 468);
             this.txtValorTotalDet.Name = "txtValorTotalDet";
+            this.txtValorTotalDet.ReadOnly = true;
             this.txtValorTotalDet.Size = new System.Drawing.Size(110, 20);
             this.txtValorTotalDet.TabIndex = 8;
             this.txtValorTotalDet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

@@ -29,6 +29,7 @@ namespace Piagg.AutoQuery.DAL
                 }
 
                 var where = PredicateBuilder.True<GastosTO>();
+
                 where = where.And<GastosTO>(x => x.DATA >= filtroGastos.DataInicio);
                 where = where.And<GastosTO>(x => x.DATA <= filtroGastos.DataFim);
 

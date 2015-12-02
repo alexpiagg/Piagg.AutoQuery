@@ -36,6 +36,7 @@
             this.lblHome = new System.Windows.Forms.Label();
             this.lblSite = new System.Windows.Forms.LinkLabel();
             this.lblSobreEmp = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
             this.gpbEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.lblVersao.AutoSize = true;
             this.lblVersao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersao.Location = new System.Drawing.Point(114, 318);
+            this.lblVersao.Location = new System.Drawing.Point(114, 239);
             this.lblVersao.Name = "lblVersao";
             this.lblVersao.Size = new System.Drawing.Size(50, 13);
             this.lblVersao.TabIndex = 1;
@@ -53,7 +54,7 @@
             // 
             this.lblNroVersao.AutoSize = true;
             this.lblNroVersao.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNroVersao.Location = new System.Drawing.Point(170, 318);
+            this.lblNroVersao.Location = new System.Drawing.Point(170, 239);
             this.lblNroVersao.Name = "lblNroVersao";
             this.lblNroVersao.Size = new System.Drawing.Size(40, 13);
             this.lblNroVersao.TabIndex = 3;
@@ -61,6 +62,7 @@
             // 
             // gpbEmpresa
             // 
+            this.gpbEmpresa.Controls.Add(this.lblAutor);
             this.gpbEmpresa.Controls.Add(this.lblCopyright);
             this.gpbEmpresa.Controls.Add(this.lblHome);
             this.gpbEmpresa.Controls.Add(this.lblSite);
@@ -76,17 +78,17 @@
             // 
             this.lblCopyright.AutoSize = true;
             this.lblCopyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCopyright.Location = new System.Drawing.Point(62, 55);
+            this.lblCopyright.Location = new System.Drawing.Point(62, 88);
             this.lblCopyright.Name = "lblCopyright";
-            this.lblCopyright.Size = new System.Drawing.Size(190, 13);
+            this.lblCopyright.Size = new System.Drawing.Size(196, 13);
             this.lblCopyright.TabIndex = 9;
-            this.lblCopyright.Text = "(c) Todos os direitos reservados - 2015";
+            this.lblCopyright.Text = "( c ) Todos os direitos reservados - 2015";
             // 
             // lblHome
             // 
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.Location = new System.Drawing.Point(18, 85);
+            this.lblHome.Location = new System.Drawing.Point(18, 109);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(66, 13);
             this.lblHome.TabIndex = 8;
@@ -96,7 +98,7 @@
             // 
             this.lblSite.AutoSize = true;
             this.lblSite.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSite.Location = new System.Drawing.Point(83, 80);
+            this.lblSite.Location = new System.Drawing.Point(83, 104);
             this.lblSite.Name = "lblSite";
             this.lblSite.Size = new System.Drawing.Size(227, 20);
             this.lblSite.TabIndex = 7;
@@ -113,11 +115,21 @@
             this.lblSobreEmp.TabIndex = 6;
             this.lblSobreEmp.Text = "Piagg Software";
             // 
+            // lblAutor
+            // 
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutor.Location = new System.Drawing.Point(105, 68);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(109, 13);
+            this.lblAutor.TabIndex = 10;
+            this.lblAutor.Text = "Autor: Alex Delapiagg";
+            // 
             // frmSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 355);
+            this.ClientSize = new System.Drawing.Size(340, 273);
             this.Controls.Add(this.gpbEmpresa);
             this.Controls.Add(this.lblNroVersao);
             this.Controls.Add(this.lblVersao);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.Label lblHome;
         private System.Windows.Forms.LinkLabel lblSite;
         private System.Windows.Forms.Label lblSobreEmp;
+        private System.Windows.Forms.Label lblAutor;
 
     }
 }

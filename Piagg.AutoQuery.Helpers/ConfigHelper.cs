@@ -25,6 +25,7 @@ namespace Piagg.AutoQuery.Helpers
 
             return mySqlConn;
         }
+
         public static String GetStringConnection()
         {
             String stringConnnection = System.Configuration.ConfigurationManager.ConnectionStrings["BancoDados"].ConnectionString;

@@ -23,13 +23,17 @@ namespace Piagg.AutoQuery.DAL
             throw new NotImplementedException();
         }
 
-        public void Insert(T objeto)
+        public void Insert(List<T> listObjectInsert)
         {
             try
             {
                 using (var context = new Context())
-                {
-                    context.Entry(objeto).State = EntityState.Added;
+                {                                        
+                    foreach (var objeto in listObjectInsert)
+                    {
+                        context.Entry(objeto).State = EntityState.Added;
+                    }
+
                     context.SaveChanges();
                 }
             }
@@ -40,13 +44,17 @@ namespace Piagg.AutoQuery.DAL
             } //fim
         }
 
-        public void Update(T objeto)
+        public void Update(List<T> listObjectUpdate)
         {
             try
             {
                 using (var context = new Context())
                 {
-                    context.Entry(objeto).State = EntityState.Modified;
+                    foreach (var objeto in listObjectUpdate)
+                    {
+                        context.Entry(objeto).State = EntityState.Modified;
+                    }
+
                     context.SaveChanges();
                 }
             }
@@ -57,13 +65,16 @@ namespace Piagg.AutoQuery.DAL
             } //fim
         }
 
-        public void Delete(T objeto)
+        public void Delete(List<T> listObjectDelete)
         {
             try
             {
                 using (var context = new Context())
                 {
-                    context.Entry(objeto).State = EntityState.Deleted;
+                    foreach (var objeto in listObjectDelete)
+                    {
+                        context.Entry(objeto).State = EntityState.Deleted;
+                    }                    
                     context.SaveChanges();
                 }
             }
@@ -74,20 +85,27 @@ namespace Piagg.AutoQuery.DAL
             } //fim
         }
 
-        public void Save(T objetoModel)
+        public void Save(List<T> listaObjetoModel)
         {
-            if (objetoModel.StatusBD == StatusTransacao.Update)
+
+            //Inserir
+            if (listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Insert).Count > 0)
             {
-                Update(objetoModel);
+                Insert(listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Insert));
             }
-            else if (objetoModel.StatusBD == StatusTransacao.Insert)
+
+            //Alterar
+            if (listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Update).Count > 0)
             {
-                Insert(objetoModel);
+                Update(listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Update));
             }
-            else if (objetoModel.StatusBD == StatusTransacao.Delete)
+
+            //Deletar
+            if (listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Delete).Count > 0)
             {
-                Delete(objetoModel);
+                Delete(listaObjetoModel.FindAll(x => x.StatusBD == StatusTransacao.Delete));
             }
+    
         }
 
     }

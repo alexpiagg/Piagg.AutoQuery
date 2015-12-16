@@ -32,11 +32,11 @@
             this.lblVersao = new System.Windows.Forms.Label();
             this.lblNroVersao = new System.Windows.Forms.Label();
             this.gpbEmpresa = new System.Windows.Forms.GroupBox();
+            this.lblAutor = new System.Windows.Forms.Label();
             this.lblCopyright = new System.Windows.Forms.Label();
             this.lblHome = new System.Windows.Forms.Label();
             this.lblSite = new System.Windows.Forms.LinkLabel();
             this.lblSobreEmp = new System.Windows.Forms.Label();
-            this.lblAutor = new System.Windows.Forms.Label();
             this.gpbEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +74,16 @@
             this.gpbEmpresa.TabStop = false;
             this.gpbEmpresa.Text = "Desenvolvido por:";
             // 
+            // lblAutor
+            // 
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutor.Location = new System.Drawing.Point(105, 68);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(109, 13);
+            this.lblAutor.TabIndex = 10;
+            this.lblAutor.Text = "Autor: Alex Delapiagg";
+            // 
             // lblCopyright
             // 
             this.lblCopyright.AutoSize = true;
@@ -104,6 +114,7 @@
             this.lblSite.TabIndex = 7;
             this.lblSite.TabStop = true;
             this.lblSite.Text = "http://www.alexpiagg.com";
+            this.lblSite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblSite_LinkClicked);
             // 
             // lblSobreEmp
             // 
@@ -114,16 +125,6 @@
             this.lblSobreEmp.Size = new System.Drawing.Size(171, 25);
             this.lblSobreEmp.TabIndex = 6;
             this.lblSobreEmp.Text = "Piagg Software";
-            // 
-            // lblAutor
-            // 
-            this.lblAutor.AutoSize = true;
-            this.lblAutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutor.Location = new System.Drawing.Point(105, 68);
-            this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(109, 13);
-            this.lblAutor.TabIndex = 10;
-            this.lblAutor.Text = "Autor: Alex Delapiagg";
             // 
             // frmSobre
             // 

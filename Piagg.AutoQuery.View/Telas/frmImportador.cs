@@ -25,13 +25,18 @@ namespace Piagg.AutoQuery.View
 
         private void btnImportar_Click(object sender, EventArgs e)
         {
+
+            if (String.IsNullOrEmpty(txtArquivo.Text))
+            {
+                MessageBox.Show("Não há dados para importação!");
+                return;
+            }
+
             TextoBLL textoBLL = new TextoBLL();
             ArrayList listaRetorno = textoBLL.processaTexto(txtArquivo.Text);
 
             PreencherGrid(listaRetorno);
-            btnSalvar.Enabled = true;
-            btnImportar.Enabled = false;
-            txtArquivo.Clear();
+            ControlarTelaImportar();
         }
 
         private void PreencherGrid(ArrayList listaLinhas)
@@ -59,7 +64,7 @@ namespace Piagg.AutoQuery.View
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             List<GastosTO> listaGastosSalvar = new List<GastosTO>();
-
+            ControlarTelaSalvar();
 
             foreach (DataGridViewRow row in dgvGrid.Rows)
             {
@@ -84,6 +89,7 @@ namespace Piagg.AutoQuery.View
                 gasto.VALOR = Convert.ToDecimal(valor);
                 gasto.DATA = OutrosUtil.StringToDate(data);
                 gasto.ID_TIPO_GASTOS = Convert.ToInt32(tipoGasto);
+                gasto.StatusBD = StatusTransacao.Insert;
 
                 listaGastosSalvar.Add(gasto);
             }
@@ -91,42 +97,51 @@ namespace Piagg.AutoQuery.View
             try
             {
                 GastosBLL gastosBLL = new GastosBLL();
+                gastosBLL.Save(listaGastosSalvar);
 
-                foreach (var gasto in listaGastosSalvar)
-                {
-                    //gastosBLL.inserirGastos(listaGastosSalvar);
-                    gasto.StatusBD = StatusTransacao.Insert;
-                    gastosBLL.Save(gasto);
-                }
-                
 
                 MessageBox.Show("Dados Salvos com Sucesso!");
-                LimparTela();
+                IniciarTela();
             }
             catch (Exception ex)
-            {
+            {                
                 MessageBox.Show(ex.Message);
             }
-
             
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            LimparTela();
+            IniciarTela();
         }
 
-        private void LimparTela()
+        private void IniciarTela()
         {
             dgvGrid.Rows.Clear();
             txtArquivo.Clear();
 
             btnImportar.Enabled = true;
+            btnLimpar.Enabled = true;
             btnSalvar.Enabled = false;
+            lblSalvando.Visible = false;
 
             //Altera automaticamente para a tabPage de Grid
             tbPrincipal.SelectedIndex = 0;
-
         }
+
+        private void ControlarTelaSalvar()
+        {
+            btnSalvar.Enabled = false;
+            btnLimpar.Enabled = false;
+            lblSalvando.Visible = true;
+        }
+
+        private void ControlarTelaImportar()
+        {
+            btnSalvar.Enabled = true;
+            btnImportar.Enabled = false;
+            txtArquivo.Clear();
+        }
+
     }
 }

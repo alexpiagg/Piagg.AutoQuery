@@ -17,14 +17,14 @@ namespace Piagg.AutoQuery.View
             InitializeComponent();           
         }
 
-        private void lblSite_MouseClick(object sender, MouseEventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://www.alexpiagg.com");
-        }
-
         private void frmSobre_Load(object sender, EventArgs e)
         {
             lblNroVersao.Text = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        }
+
+        private void lblSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.alexpiagg.com");
         }
     }
 }

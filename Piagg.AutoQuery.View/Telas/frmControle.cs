@@ -67,40 +67,14 @@ namespace Piagg.AutoQuery.View
 
             foreach (var gasto in listaGastos)
             {
-
-                //valor decimal formatado
-                var valor = String.Format("{0:0.0,0}",gasto.VALOR);
-
                 dgvMaster.Rows.Add(gasto.ID_TIPO_GASTOS,
                                    gasto.TIPO,
-                                   valor);
+                                   Convert.ToDecimal(FormatarDecimal(gasto.VALOR))
+                                   );
             }
 
-            var total = Convert.ToDecimal(listaGastos.Sum(x => x.VALOR));
-            txtValorTotal.Text = total.ToString("#0.00");
-        }
-
-
-        private void PreencherGridDetalhe(List<GastosTO> listaGastos)
-        {
-            dgvMaster.Rows.Clear();
-
-            //Alinhando texto à direita
-            this.dgvMaster.Columns["colValor"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-
-            foreach (var gasto in listaGastos)
-            {
-
-                //valor decimal formatado
-                var valor = String.Format("{0:0.0,0}", gasto.VALOR);
-
-                dgvMaster.Rows.Add(gasto.ID_TIPO_GASTOS,
-                                   gasto.TIPO,
-                                   valor);
-            }
-
-            var total = Convert.ToDecimal(listaGastos.Sum(x => x.VALOR));
-            txtValorTotal.Text = total.ToString("#0.00");
+            var total = listaGastos.Sum(x => x.VALOR);
+            txtValorTotal.Text = FormatarDecimal(total);
         }
 
         public GastosFiltroTela Filtro()
@@ -129,16 +103,14 @@ namespace Piagg.AutoQuery.View
 
                 foreach (var detalhe in listaFiltradaPorTipo)
                 {
-                    //valor decimal formatado
-                    var valor = String.Format("{0:0.0,0}", detalhe.VALOR);
-
-                    dgvDetalhe.Rows.Add(detalhe.DATA,
+                    dgvDetalhe.Rows.Add(detalhe.DATA.ToString("dd/MM/yyyy"),
                                        detalhe.LOCAL,
-                                       valor);
+                                       Convert.ToDecimal(FormatarDecimal(detalhe.VALOR))
+                                       );
                 }
 
-                var total = Convert.ToDecimal(listaFiltradaPorTipo.Sum(x => x.VALOR));
-                txtValorTotalDet.Text = String.Format("{0:0.0,0}", total);
+                var total = listaFiltradaPorTipo.Sum(x => x.VALOR);
+                txtValorTotalDet.Text = FormatarDecimal(total);
             }
         }
 
@@ -149,5 +121,17 @@ namespace Piagg.AutoQuery.View
             return retorno;
         }
 
+
+        private string FormatarDecimal(decimal? valor)
+        {
+            string valorFormatado = "";
+
+            if (valor != null)
+            {
+                valorFormatado = String.Format("{0:0,0.00}", valor); 
+            }            
+
+            return valorFormatado;
+        }
     }
 }

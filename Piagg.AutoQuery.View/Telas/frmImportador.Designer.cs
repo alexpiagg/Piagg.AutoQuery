@@ -41,6 +41,7 @@
             this.colTipoGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.lblSalvando = new System.Windows.Forms.Label();
             this.tbPrincipal.SuspendLayout();
             this.tabArquivo.SuspendLayout();
             this.tabGrid.SuspendLayout();
@@ -122,11 +123,11 @@
             this.colValor,
             this.colData,
             this.colTipoGasto});
-            this.dgvGrid.Location = new System.Drawing.Point(3, 3);
+            this.dgvGrid.Location = new System.Drawing.Point(-3, 0);
             this.dgvGrid.Name = "dgvGrid";
             this.dgvGrid.RowHeadersVisible = false;
             this.dgvGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrid.Size = new System.Drawing.Size(851, 391);
+            this.dgvGrid.Size = new System.Drawing.Size(857, 397);
             this.dgvGrid.TabIndex = 0;
             // 
             // colLocal
@@ -178,11 +179,24 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // lblSalvando
+            // 
+            this.lblSalvando.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSalvando.AutoSize = true;
+            this.lblSalvando.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalvando.Location = new System.Drawing.Point(15, 449);
+            this.lblSalvando.Name = "lblSalvando";
+            this.lblSalvando.Size = new System.Drawing.Size(114, 24);
+            this.lblSalvando.TabIndex = 4;
+            this.lblSalvando.Text = "Salvando...";
+            this.lblSalvando.Visible = false;
+            // 
             // frmImportador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 487);
+            this.Controls.Add(this.lblSalvando);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.tbPrincipal);
@@ -197,6 +211,7 @@
             this.tabGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -214,6 +229,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colData;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipoGasto;
+        private System.Windows.Forms.Label lblSalvando;
     }
 }
 

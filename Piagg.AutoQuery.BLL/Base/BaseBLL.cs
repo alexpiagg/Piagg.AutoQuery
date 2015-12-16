@@ -15,7 +15,7 @@ namespace Piagg.AutoQuery.BLL
             throw new NotImplementedException();
         }
 
-        public abstract void Save(T objetoModel);
+        public abstract void Save(List<T> objetoModel);
         
     }
 }

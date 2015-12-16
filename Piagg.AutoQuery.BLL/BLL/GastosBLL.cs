@@ -11,7 +11,7 @@ namespace Piagg.AutoQuery.BLL
     public class GastosBLL :BaseBLL<GastosTO>
     {
 
-        public override void Save(GastosTO gastosTO)
+        public override void Save(List<GastosTO> gastosTO)
         {
             try
             {

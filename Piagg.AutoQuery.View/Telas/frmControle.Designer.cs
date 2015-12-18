@@ -40,15 +40,15 @@
             this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDetalhe = new System.Windows.Forms.DataGridView();
+            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colValorDet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMaster = new System.Windows.Forms.Label();
             this.lblDetalhe = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.txtValorTotalDet = new System.Windows.Forms.TextBox();
             this.lblTotalDetalhe = new System.Windows.Forms.Label();
-            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colValorDet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpbFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalhe)).BeginInit();
@@ -185,6 +185,27 @@
             this.dgvDetalhe.Size = new System.Drawing.Size(595, 164);
             this.dgvDetalhe.TabIndex = 2;
             // 
+            // colData
+            // 
+            this.colData.FillWeight = 40F;
+            this.colData.HeaderText = "Data";
+            this.colData.Name = "colData";
+            this.colData.ReadOnly = true;
+            // 
+            // colLocal
+            // 
+            this.colLocal.FillWeight = 116.8786F;
+            this.colLocal.HeaderText = "Local";
+            this.colLocal.Name = "colLocal";
+            this.colLocal.ReadOnly = true;
+            // 
+            // colValorDet
+            // 
+            this.colValorDet.FillWeight = 59.63196F;
+            this.colValorDet.HeaderText = "Valor (R$)";
+            this.colValorDet.Name = "colValorDet";
+            this.colValorDet.ReadOnly = true;
+            // 
             // lblMaster
             // 
             this.lblMaster.AutoSize = true;
@@ -255,29 +276,9 @@
             this.lblTotalDetalhe.TabIndex = 7;
             this.lblTotalDetalhe.Text = "TOTAL DETALHE R$:";
             // 
-            // colData
-            // 
-            this.colData.FillWeight = 40F;
-            this.colData.HeaderText = "Data";
-            this.colData.Name = "colData";
-            this.colData.ReadOnly = true;
-            // 
-            // colLocal
-            // 
-            this.colLocal.FillWeight = 116.8786F;
-            this.colLocal.HeaderText = "Local";
-            this.colLocal.Name = "colLocal";
-            this.colLocal.ReadOnly = true;
-            // 
-            // colValorDet
-            // 
-            this.colValorDet.FillWeight = 59.63196F;
-            this.colValorDet.HeaderText = "Valor (R$)";
-            this.colValorDet.Name = "colValorDet";
-            this.colValorDet.ReadOnly = true;
-            // 
             // frmControle
             // 
+            this.AcceptButton = this.btnBuscar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 493);
@@ -294,6 +295,7 @@
             this.Name = "frmControle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle";
+            this.Enter += new System.EventHandler(this.btnBuscar_Click);
             this.gpbFiltros.ResumeLayout(false);
             this.gpbFiltros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).EndInit();

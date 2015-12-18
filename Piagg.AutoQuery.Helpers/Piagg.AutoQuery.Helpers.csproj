@@ -53,6 +53,7 @@
     <Content Include="Images\Controle.ico" />
     <Content Include="Images\Engrenagem.ico" />
     <Content Include="Images\Principal.ico" />
+    <Content Include="Images\Principal.png" />
     <Content Include="Images\Sobre.ico" />
   </ItemGroup>
   <ItemGroup>

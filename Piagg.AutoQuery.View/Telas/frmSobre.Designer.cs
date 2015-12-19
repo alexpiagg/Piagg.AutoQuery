@@ -37,6 +37,7 @@
             this.lblHome = new System.Windows.Forms.Label();
             this.lblSite = new System.Windows.Forms.LinkLabel();
             this.lblSobreEmp = new System.Windows.Forms.Label();
+            this.btnReleaseNotes = new System.Windows.Forms.Button();
             this.gpbEmpresa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,11 +127,22 @@
             this.lblSobreEmp.TabIndex = 6;
             this.lblSobreEmp.Text = "Piagg Software";
             // 
+            // btnReleaseNotes
+            // 
+            this.btnReleaseNotes.Location = new System.Drawing.Point(122, 200);
+            this.btnReleaseNotes.Name = "btnReleaseNotes";
+            this.btnReleaseNotes.Size = new System.Drawing.Size(88, 23);
+            this.btnReleaseNotes.TabIndex = 7;
+            this.btnReleaseNotes.Text = "Release Notes";
+            this.btnReleaseNotes.UseVisualStyleBackColor = true;
+            this.btnReleaseNotes.Click += new System.EventHandler(this.btnReleaseNotes_Click);
+            // 
             // frmSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 273);
+            this.Controls.Add(this.btnReleaseNotes);
             this.Controls.Add(this.gpbEmpresa);
             this.Controls.Add(this.lblNroVersao);
             this.Controls.Add(this.lblVersao);
@@ -157,6 +169,7 @@
         private System.Windows.Forms.LinkLabel lblSite;
         private System.Windows.Forms.Label lblSobreEmp;
         private System.Windows.Forms.Label lblAutor;
+        private System.Windows.Forms.Button btnReleaseNotes;
 
     }
 }

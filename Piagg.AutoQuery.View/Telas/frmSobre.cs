@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,5 +27,11 @@ namespace Piagg.AutoQuery.View
         {
             System.Diagnostics.Process.Start("http://www.alexpiagg.com");
         }
+
+        private void btnReleaseNotes_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"ReleaseNotes.html");
+        }
+
     }
 }

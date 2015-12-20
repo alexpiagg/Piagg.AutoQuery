@@ -16,8 +16,11 @@ using System.Windows.Forms;
 
 namespace Piagg.AutoQuery.View
 {
-    public partial class frmImportador : Form
+    public partial class frmImportador : Form    
     {
+
+        private bool linhaErro = false;
+
         public frmImportador()
         {
             InitializeComponent();
@@ -41,6 +44,7 @@ namespace Piagg.AutoQuery.View
 
         private void PreencherGrid(ArrayList listaLinhas)
         {
+            TextoBLL textoBLL = new TextoBLL();
 
             foreach (var linha in listaLinhas)
             {
@@ -51,6 +55,19 @@ namespace Piagg.AutoQuery.View
 
                 string[] coluna = linha.ToString().Split(',');
 
+                //Se já passou por algum linha com problema, não validar novamente
+                if (!linhaErro)
+                {
+                    linhaErro = textoBLL.ValidarLinhas(coluna);
+                    
+                    //Houve erro? Então avisa na tela
+                    if (linhaErro)
+                    {
+                        lblErro.Visible = true;
+                    }                    
+                }
+
+                //Populando grid com os dados importados
                 dgvGrid.Rows.Add(   coluna[1], //local
                                     coluna[2].Replace('.', ','), //valor                
                                     coluna[0], //data                                    
@@ -124,6 +141,9 @@ namespace Piagg.AutoQuery.View
             btnLimpar.Enabled = true;
             btnSalvar.Enabled = false;
             lblSalvando.Visible = false;
+            lblTotalRegistros.Text = "";
+            lblErro.Visible = false;
+            linhaErro = false;
 
             //Altera automaticamente para a tabPage de Grid
             tbPrincipal.SelectedIndex = 0;
@@ -138,8 +158,15 @@ namespace Piagg.AutoQuery.View
 
         private void ControlarTelaImportar()
         {
-            btnSalvar.Enabled = true;
+            if (!linhaErro)
+            {
+                btnSalvar.Enabled = true;
+            }
+            
             btnImportar.Enabled = false;
+            lblTotalRegistros.Visible = true;
+            lblTotalRegistros.Text += "Total Linhas: " + dgvGrid.Rows.Count;
+
             txtArquivo.Clear();
         }
 

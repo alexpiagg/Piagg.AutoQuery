@@ -42,6 +42,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.lblSalvando = new System.Windows.Forms.Label();
+            this.lblTotalRegistros = new System.Windows.Forms.Label();
+            this.lblErro = new System.Windows.Forms.Label();
             this.tbPrincipal.SuspendLayout();
             this.tabArquivo.SuspendLayout();
             this.tabGrid.SuspendLayout();
@@ -111,9 +113,6 @@
             this.dgvGrid.AllowUserToAddRows = false;
             this.dgvGrid.AllowUserToDeleteRows = false;
             this.dgvGrid.AllowUserToResizeRows = false;
-            this.dgvGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -184,18 +183,42 @@
             this.lblSalvando.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSalvando.AutoSize = true;
             this.lblSalvando.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalvando.Location = new System.Drawing.Point(15, 449);
+            this.lblSalvando.Location = new System.Drawing.Point(360, 454);
             this.lblSalvando.Name = "lblSalvando";
             this.lblSalvando.Size = new System.Drawing.Size(114, 24);
             this.lblSalvando.TabIndex = 4;
             this.lblSalvando.Text = "Salvando...";
             this.lblSalvando.Visible = false;
             // 
+            // lblTotalRegistros
+            // 
+            this.lblTotalRegistros.AutoSize = true;
+            this.lblTotalRegistros.Location = new System.Drawing.Point(13, 441);
+            this.lblTotalRegistros.Name = "lblTotalRegistros";
+            this.lblTotalRegistros.Size = new System.Drawing.Size(68, 13);
+            this.lblTotalRegistros.TabIndex = 5;
+            this.lblTotalRegistros.Text = "Total Linhas:";
+            this.lblTotalRegistros.Visible = false;
+            // 
+            // lblErro
+            // 
+            this.lblErro.AutoSize = true;
+            this.lblErro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErro.ForeColor = System.Drawing.Color.Red;
+            this.lblErro.Location = new System.Drawing.Point(13, 465);
+            this.lblErro.Name = "lblErro";
+            this.lblErro.Size = new System.Drawing.Size(242, 20);
+            this.lblErro.TabIndex = 6;
+            this.lblErro.Text = "Existem erros na importação!";
+            this.lblErro.Visible = false;
+            // 
             // frmImportador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 487);
+            this.Controls.Add(this.lblErro);
+            this.Controls.Add(this.lblTotalRegistros);
             this.Controls.Add(this.lblSalvando);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSalvar);
@@ -230,6 +253,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colData;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipoGasto;
         private System.Windows.Forms.Label lblSalvando;
+        private System.Windows.Forms.Label lblTotalRegistros;
+        private System.Windows.Forms.Label lblErro;
     }
 }
 

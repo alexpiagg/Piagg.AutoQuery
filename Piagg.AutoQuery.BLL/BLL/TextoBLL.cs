@@ -29,6 +29,25 @@ namespace Piagg.AutoQuery.BLL.BLL
             return linhaTexto;
         }
 
+        /*
+         * Verifica se existe algum dado não preenchido
+         * Se houver algum item em branco retorna TRUE
+         */
+        public bool ValidarLinhas(string[] validarColuna)
+        {
+            {
+                if (String.IsNullOrEmpty(validarColuna[0]) ||
+                    String.IsNullOrEmpty(validarColuna[1]) ||
+                    String.IsNullOrEmpty(validarColuna[2]) ||
+                    String.IsNullOrEmpty(validarColuna[3])
+                    )
+                {
+                    return true;
+                }
 
+                return false;
+            }
+
+        }
     }
 }

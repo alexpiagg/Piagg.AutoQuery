@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseBLL.cs" />
-    <Compile Include="BLL\ArquivoBLL.cs" />
     <Compile Include="BLL\GastosBLL.cs" />
     <Compile Include="BLL\TextoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

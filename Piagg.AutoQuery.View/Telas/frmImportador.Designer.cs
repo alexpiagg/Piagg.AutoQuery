@@ -113,6 +113,9 @@
             this.dgvGrid.AllowUserToAddRows = false;
             this.dgvGrid.AllowUserToDeleteRows = false;
             this.dgvGrid.AllowUserToResizeRows = false;
+            this.dgvGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;

@@ -165,7 +165,7 @@ namespace Piagg.AutoQuery.View
             
             btnImportar.Enabled = false;
             lblTotalRegistros.Visible = true;
-            lblTotalRegistros.Text += "Total Linhas: " + dgvGrid.Rows.Count;
+            lblTotalRegistros.Text = "Total Linhas: " + dgvGrid.Rows.Count;
 
             txtArquivo.Clear();
         }

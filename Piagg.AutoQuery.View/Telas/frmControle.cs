@@ -133,5 +133,11 @@ namespace Piagg.AutoQuery.View
 
             return valorFormatado;
         }
+
+        private void frmControle_Load(object sender, EventArgs e)
+        {
+            //Ao iniciar o form o calendario do filtro deve estar na data atual
+            dtpFim.Value = dtpInicio.Value = DateTime.Today;
+        }
     }
 }

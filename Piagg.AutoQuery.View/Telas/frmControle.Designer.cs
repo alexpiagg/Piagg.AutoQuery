@@ -117,7 +117,7 @@
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(114, 20);
             this.dtpInicio.TabIndex = 0;
-            this.dtpInicio.Value = new System.DateTime(2015, 12, 2, 0, 0, 0, 0);
+            this.dtpInicio.Value = new System.DateTime(2016, 1, 4, 0, 0, 0, 0);
             // 
             // dgvMaster
             // 
@@ -295,6 +295,7 @@
             this.Name = "frmControle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle";
+            this.Load += new System.EventHandler(this.frmControle_Load);
             this.Enter += new System.EventHandler(this.btnBuscar_Click);
             this.gpbFiltros.ResumeLayout(false);
             this.gpbFiltros.PerformLayout();

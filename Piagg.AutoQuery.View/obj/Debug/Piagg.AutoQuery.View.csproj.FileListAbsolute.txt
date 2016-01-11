@@ -1,0 +1,1 @@
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\bin\Debug\Piagg.AutoQuery.View.exe.config

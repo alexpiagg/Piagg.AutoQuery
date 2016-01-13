@@ -59,6 +59,12 @@ namespace Piagg.AutoQuery.View
             inicializar();
         }
 
+        private void menuSubCadGasto_Click(object sender, EventArgs e)
+        {
+            frmCadGasto cadGasto = new frmCadGasto();
+            cadGasto.Show();
+        }
+
 
     }
 }

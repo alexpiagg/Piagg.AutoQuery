@@ -50,6 +50,7 @@
     <Compile Include="ConfigHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\cadGasto.ico" />
     <Content Include="Images\Controle.ico" />
     <Content Include="Images\Engrenagem.ico" />
     <Content Include="Images\Principal.ico" />

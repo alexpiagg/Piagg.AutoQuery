@@ -35,30 +35,34 @@
             this.lblValor = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.cbxTipoGasto = new System.Windows.Forms.ComboBox();
-            this.nupValor = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.dgvListaGastos = new System.Windows.Forms.DataGridView();
+            this.nupValor = new System.Windows.Forms.NumericUpDown();
+            this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpbCadGasto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupValor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupValor)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbCadGasto
             // 
             this.gpbCadGasto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpbCadGasto.Controls.Add(this.nupValor);
             this.gpbCadGasto.Controls.Add(this.lblLocal);
             this.gpbCadGasto.Controls.Add(this.lblTipo);
             this.gpbCadGasto.Controls.Add(this.lblValor);
             this.gpbCadGasto.Controls.Add(this.lblData);
             this.gpbCadGasto.Controls.Add(this.cbxTipoGasto);
-            this.gpbCadGasto.Controls.Add(this.nupValor);
             this.gpbCadGasto.Controls.Add(this.textBox1);
             this.gpbCadGasto.Controls.Add(this.dtpData);
             this.gpbCadGasto.Location = new System.Drawing.Point(12, 12);
             this.gpbCadGasto.Name = "gpbCadGasto";
-            this.gpbCadGasto.Size = new System.Drawing.Size(490, 117);
+            this.gpbCadGasto.Size = new System.Drawing.Size(565, 117);
             this.gpbCadGasto.TabIndex = 0;
             this.gpbCadGasto.TabStop = false;
             this.gpbCadGasto.Text = "Cadastrar";
@@ -113,21 +117,13 @@
             this.cbxTipoGasto.Size = new System.Drawing.Size(121, 21);
             this.cbxTipoGasto.TabIndex = 3;
             // 
-            // nupValor
-            // 
-            this.nupValor.DecimalPlaces = 2;
-            this.nupValor.Location = new System.Drawing.Point(177, 39);
-            this.nupValor.Name = "nupValor";
-            this.nupValor.Size = new System.Drawing.Size(120, 20);
-            this.nupValor.TabIndex = 2;
-            // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(6, 90);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(478, 20);
+            this.textBox1.Size = new System.Drawing.Size(553, 20);
             this.textBox1.TabIndex = 1;
             // 
             // dtpData
@@ -143,20 +139,73 @@
             // 
             // dgvListaGastos
             // 
+            this.dgvListaGastos.AllowUserToAddRows = false;
+            this.dgvListaGastos.AllowUserToDeleteRows = false;
+            this.dgvListaGastos.AllowUserToResizeRows = false;
             this.dgvListaGastos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvListaGastos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaGastos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvListaGastos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvListaGastos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaGastos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colData,
+            this.colLocal,
+            this.col,
+            this.colCategoria});
             this.dgvListaGastos.Location = new System.Drawing.Point(12, 135);
             this.dgvListaGastos.Name = "dgvListaGastos";
-            this.dgvListaGastos.Size = new System.Drawing.Size(490, 328);
+            this.dgvListaGastos.ReadOnly = true;
+            this.dgvListaGastos.RowHeadersVisible = false;
+            this.dgvListaGastos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvListaGastos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaGastos.Size = new System.Drawing.Size(565, 328);
             this.dgvListaGastos.TabIndex = 1;
+            // 
+            // nupValor
+            // 
+            this.nupValor.DecimalPlaces = 2;
+            this.nupValor.Location = new System.Drawing.Point(177, 39);
+            this.nupValor.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nupValor.Name = "nupValor";
+            this.nupValor.Size = new System.Drawing.Size(120, 20);
+            this.nupValor.TabIndex = 8;
+            this.nupValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // colData
+            // 
+            this.colData.HeaderText = "Data";
+            this.colData.Name = "colData";
+            this.colData.ReadOnly = true;
+            // 
+            // colLocal
+            // 
+            this.colLocal.HeaderText = "Local";
+            this.colLocal.Name = "colLocal";
+            this.colLocal.ReadOnly = true;
+            // 
+            // col
+            // 
+            this.col.HeaderText = "Valor (R$)";
+            this.col.Name = "col";
+            this.col.ReadOnly = true;
+            // 
+            // colCategoria
+            // 
+            this.colCategoria.HeaderText = "Categoria";
+            this.colCategoria.Name = "colCategoria";
+            this.colCategoria.ReadOnly = true;
             // 
             // frmCadGasto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 475);
+            this.ClientSize = new System.Drawing.Size(589, 475);
             this.Controls.Add(this.dgvListaGastos);
             this.Controls.Add(this.gpbCadGasto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -165,8 +214,8 @@
             this.Text = "Cadastro de Gasto";
             this.gpbCadGasto.ResumeLayout(false);
             this.gpbCadGasto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupValor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupValor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,7 +224,6 @@
 
         private System.Windows.Forms.GroupBox gpbCadGasto;
         private System.Windows.Forms.DateTimePicker dtpData;
-        private System.Windows.Forms.NumericUpDown nupValor;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox cbxTipoGasto;
         private System.Windows.Forms.Label lblLocal;
@@ -183,5 +231,10 @@
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.DataGridView dgvListaGastos;
+        private System.Windows.Forms.NumericUpDown nupValor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLocal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCategoria;
     }
 }

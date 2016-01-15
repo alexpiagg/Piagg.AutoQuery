@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseDAL.cs" />
+    <Compile Include="DAL\TipoGastosDAL.cs" />
     <Compile Include="Helper\Context.cs" />
     <Compile Include="Helper\DBUtil.cs" />
     <Compile Include="DAL\GastosDAL.cs" />

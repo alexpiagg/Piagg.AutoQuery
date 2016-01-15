@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Piagg.AutoQuery.BLL.BLL;
+using Piagg.AutoQuery.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,12 +19,25 @@ namespace Piagg.AutoQuery.View
             InitializeComponent();
         }
 
-        private void txtValor_KeyPress(object sender, KeyPressEventArgs e)
+        private void frmCadGasto_Load(object sender, EventArgs e)
         {
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
-            {
-                e.Handled = true;
-            }
+            carregarCombos();
+        }
+
+        private void carregarCombos()
+        {
+            TipoGastosBLL tipoGastoBLL = new TipoGastosBLL();
+            var listaTipoGastos = tipoGastoBLL.SelectAll(new TipoGastosTO());
+            
+
+            cbxTipoGasto.DisplayMember = "TIPO";
+            cbxTipoGasto.ValueMember = "ID_TIPO_GASTOS";
+            cbxTipoGasto.DataSource = listaTipoGastos.OrderBy(x => x.TIPO).ToList();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var teste = cbxTipoGasto.SelectedValue;
         }
 
     }

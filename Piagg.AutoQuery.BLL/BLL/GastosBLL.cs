@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Piagg.AutoQuery.BLL
 {
-    public class GastosBLL :BaseBLL<GastosTO>
+    public class GastosBLL : BaseBLL<GastosTO>
     {
 
         public override void Save(List<GastosTO> gastosTO)

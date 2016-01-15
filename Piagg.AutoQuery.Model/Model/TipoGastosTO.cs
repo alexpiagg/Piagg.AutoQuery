@@ -7,7 +7,7 @@ using System.Text;
 namespace Piagg.AutoQuery.Model
 {
     [Table("tipo_gastos")]
-    public class TipoGastosTO
+    public class TipoGastosTO : BaseModel
     {
 
         [Key]

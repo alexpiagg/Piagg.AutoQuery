@@ -11,5 +11,7 @@ namespace Piagg.AutoQuery.Model
         public DateTime DataInicio { get; set; }
 
         public DateTime DataFim { get; set; }
+
+        public int IdTipoGasto { get; set; }
     }
 }

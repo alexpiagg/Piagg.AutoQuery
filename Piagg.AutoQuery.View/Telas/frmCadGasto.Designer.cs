@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGasto));
             this.gpbCadGasto = new System.Windows.Forms.GroupBox();
+            this.nupValor = new System.Windows.Forms.NumericUpDown();
             this.lblLocal = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
@@ -38,20 +39,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.dgvListaGastos = new System.Windows.Forms.DataGridView();
-            this.nupValor = new System.Windows.Forms.NumericUpDown();
             this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.gpbCadGasto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupValor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
             this.SuspendLayout();
             // 
             // gpbCadGasto
             // 
             this.gpbCadGasto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpbCadGasto.Controls.Add(this.button1);
             this.gpbCadGasto.Controls.Add(this.nupValor);
             this.gpbCadGasto.Controls.Add(this.lblLocal);
             this.gpbCadGasto.Controls.Add(this.lblTipo);
@@ -67,6 +69,20 @@
             this.gpbCadGasto.TabStop = false;
             this.gpbCadGasto.Text = "Cadastrar";
             // 
+            // nupValor
+            // 
+            this.nupValor.DecimalPlaces = 2;
+            this.nupValor.Location = new System.Drawing.Point(146, 39);
+            this.nupValor.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nupValor.Name = "nupValor";
+            this.nupValor.Size = new System.Drawing.Size(120, 20);
+            this.nupValor.TabIndex = 8;
+            this.nupValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // lblLocal
             // 
             this.lblLocal.AutoSize = true;
@@ -81,7 +97,7 @@
             this.lblTipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(360, 23);
+            this.lblTipo.Location = new System.Drawing.Point(306, 23);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(52, 13);
             this.lblTipo.TabIndex = 5;
@@ -90,7 +106,7 @@
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(174, 23);
+            this.lblValor.Location = new System.Drawing.Point(143, 23);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(54, 13);
             this.lblValor.TabIndex = 4;
@@ -112,7 +128,7 @@
             this.cbxTipoGasto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cbxTipoGasto.FormattingEnabled = true;
-            this.cbxTipoGasto.Location = new System.Drawing.Point(363, 39);
+            this.cbxTipoGasto.Location = new System.Drawing.Point(309, 39);
             this.cbxTipoGasto.Name = "cbxTipoGasto";
             this.cbxTipoGasto.Size = new System.Drawing.Size(121, 21);
             this.cbxTipoGasto.TabIndex = 3;
@@ -132,7 +148,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpData.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpData.Location = new System.Drawing.Point(6, 40);
+            this.dtpData.Location = new System.Drawing.Point(6, 39);
             this.dtpData.Name = "dtpData";
             this.dtpData.Size = new System.Drawing.Size(100, 20);
             this.dtpData.TabIndex = 0;
@@ -163,20 +179,6 @@
             this.dgvListaGastos.Size = new System.Drawing.Size(565, 328);
             this.dgvListaGastos.TabIndex = 1;
             // 
-            // nupValor
-            // 
-            this.nupValor.DecimalPlaces = 2;
-            this.nupValor.Location = new System.Drawing.Point(177, 39);
-            this.nupValor.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.nupValor.Name = "nupValor";
-            this.nupValor.Size = new System.Drawing.Size(120, 20);
-            this.nupValor.TabIndex = 8;
-            this.nupValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // colData
             // 
             this.colData.HeaderText = "Data";
@@ -201,6 +203,16 @@
             this.colCategoria.Name = "colCategoria";
             this.colCategoria.ReadOnly = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(509, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmCadGasto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,11 +223,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadGasto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Gasto";
+            this.Text = "Cadastro de Gastos";
+            this.Load += new System.EventHandler(this.frmCadGasto_Load);
             this.gpbCadGasto.ResumeLayout(false);
             this.gpbCadGasto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupValor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,5 +249,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocal;
         private System.Windows.Forms.DataGridViewTextBoxColumn col;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategoria;
+        private System.Windows.Forms.Button button1;
     }
 }

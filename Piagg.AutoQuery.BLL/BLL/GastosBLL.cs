@@ -24,7 +24,7 @@ namespace Piagg.AutoQuery.BLL
             }
         }
 
-        public List<GastosTO> SelectAll(GastosFiltroTela filtroGastos)
+        public List<GastosTO> SelectAll(FiltroGastosTO filtroGastos)
         {
             GastosDAL gastosDAL = new GastosDAL();
             var listaGastos = gastosDAL.SelectAll(filtroGastos);
@@ -32,7 +32,7 @@ namespace Piagg.AutoQuery.BLL
             return listaGastos;
         }
 
-        public List<GastosTO> getSomatorioPorTipo(GastosFiltroTela filtroGastos)
+        public List<GastosTO> getSomatorioPorTipo(FiltroGastosTO filtroGastos)
         {
             GastosDAL gastosDAL = new GastosDAL();
 

@@ -26,6 +26,9 @@ namespace Piagg.AutoQuery.View
 
         private void carregarCombos()
         {
+            //Impede que o comboBox seja editável
+            cbxTipoGasto.DropDownStyle = ComboBoxStyle.DropDownList;
+
             TipoGastosBLL tipoGastoBLL = new TipoGastosBLL();
             var listaTipoGastos = tipoGastoBLL.SelectAll(new TipoGastosTO());
             
@@ -35,9 +38,13 @@ namespace Piagg.AutoQuery.View
             cbxTipoGasto.DataSource = listaTipoGastos.OrderBy(x => x.TIPO).ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            var teste = cbxTipoGasto.SelectedValue;
+            BuscarDados();
+        }
+        private void BuscarDados()
+        { 
+
         }
 
     }

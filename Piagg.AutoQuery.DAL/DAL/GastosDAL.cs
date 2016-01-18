@@ -13,7 +13,7 @@ namespace Piagg.AutoQuery.DAL
     public class GastosDAL : BaseDAL<GastosTO>
     {
 
-        public List<GastosTO> SelectAll(GastosFiltroTela filtroGastos)
+        public List<GastosTO> SelectAll(FiltroGastosTO filtroGastos)
         {
             using (var contexto = new Context())
             {
@@ -39,7 +39,7 @@ namespace Piagg.AutoQuery.DAL
             }
         }
 
-        public List<GastosTO> getSomatorioPorTipo(GastosFiltroTela filtroGastos)
+        public List<GastosTO> getSomatorioPorTipo(FiltroGastosTO filtroGastos)
         {
 
             try

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Piagg.AutoQuery.Model
 {
-    public class GastosFiltroTela
+    public class FiltroGastosTO
     {
         public DateTime DataInicio { get; set; }
 

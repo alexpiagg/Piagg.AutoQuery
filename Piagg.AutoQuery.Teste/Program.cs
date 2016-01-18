@@ -15,7 +15,7 @@ namespace Piagg.AutoQuery.Teste
         static void Main(string[] args)
         {
 
-            GastosFiltroTela g = new GastosFiltroTela();
+            FiltroGastosTO g = new FiltroGastosTO();
             g.DataInicio = new DateTime(2015,11,01);
             g.DataFim = new DateTime(2015, 11, 05);
 

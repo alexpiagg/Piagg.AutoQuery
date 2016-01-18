@@ -77,9 +77,9 @@ namespace Piagg.AutoQuery.View
             txtValorTotal.Text = FormatarDecimal(total);
         }
 
-        public GastosFiltroTela Filtro()
+        public FiltroGastosTO Filtro()
         {
-            GastosFiltroTela filtro = new GastosFiltroTela();
+            FiltroGastosTO filtro = new FiltroGastosTO();
 
             filtro.DataInicio = dtpInicio.Value;
             filtro.DataFim = dtpFim.Value;

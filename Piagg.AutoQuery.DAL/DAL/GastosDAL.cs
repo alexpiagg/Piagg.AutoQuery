@@ -18,6 +18,8 @@ namespace Piagg.AutoQuery.DAL
             using (var contexto = new Context())
             {
 
+                var where = PredicateBuilder.True<GastosTO>();
+
                 if (filtroGastos.DataInicio == null)
                 {
                     filtroGastos.DataInicio = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
@@ -28,12 +30,18 @@ namespace Piagg.AutoQuery.DAL
                     filtroGastos.DataFim = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1).AddMonths(1).AddDays(-1);
                 }
 
-                var where = PredicateBuilder.True<GastosTO>();
+                if (filtroGastos.IdTipoGasto > 0)
+                {
+                    where = where.And<GastosTO>(x => x.ID_TIPO_GASTOS == filtroGastos.IdTipoGasto);
+                }
 
                 where = where.And<GastosTO>(x => x.DATA >= filtroGastos.DataInicio);
                 where = where.And<GastosTO>(x => x.DATA <= filtroGastos.DataFim);
-
-                var retorno = contexto.gastos.AsExpandable().Where(where).ToList();
+                
+                var retorno = contexto.gastos.
+                                       AsExpandable().
+                                       Where(where).
+                                       Include(b => b.FK_ID_TIPO_GASTOS).ToList();
 
                 return retorno;
             }

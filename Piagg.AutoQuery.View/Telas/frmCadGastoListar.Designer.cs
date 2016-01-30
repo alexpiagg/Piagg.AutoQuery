@@ -1,6 +1,6 @@
 ﻿namespace Piagg.AutoQuery.View
 {
-    partial class frmCadGasto
+    partial class frmCadGastoListar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGasto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGastoListar));
             this.gpbCadGasto = new System.Windows.Forms.GroupBox();
             this.lblFim = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataFim = new System.Windows.Forms.DateTimePicker();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.lblLocal = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.cbxTipoGasto = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dtpData = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataIni = new System.Windows.Forms.DateTimePicker();
             this.dgvListaGastos = new System.Windows.Forms.DataGridView();
             this.btnIncluir = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.IdGasto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codlIdGastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gpbCadGasto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
@@ -57,17 +55,15 @@
             this.gpbCadGasto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gpbCadGasto.Controls.Add(this.lblFim);
-            this.gpbCadGasto.Controls.Add(this.dateTimePicker1);
+            this.gpbCadGasto.Controls.Add(this.dtpDataFim);
             this.gpbCadGasto.Controls.Add(this.btnBuscar);
-            this.gpbCadGasto.Controls.Add(this.lblLocal);
             this.gpbCadGasto.Controls.Add(this.lblTipo);
             this.gpbCadGasto.Controls.Add(this.lblInicio);
             this.gpbCadGasto.Controls.Add(this.cbxTipoGasto);
-            this.gpbCadGasto.Controls.Add(this.textBox1);
-            this.gpbCadGasto.Controls.Add(this.dtpData);
+            this.gpbCadGasto.Controls.Add(this.dtpDataIni);
             this.gpbCadGasto.Location = new System.Drawing.Point(12, 12);
             this.gpbCadGasto.Name = "gpbCadGasto";
-            this.gpbCadGasto.Size = new System.Drawing.Size(565, 117);
+            this.gpbCadGasto.Size = new System.Drawing.Size(565, 79);
             this.gpbCadGasto.TabIndex = 0;
             this.gpbCadGasto.TabStop = false;
             this.gpbCadGasto.Text = "Cadastrar";
@@ -77,22 +73,22 @@
             this.lblFim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.lblFim.AutoSize = true;
-            this.lblFim.Location = new System.Drawing.Point(164, 23);
+            this.lblFim.Location = new System.Drawing.Point(164, 22);
             this.lblFim.Name = "lblFim";
             this.lblFim.Size = new System.Drawing.Size(23, 13);
             this.lblFim.TabIndex = 11;
             this.lblFim.Text = "Fim";
             // 
-            // dateTimePicker1
+            // dtpDataFim
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpDataFim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(164, 39);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpDataFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataFim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpDataFim.Location = new System.Drawing.Point(164, 39);
+            this.dtpDataFim.Name = "dtpDataFim";
+            this.dtpDataFim.Size = new System.Drawing.Size(100, 20);
+            this.dtpDataFim.TabIndex = 10;
             // 
             // btnBuscar
             // 
@@ -103,15 +99,6 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // lblLocal
-            // 
-            this.lblLocal.AutoSize = true;
-            this.lblLocal.Location = new System.Drawing.Point(6, 74);
-            this.lblLocal.Name = "lblLocal";
-            this.lblLocal.Size = new System.Drawing.Size(33, 13);
-            this.lblLocal.TabIndex = 6;
-            this.lblLocal.Text = "Local";
             // 
             // lblTipo
             // 
@@ -145,25 +132,16 @@
             this.cbxTipoGasto.Size = new System.Drawing.Size(121, 21);
             this.cbxTipoGasto.TabIndex = 3;
             // 
-            // textBox1
+            // dtpDataIni
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(6, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(553, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // dtpData
-            // 
-            this.dtpData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpDataIni.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpData.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpData.Location = new System.Drawing.Point(6, 39);
-            this.dtpData.Name = "dtpData";
-            this.dtpData.Size = new System.Drawing.Size(100, 20);
-            this.dtpData.TabIndex = 0;
+            this.dtpDataIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataIni.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpDataIni.Location = new System.Drawing.Point(6, 39);
+            this.dtpDataIni.Name = "dtpDataIni";
+            this.dtpDataIni.Size = new System.Drawing.Size(100, 20);
+            this.dtpDataIni.TabIndex = 0;
             // 
             // dgvListaGastos
             // 
@@ -178,12 +156,13 @@
             this.dgvListaGastos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dgvListaGastos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaGastos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdGasto,
+            this.codlIdGastos,
             this.colData,
             this.colLocal,
-            this.col,
+            this.colValor,
             this.colCategoria});
-            this.dgvListaGastos.Location = new System.Drawing.Point(12, 135);
+            this.dgvListaGastos.Location = new System.Drawing.Point(12, 97);
+            this.dgvListaGastos.MultiSelect = false;
             this.dgvListaGastos.Name = "dgvListaGastos";
             this.dgvListaGastos.ReadOnly = true;
             this.dgvListaGastos.RowHeadersVisible = false;
@@ -219,12 +198,12 @@
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // IdGasto
+            // codlIdGastos
             // 
-            this.IdGasto.HeaderText = "IdGasto";
-            this.IdGasto.Name = "IdGasto";
-            this.IdGasto.ReadOnly = true;
-            this.IdGasto.Visible = false;
+            this.codlIdGastos.HeaderText = "IdGasto";
+            this.codlIdGastos.Name = "codlIdGastos";
+            this.codlIdGastos.ReadOnly = true;
+            this.codlIdGastos.Visible = false;
             // 
             // colData
             // 
@@ -238,11 +217,11 @@
             this.colLocal.Name = "colLocal";
             this.colLocal.ReadOnly = true;
             // 
-            // col
+            // colValor
             // 
-            this.col.HeaderText = "Valor (R$)";
-            this.col.Name = "col";
-            this.col.ReadOnly = true;
+            this.colValor.HeaderText = "Valor (R$)";
+            this.colValor.Name = "colValor";
+            this.colValor.ReadOnly = true;
             // 
             // colCategoria
             // 
@@ -275,23 +254,21 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gpbCadGasto;
-        private System.Windows.Forms.DateTimePicker dtpData;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblLocal;
+        private System.Windows.Forms.DateTimePicker dtpDataIni;
         private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.DataGridView dgvListaGastos;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblFim;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDataFim;
         private System.Windows.Forms.Button btnIncluir;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdGasto;
+        protected System.Windows.Forms.ComboBox cbxTipoGasto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codlIdGastos;
         private System.Windows.Forms.DataGridViewTextBoxColumn colData;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategoria;
-        protected System.Windows.Forms.ComboBox cbxTipoGasto;
     }
 }

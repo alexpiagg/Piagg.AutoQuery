@@ -61,7 +61,7 @@ namespace Piagg.AutoQuery.View
 
         private void menuSubCadGasto_Click(object sender, EventArgs e)
         {
-            frmCadGasto cadGasto = new frmCadGasto();
+            frmCadGastoListar cadGasto = new frmCadGastoListar();
             cadGasto.Show();
         }
 

@@ -61,11 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Telas\frmCadGasto.cs">
+    <Compile Include="frmCadGastoManut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\frmCadGasto.Designer.cs">
-      <DependentUpon>frmCadGasto.cs</DependentUpon>
+    <Compile Include="frmCadGastoManut.Designer.cs">
+      <DependentUpon>frmCadGastoManut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmCadGastoListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmCadGastoListar.Designer.cs">
+      <DependentUpon>frmCadGastoListar.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\frmSobre.cs">
       <SubType>Form</SubType>
@@ -93,8 +99,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Telas\frmCadGasto.resx">
-      <DependentUpon>frmCadGasto.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadGastoManut.resx">
+      <DependentUpon>frmCadGastoManut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmCadGastoListar.resx">
+      <DependentUpon>frmCadGastoListar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmSobre.resx">
       <DependentUpon>frmSobre.cs</DependentUpon>

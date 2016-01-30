@@ -1,4 +1,5 @@
 ﻿using Piagg.AutoQuery.BLL;
+using Piagg.AutoQuery.Helpers;
 using Piagg.AutoQuery.Model;
 using System;
 using System.Collections.Generic;
@@ -105,7 +106,7 @@ namespace Piagg.AutoQuery.View
                 {
                     dgvDetalhe.Rows.Add(detalhe.DATA.ToString("dd/MM/yyyy"),
                                        detalhe.LOCAL,
-                                       Convert.ToDecimal(FormatarDecimal(detalhe.VALOR))
+                                       Convert.ToDecimal(OutrosUtil.FormatarDecimal(detalhe.VALOR))
                                        );
                 }
 

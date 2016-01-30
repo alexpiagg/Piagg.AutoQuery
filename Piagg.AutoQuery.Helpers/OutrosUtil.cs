@@ -19,7 +19,17 @@ namespace Piagg.AutoQuery.Helpers
             return dataRetorno;
         }
 
+        public static string FormatarDecimal(decimal? valor)
+        {
+            string valorFormatado = "";
 
+            if (valor != null)
+            {
+                valorFormatado = String.Format("{0:0,0.00}", valor);
+            }
+
+            return valorFormatado;
+        }
 
     }
 }

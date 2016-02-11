@@ -61,11 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadGastoManut.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmCadGasto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadGastoManut.Designer.cs">
-      <DependentUpon>frmCadGastoManut.cs</DependentUpon>
+    <Compile Include="Telas\frmCadGasto.Designer.cs">
+      <DependentUpon>frmCadGasto.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\frmCadGastoListar.cs">
       <SubType>Form</SubType>
@@ -99,8 +104,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadGastoManut.resx">
-      <DependentUpon>frmCadGastoManut.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmCadGasto.resx">
+      <DependentUpon>frmCadGasto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmCadGastoListar.resx">
       <DependentUpon>frmCadGastoListar.cs</DependentUpon>
@@ -119,14 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +159,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Principal.ico" />
+    <None Include="Resources\cancelar_32_x_32.png" />
+    <None Include="Resources\salvar_32_x_32.png" />
+    <None Include="Resources\Principal.png" />
+    <None Include="Resources\limpar_32_x_32.png" />
+    <None Include="Resources\incluir_32_x_32.png" />
+    <None Include="Resources\importar_32_x_32.png" />
+    <None Include="Resources\excluir_32_x_32.png" />
+    <None Include="Resources\editar_32_x_32.png" />
+    <None Include="Resources\buscar_32_x_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

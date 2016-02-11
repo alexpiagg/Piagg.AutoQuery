@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGastoListar));
             this.gpbCadGasto = new System.Windows.Forms.GroupBox();
             this.lblFim = new System.Windows.Forms.Label();
@@ -38,14 +39,15 @@
             this.cbxTipoGasto = new System.Windows.Forms.ComboBox();
             this.dtpDataIni = new System.Windows.Forms.DateTimePicker();
             this.dgvListaGastos = new System.Windows.Forms.DataGridView();
-            this.btnIncluir = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
             this.codlIdGastos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLocal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnIncluir = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.gpbCadGasto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +78,7 @@
             this.lblFim.Location = new System.Drawing.Point(164, 22);
             this.lblFim.Name = "lblFim";
             this.lblFim.Size = new System.Drawing.Size(23, 13);
-            this.lblFim.TabIndex = 11;
+            this.lblFim.TabIndex = 2;
             this.lblFim.Text = "Fim";
             // 
             // dtpDataFim
@@ -88,15 +90,15 @@
             this.dtpDataFim.Location = new System.Drawing.Point(164, 39);
             this.dtpDataFim.Name = "dtpDataFim";
             this.dtpDataFim.Size = new System.Drawing.Size(100, 20);
-            this.dtpDataFim.TabIndex = 10;
+            this.dtpDataFim.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(491, 37);
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(496, 22);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(68, 23);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Size = new System.Drawing.Size(50, 50);
+            this.btnBuscar.TabIndex = 6;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -108,7 +110,7 @@
             this.lblTipo.Location = new System.Drawing.Point(323, 23);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(52, 13);
-            this.lblTipo.TabIndex = 5;
+            this.lblTipo.TabIndex = 4;
             this.lblTipo.Text = "Categoria";
             // 
             // lblInicio
@@ -119,7 +121,7 @@
             this.lblInicio.Location = new System.Drawing.Point(6, 23);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(34, 13);
-            this.lblInicio.TabIndex = 1;
+            this.lblInicio.TabIndex = 0;
             this.lblInicio.Text = "Início";
             // 
             // cbxTipoGasto
@@ -130,7 +132,7 @@
             this.cbxTipoGasto.Location = new System.Drawing.Point(326, 39);
             this.cbxTipoGasto.Name = "cbxTipoGasto";
             this.cbxTipoGasto.Size = new System.Drawing.Size(121, 21);
-            this.cbxTipoGasto.TabIndex = 3;
+            this.cbxTipoGasto.TabIndex = 5;
             // 
             // dtpDataIni
             // 
@@ -141,7 +143,7 @@
             this.dtpDataIni.Location = new System.Drawing.Point(6, 39);
             this.dtpDataIni.Name = "dtpDataIni";
             this.dtpDataIni.Size = new System.Drawing.Size(100, 20);
-            this.dtpDataIni.TabIndex = 0;
+            this.dtpDataIni.TabIndex = 1;
             // 
             // dgvListaGastos
             // 
@@ -170,33 +172,6 @@
             this.dgvListaGastos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaGastos.Size = new System.Drawing.Size(565, 298);
             this.dgvListaGastos.TabIndex = 1;
-            // 
-            // btnIncluir
-            // 
-            this.btnIncluir.Location = new System.Drawing.Point(496, 440);
-            this.btnIncluir.Name = "btnIncluir";
-            this.btnIncluir.Size = new System.Drawing.Size(75, 23);
-            this.btnIncluir.TabIndex = 2;
-            this.btnIncluir.Text = "Incluir";
-            this.btnIncluir.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Location = new System.Drawing.Point(382, 440);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 3;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(265, 440);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 4;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
             // codlIdGastos
             // 
@@ -229,7 +204,38 @@
             this.colCategoria.Name = "colCategoria";
             this.colCategoria.ReadOnly = true;
             // 
-            // frmCadGasto
+            // btnIncluir
+            // 
+            this.btnIncluir.Image = ((System.Drawing.Image)(resources.GetObject("btnIncluir.Image")));
+            this.btnIncluir.Location = new System.Drawing.Point(481, 413);
+            this.btnIncluir.Name = "btnIncluir";
+            this.btnIncluir.Size = new System.Drawing.Size(50, 50);
+            this.btnIncluir.TabIndex = 3;
+            this.toolTip.SetToolTip(this.btnIncluir, "Incluir");
+            this.btnIncluir.UseVisualStyleBackColor = true;
+            this.btnIncluir.Click += new System.EventHandler(this.btnIncluir_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
+            this.btnExcluir.Location = new System.Drawing.Point(389, 413);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(50, 50);
+            this.btnExcluir.TabIndex = 2;
+            this.toolTip.SetToolTip(this.btnExcluir, "Excluir");
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.Location = new System.Drawing.Point(301, 413);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(50, 50);
+            this.btnAlterar.TabIndex = 1;
+            this.toolTip.SetToolTip(this.btnAlterar, "Alterar");
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            // 
+            // frmCadGastoListar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -240,7 +246,7 @@
             this.Controls.Add(this.dgvListaGastos);
             this.Controls.Add(this.gpbCadGasto);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmCadGasto";
+            this.Name = "frmCadGastoListar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Gastos";
             this.Load += new System.EventHandler(this.frmCadGasto_Load);
@@ -270,5 +276,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategoria;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

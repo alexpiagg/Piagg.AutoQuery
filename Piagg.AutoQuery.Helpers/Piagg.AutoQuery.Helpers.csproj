@@ -50,11 +50,19 @@
     <Compile Include="ConfigHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\buscar_32_x_32.png" />
     <Content Include="Images\cadGasto.ico" />
+    <Content Include="Images\cancelar_32_x_32.png" />
     <Content Include="Images\Controle.ico" />
+    <Content Include="Images\editar_32_x_32.png" />
     <Content Include="Images\Engrenagem.ico" />
+    <Content Include="Images\excluir_32_x_32.png" />
+    <Content Include="Images\importar_32_x_32.png" />
+    <Content Include="Images\incluir_32_x_32.png" />
+    <Content Include="Images\limpar_32_x_32.png" />
     <Content Include="Images\Principal.ico" />
     <Content Include="Images\Principal.png" />
+    <Content Include="Images\salvar_32_x_32.png" />
     <Content Include="Images\Sobre.ico" />
   </ItemGroup>
   <ItemGroup>

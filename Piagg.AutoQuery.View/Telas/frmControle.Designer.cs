@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControle));
             this.gpbFiltros = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             this.txtValorTotal = new System.Windows.Forms.TextBox();
             this.txtValorTotalDet = new System.Windows.Forms.TextBox();
             this.lblTotalDetalhe = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.gpbFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalhe)).BeginInit();
@@ -73,12 +75,14 @@
             // btnBuscar
             // 
             this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.Location = new System.Drawing.Point(514, 32);
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(529, 15);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Size = new System.Drawing.Size(50, 50);
+            this.btnBuscar.TabIndex = 4;
+            this.toolTip.SetToolTip(this.btnBuscar, "Buscar");
+            this.btnBuscar.UseCompatibleTextRendering = true;
+            this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblFim
@@ -96,7 +100,7 @@
             this.lblInicio.Location = new System.Drawing.Point(6, 19);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(34, 13);
-            this.lblInicio.TabIndex = 1;
+            this.lblInicio.TabIndex = 0;
             this.lblInicio.Text = "Início";
             // 
             // dtpFim
@@ -106,7 +110,7 @@
             this.dtpFim.Location = new System.Drawing.Point(158, 35);
             this.dtpFim.Name = "dtpFim";
             this.dtpFim.Size = new System.Drawing.Size(114, 20);
-            this.dtpFim.TabIndex = 1;
+            this.dtpFim.TabIndex = 3;
             this.dtpFim.Value = new System.DateTime(2015, 12, 2, 0, 0, 0, 0);
             // 
             // dtpInicio
@@ -116,7 +120,7 @@
             this.dtpInicio.Location = new System.Drawing.Point(6, 35);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(114, 20);
-            this.dtpInicio.TabIndex = 0;
+            this.dtpInicio.TabIndex = 1;
             this.dtpInicio.Value = new System.DateTime(2016, 1, 4, 0, 0, 0, 0);
             // 
             // dgvMaster
@@ -139,7 +143,7 @@
             this.dgvMaster.RowHeadersVisible = false;
             this.dgvMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMaster.Size = new System.Drawing.Size(595, 152);
-            this.dgvMaster.TabIndex = 1;
+            this.dgvMaster.TabIndex = 2;
             this.dgvMaster.SelectionChanged += new System.EventHandler(this.dgvMaster_SelectionChanged);
             // 
             // colIdTipo
@@ -183,7 +187,7 @@
             this.dgvDetalhe.RowHeadersVisible = false;
             this.dgvDetalhe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetalhe.Size = new System.Drawing.Size(595, 164);
-            this.dgvDetalhe.TabIndex = 2;
+            this.dgvDetalhe.TabIndex = 4;
             // 
             // colData
             // 
@@ -213,7 +217,7 @@
             this.lblMaster.Location = new System.Drawing.Point(12, 97);
             this.lblMaster.Name = "lblMaster";
             this.lblMaster.Size = new System.Drawing.Size(88, 13);
-            this.lblMaster.TabIndex = 3;
+            this.lblMaster.TabIndex = 1;
             this.lblMaster.Text = "Por Categoria:";
             // 
             // lblDetalhe
@@ -225,7 +229,7 @@
             this.lblDetalhe.Location = new System.Drawing.Point(12, 280);
             this.lblDetalhe.Name = "lblDetalhe";
             this.lblDetalhe.Size = new System.Drawing.Size(69, 13);
-            this.lblDetalhe.TabIndex = 4;
+            this.lblDetalhe.TabIndex = 3;
             this.lblDetalhe.Text = "Detalhado:";
             // 
             // lblTotal
@@ -328,5 +332,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colData;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocal;
         private System.Windows.Forms.DataGridViewTextBoxColumn colValorDet;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

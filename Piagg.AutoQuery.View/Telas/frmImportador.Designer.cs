@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmImportador));
             this.btnImportar = new System.Windows.Forms.Button();
             this.tbPrincipal = new System.Windows.Forms.TabControl();
@@ -44,6 +45,7 @@
             this.lblSalvando = new System.Windows.Forms.Label();
             this.lblTotalRegistros = new System.Windows.Forms.Label();
             this.lblErro = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.tbPrincipal.SuspendLayout();
             this.tabArquivo.SuspendLayout();
             this.tabGrid.SuspendLayout();
@@ -53,11 +55,12 @@
             // btnImportar
             // 
             this.btnImportar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnImportar.Location = new System.Drawing.Point(539, 446);
+            this.btnImportar.Image = ((System.Drawing.Image)(resources.GetObject("btnImportar.Image")));
+            this.btnImportar.Location = new System.Drawing.Point(593, 435);
             this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(75, 34);
+            this.btnImportar.Size = new System.Drawing.Size(50, 50);
             this.btnImportar.TabIndex = 0;
-            this.btnImportar.Text = "Importar";
+            this.toolTip.SetToolTip(this.btnImportar, "Importar");
             this.btnImportar.UseVisualStyleBackColor = true;
             this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
             // 
@@ -162,22 +165,24 @@
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(789, 446);
+            this.btnSalvar.Image = global::Piagg.AutoQuery.View.Properties.Resources.salvar_32_x_32;
+            this.btnSalvar.Location = new System.Drawing.Point(768, 435);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 34);
+            this.btnSalvar.Size = new System.Drawing.Size(50, 50);
             this.btnSalvar.TabIndex = 2;
-            this.btnSalvar.Text = "Salvar";
+            this.toolTip.SetToolTip(this.btnSalvar, "Salvar");
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
             this.btnLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpar.Location = new System.Drawing.Point(631, 446);
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
+            this.btnLimpar.Location = new System.Drawing.Point(681, 435);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(75, 34);
-            this.btnLimpar.TabIndex = 3;
-            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.Size = new System.Drawing.Size(50, 50);
+            this.btnLimpar.TabIndex = 1;
+            this.toolTip.SetToolTip(this.btnLimpar, "Limpar");
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
@@ -258,6 +263,7 @@
         private System.Windows.Forms.Label lblSalvando;
         private System.Windows.Forms.Label lblTotalRegistros;
         private System.Windows.Forms.Label lblErro;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 

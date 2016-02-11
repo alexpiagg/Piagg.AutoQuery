@@ -2,6 +2,7 @@
 using Piagg.AutoQuery.BLL.BLL;
 using Piagg.AutoQuery.Helpers;
 using Piagg.AutoQuery.Model;
+using Piagg.AutoQuery.View.Telas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -100,6 +101,12 @@ namespace Piagg.AutoQuery.View
 
 
             return filtro;
+        }
+
+        private void btnIncluir_Click(object sender, EventArgs e)
+        {
+            frmCadGasto frmCadGasto = new frmCadGasto();
+            frmCadGasto.Incluir();
         }
 
 

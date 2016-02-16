@@ -15,15 +15,9 @@ namespace Piagg.AutoQuery.Teste
         static void Main(string[] args)
         {
 
-            FiltroGastosTO g = new FiltroGastosTO();
-            g.DataInicio = new DateTime(2015,11,01);
-            g.DataFim = new DateTime(2015, 11, 05);
+            GastosDAL g = new GastosDAL();
 
-            GastosDAL dal = new GastosDAL();
-
-            var x = dal.getSomatorioPorTipo(g);
-
-            Console.ReadKey();
+            
         }
     }
 }

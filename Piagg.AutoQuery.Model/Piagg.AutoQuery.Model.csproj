@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="Base\BaseModel.cs" />
     <Compile Include="Base\Enuns.cs" />
-    <Compile Include="FiltrosTela\FiltroGastosTO.cs" />
+    <Compile Include="FiltrosTela\FiltroTelaTO.cs" />
     <Compile Include="Model\ArquivoTO.cs" />
     <Compile Include="Model\GastosTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

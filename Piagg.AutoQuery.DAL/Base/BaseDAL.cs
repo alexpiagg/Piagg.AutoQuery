@@ -18,10 +18,14 @@ namespace Piagg.AutoQuery.DAL
             throw new NotImplementedException();
         }
 
-        public virtual T SelectScalar(int id)
+
+        public virtual List<T> SelectAll(FiltroTelaTO objetoTela)
         {
             throw new NotImplementedException();
         }
+
+        public abstract T SelectScalar(int id);
+        
 
         public void Insert(List<T> listObjectInsert)
         {

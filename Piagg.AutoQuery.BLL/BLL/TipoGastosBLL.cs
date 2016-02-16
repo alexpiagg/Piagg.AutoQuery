@@ -18,10 +18,17 @@ namespace Piagg.AutoQuery.BLL.BLL
 
             return tipoGastosDAL.SelectAll(filtro);
         }
+
+        public override TipoGastosTO SelectScalar(int id)
+        {
+            throw new NotImplementedException();
+        }
         
         public override void Save(List<TipoGastosTO> objetoModel)
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

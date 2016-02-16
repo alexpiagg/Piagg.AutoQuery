@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGasto));
             this.txtLocal = new System.Windows.Forms.TextBox();
-            this.txtValor = new System.Windows.Forms.NumericUpDown();
             this.cbxTipoGasto = new System.Windows.Forms.ComboBox();
             this.dtpData = new System.Windows.Forms.DateTimePicker();
             this.lblData = new System.Windows.Forms.Label();
@@ -41,7 +40,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.txtValor)).BeginInit();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtLocal
@@ -50,19 +49,6 @@
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(484, 20);
             this.txtLocal.TabIndex = 7;
-            // 
-            // txtValor
-            // 
-            this.txtValor.Location = new System.Drawing.Point(166, 49);
-            this.txtValor.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(139, 20);
-            this.txtValor.TabIndex = 3;
-            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // cbxTipoGasto
             // 
@@ -138,11 +124,20 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(166, 49);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(137, 20);
+            this.txtValor.TabIndex = 3;
+            this.txtValor.Leave += new System.EventHandler(this.txtValor_Leave);
+            // 
             // frmCadGasto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 210);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblLocal);
@@ -151,7 +146,6 @@
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.dtpData);
             this.Controls.Add(this.cbxTipoGasto);
-            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtLocal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -161,7 +155,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Gasto";
             this.Load += new System.EventHandler(this.frmCadGasto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtValor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +163,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtLocal;
-        private System.Windows.Forms.NumericUpDown txtValor;
         private System.Windows.Forms.ComboBox cbxTipoGasto;
         private System.Windows.Forms.DateTimePicker dtpData;
         private System.Windows.Forms.Label lblData;
@@ -180,5 +172,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.TextBox txtValor;
     }
 }

@@ -10,10 +10,18 @@ namespace Piagg.AutoQuery.BLL
         where T : BaseModel
     {
 
-        public virtual T SelectScalar(int id) 
-        {   
+
+        public virtual List<T> SelectAll(T objetoTO)
+        {
             throw new NotImplementedException();
         }
+
+        public virtual List<T> SelectAll(FiltroTelaTO objetoTela)
+        {
+            throw new NotImplementedException();
+        }
+
+        public abstract T SelectScalar(int id);        
 
         public abstract void Save(List<T> objetoModel);
         

@@ -82,7 +82,7 @@ namespace Piagg.AutoQuery.View
                                         gasto.DATA,
                                         gasto.LOCAL,
                                         Convert.ToDecimal(OutrosUtil.FormatarDecimal(gasto.VALOR)),
-                                        gasto.FK_ID_TIPO_GASTOS.TIPO
+                                        gasto.TIPO
                                         );
             }
 
@@ -91,9 +91,9 @@ namespace Piagg.AutoQuery.View
         /*
          * Verifica os filtros na tela e preenche o objeto de filtro
          */
-        public FiltroGastosTO Filtro()
+        public FiltroTelaTO Filtro()
         {
-            FiltroGastosTO filtro = new FiltroGastosTO();
+            FiltroTelaTO filtro = new FiltroTelaTO();
 
             filtro.DataInicio = dtpDataIni.Value;
             filtro.DataFim = dtpDataFim.Value;
@@ -107,6 +107,19 @@ namespace Piagg.AutoQuery.View
         {
             frmCadGasto frmCadGasto = new frmCadGasto();
             frmCadGasto.Incluir();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            frmCadGasto frmCadGasto = new frmCadGasto();
+
+            GastosTO gastoTO = new GastosTO();
+            foreach (DataGridViewRow row in dgvListaGastos.SelectedRows)
+            {
+                gastoTO.ID_GASTOS = Convert.ToInt32(row.Cells[0].Value.ToString());
+            }
+
+            frmCadGasto.Alterar(gastoTO);
         }
 
 

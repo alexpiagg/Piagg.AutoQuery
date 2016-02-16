@@ -95,7 +95,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(496, 22);
+            this.btnBuscar.Location = new System.Drawing.Point(496, 19);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(50, 50);
             this.btnBuscar.TabIndex = 6;
@@ -207,7 +207,7 @@
             // btnIncluir
             // 
             this.btnIncluir.Image = ((System.Drawing.Image)(resources.GetObject("btnIncluir.Image")));
-            this.btnIncluir.Location = new System.Drawing.Point(481, 413);
+            this.btnIncluir.Location = new System.Drawing.Point(527, 413);
             this.btnIncluir.Name = "btnIncluir";
             this.btnIncluir.Size = new System.Drawing.Size(50, 50);
             this.btnIncluir.TabIndex = 3;
@@ -218,7 +218,7 @@
             // btnExcluir
             // 
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.Location = new System.Drawing.Point(389, 413);
+            this.btnExcluir.Location = new System.Drawing.Point(357, 413);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(50, 50);
             this.btnExcluir.TabIndex = 2;
@@ -228,12 +228,13 @@
             // btnAlterar
             // 
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
-            this.btnAlterar.Location = new System.Drawing.Point(301, 413);
+            this.btnAlterar.Location = new System.Drawing.Point(443, 413);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(50, 50);
             this.btnAlterar.TabIndex = 1;
             this.toolTip.SetToolTip(this.btnAlterar, "Alterar");
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // frmCadGastoListar
             // 

@@ -14,9 +14,27 @@ namespace Piagg.AutoQuery.DAL.DAL
         {
             using (var contexto = new Context())
             {
-                return contexto.tipo_gastos.ToList();
+
+                StringBuilder sqlQuery = new StringBuilder();
+
+                sqlQuery.Append(@"SELECT 
+                                    t.id_tipo_gastos,
+                                    t.tipo
+                                FROM tipo_gastos t");
+
+                var retorno = contexto.Database.SqlQuery<TipoGastosTO>(sqlQuery.ToString()).ToList();
+
+                return retorno;
             }
         }
 
+        public override TipoGastosTO SelectScalar(int id)
+        {
+            using (var contexto = new Context())
+            {
+                return contexto.tipo_gastos.Where(x => x.ID_TIPO_GASTOS == id).Single();
+            }
+
+        }
     }
 }

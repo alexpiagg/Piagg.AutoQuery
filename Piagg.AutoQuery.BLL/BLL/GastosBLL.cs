@@ -24,7 +24,7 @@ namespace Piagg.AutoQuery.BLL
             }
         }
 
-        public List<GastosTO> SelectAll(FiltroGastosTO filtroGastos)
+        public List<GastosTO> SelectAll(FiltroTelaTO filtroGastos)
         {
             GastosDAL gastosDAL = new GastosDAL();
             var listaGastos = gastosDAL.SelectAll(filtroGastos);
@@ -32,13 +32,45 @@ namespace Piagg.AutoQuery.BLL
             return listaGastos;
         }
 
-        public List<GastosTO> getSomatorioPorTipo(FiltroGastosTO filtroGastos)
+        public List<GastosTO> getSomatorioPorTipo(FiltroTelaTO filtroGastos)
         {
             GastosDAL gastosDAL = new GastosDAL();
 
-            List<GastosTO> retorno = gastosDAL.getSomatorioPorTipo(filtroGastos);
+            try
+            {
+                List<GastosTO> retorno = gastosDAL.SelectAll(filtroGastos);
 
-            return retorno;
+                var listaAgrupada = retorno.GroupBy(x => x.TIPO).Select(g => new
+                                                                                    {
+                                                                                        TIPO = g.First().TIPO,
+                                                                                        ID_TIPO_GASTOS = g.First().ID_TIPO_GASTOS,
+                                                                                        VALOR = g.Sum(s => s.VALOR),                           
+                                                                                    }).ToList();
+
+                retorno.Clear();
+                foreach (var linha in listaAgrupada)
+                {
+                    GastosTO gastoTO = new GastosTO();
+                    gastoTO.TIPO = linha.TIPO;
+                    gastoTO.VALOR = linha.VALOR;
+                    gastoTO.ID_TIPO_GASTOS = linha.ID_TIPO_GASTOS;
+
+                    retorno.Add(gastoTO);
+                }
+
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public override GastosTO SelectScalar(int id)
+        {
+            GastosDAL gastosDAL = new GastosDAL();
+
+            return gastosDAL.SelectScalar(id);
         }
     }
 }

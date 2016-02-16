@@ -73,7 +73,7 @@ namespace Piagg.AutoQuery.View.Telas
         {
             gastosTO.DATA = dtpData.Value;
             gastosTO.LOCAL = txtLocal.Text.Trim();
-            gastosTO.VALOR = 100;
+            gastosTO.VALOR = Convert.ToDecimal(txtValor.Text);
             gastosTO.ID_TIPO_GASTOS = (int) cbxTipoGasto.SelectedValue;
             gastosTO.StatusBD = StatusTransacao.Insert;
         }
@@ -101,7 +101,7 @@ namespace Piagg.AutoQuery.View.Telas
             {
                 return false;
             }
-            else if (String.IsNullOrEmpty(txtValor.Value.ToString()))
+            else if (String.IsNullOrEmpty(txtValor.Text))
             {
                 return false;
             }
@@ -140,6 +140,29 @@ namespace Piagg.AutoQuery.View.Telas
             cbxTipoGasto.SelectedItem = 1;
             gastosTO = new GastosTO();
 
+        }
+
+        private void txtValor_Leave(object sender, EventArgs e)
+        {
+            Double value;
+            if (Double.TryParse(txtValor.Text, out value))
+            {
+                txtValor.Text = String.Format("{0:C2}", value);
+                txtValor.Text = txtValor.Text.Replace("R$", "");
+                txtValor.Text.Trim();
+            }
+            else
+            {
+                txtValor.Text = String.Empty;
+            }                
+        }
+
+        /*
+         * Alteração de gastos
+         */
+        public void Alterar(GastosTO gastoTO)
+        {
+            
         }
     }
 }

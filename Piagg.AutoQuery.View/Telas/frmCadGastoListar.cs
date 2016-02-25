@@ -73,6 +73,8 @@ namespace Piagg.AutoQuery.View
         private void preencherGrid(List<GastosTO> listaGastos)
         {
 
+            dgvListaGastos.Rows.Clear();
+
             //Alinhando texto à esquerda
             this.dgvListaGastos.Columns["colValor"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
@@ -107,21 +109,28 @@ namespace Piagg.AutoQuery.View
         {
             frmCadGasto frmCadGasto = new frmCadGasto();
             frmCadGasto.Incluir();
+            BuscarDados();
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             frmCadGasto frmCadGasto = new frmCadGasto();
 
-            GastosTO gastoTO = new GastosTO();
-            foreach (DataGridViewRow row in dgvListaGastos.SelectedRows)
+            GastosTO gastosTO = new GastosTO();
+            if (dgvListaGastos.CurrentRow != null)
             {
-                gastoTO.ID_GASTOS = Convert.ToInt32(row.Cells[0].Value.ToString());
+                DataGridViewRow row = this.dgvListaGastos.SelectedRows[0];
+                int idGastos = (int) row.Cells["codlIdGastos"].Value;
+
+                gastosTO.ID_GASTOS = idGastos;
+                frmCadGasto.Alterar(gastosTO);
+            }
+            else
+            {
+                MessageBox.Show("Selecionar um item na lista :)");
             }
 
-            frmCadGasto.Alterar(gastoTO);
+            BuscarDados();
         }
-
-
     }
 }

@@ -39,29 +39,40 @@ namespace Piagg.AutoQuery.View.Telas
 
             if (gastosTO != null)
             {
-                PreencherValores();
+                PreencherValoresSalvar();
                 gastoListaTO.Add(gastosTO);
             }
 
             GastosBLL gastosBLL = new GastosBLL();
             gastosBLL.Save(gastoListaTO);
 
-            VerificarNovaInclusao();
+            VerificarProcessoDepoisSalvar();
         }
 
         /*
          * Caso o usuário optar por continuar inserindo gastos, deverá limpar a tela e o objeto.
          * Senão deverá encerrar o form
          */
-        private void VerificarNovaInclusao()
+        private void VerificarProcessoDepoisSalvar()
         {
-            DialogResult dialogResult = MessageBox.Show("Deseja incluir um novo gasto?", "Incluir", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            /*Se for inclusão:
+             * Pergunta se quer adicionar mais e limpa a tela, senão fecha a tela
+             */
+            if (gastosTO.StatusBD == StatusTransacao.Insert)
             {
-                LimparTela();
+                DialogResult dialogResult = MessageBox.Show("Deseja incluir um novo gasto?", "Incluir", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    LimparTela();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    this.Close();
+                }
             }
-            else if (dialogResult == DialogResult.No)
+            else if (gastosTO.StatusBD == StatusTransacao.Update)
             {
+                MessageBox.Show("Dados salvos com sucesso :)");
                 this.Close();
             }
         }
@@ -69,13 +80,12 @@ namespace Piagg.AutoQuery.View.Telas
         /*
          * Insere os valores capturados da tela no objeto a ser salvo no banco de dados 
          */
-        private void PreencherValores()
+        private void PreencherValoresSalvar()
         {
             gastosTO.DATA = dtpData.Value;
             gastosTO.LOCAL = txtLocal.Text.Trim();
             gastosTO.VALOR = Convert.ToDecimal(txtValor.Text);
             gastosTO.ID_TIPO_GASTOS = (int) cbxTipoGasto.SelectedValue;
-            gastosTO.StatusBD = StatusTransacao.Insert;
         }
     
         private void carregarCombos()
@@ -126,6 +136,7 @@ namespace Piagg.AutoQuery.View.Telas
         public void Incluir()
         {
             gastosTO = new GastosTO();
+            gastosTO.StatusBD = StatusTransacao.Insert;
             this.ShowDialog();
         }
 
@@ -142,6 +153,9 @@ namespace Piagg.AutoQuery.View.Telas
 
         }
 
+        /*
+         * Formata o campo de valores monetarios ao sair do campo
+         */
         private void txtValor_Leave(object sender, EventArgs e)
         {
             Double value;
@@ -160,9 +174,31 @@ namespace Piagg.AutoQuery.View.Telas
         /*
          * Alteração de gastos
          */
-        public void Alterar(GastosTO gastoTO)
+        public void Alterar(GastosTO objGastosTO)
         {
-            
+            GastosBLL gastoBLL = new GastosBLL();
+            this.gastosTO = gastoBLL.SelectScalar(objGastosTO.ID_GASTOS);
+
+            if (gastosTO != null)
+            {
+                PreencherValoresTela(gastosTO);
+            }
+
+            this.ShowDialog();
         }
+
+        /*
+         * Recebe o objeto com os dados completos dos gastos e apresenta na tela
+         */
+        private void PreencherValoresTela(GastosTO gastosTO)
+        {
+
+            txtLocal.Text = gastosTO.LOCAL.Trim();
+            txtValor.Text = gastosTO.VALOR.ToString();
+            dtpData.Value = gastosTO.DATA;
+            cbxTipoGasto.ValueMember = gastosTO.ID_TIPO_GASTOS.ToString();
+            gastosTO.StatusBD = StatusTransacao.Update;
+        }
+
     }
 }

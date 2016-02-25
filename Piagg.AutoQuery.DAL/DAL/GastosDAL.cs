@@ -26,13 +26,13 @@ namespace Piagg.AutoQuery.DAL
                                         g.id_tipo_gastos,
 	                                    g.local,
 	                                    g.valor,
-                                        t.tipo
+                                        t.tipo TIPO
                                     FROM gastos g
                                     JOIN tipo_gastos t ON t.id_tipo_gastos = g.id_tipo_gastos
                                     WHERE 1 = 1 ");
 
                 List<MySqlParameter> parametros = new List<MySqlParameter>();
-
+                /*
                 if (filtroGastos.DataInicio != null)
                 {
                     sqlQuery.Append(" AND g.data >= @DataInicio");
@@ -53,10 +53,33 @@ namespace Piagg.AutoQuery.DAL
                     MySqlParameter idTipoGasto = new MySqlParameter("@IdTipoGasto", filtroGastos.IdTipoGasto);
                     parametros.Add(idTipoGasto);
                 }
+                */
 
-                var retorno = contexto.Database.SqlQuery<GastosTO>(sqlQuery.ToString(), parametros.ToArray()).ToList(); 
-                
-                return retorno;
+                if (filtroGastos.DataInicio != null)
+                {
+                    sqlQuery.AppendFormat(" AND g.data >= {0}", filtroGastos.DataInicio.ToString("yyyyMMdd"));
+                }
+
+                if (filtroGastos.DataFim != null)
+                {
+                    sqlQuery.AppendFormat(" AND g.data <= {0}", filtroGastos.DataFim.ToString("yyyyMMdd"));
+                }
+
+                if (filtroGastos.IdTipoGasto > 0)
+                {
+                    sqlQuery.AppendFormat(" AND g.id_tipo_gastos = {0}", filtroGastos.IdTipoGasto);
+                }
+
+                try
+                {
+                    //var retorno = contexto.Database.ExecuteSql<GastosTO>(sqlQuery.ToString(), parametros.ToArray()).ToList();
+                    var retorno = ExecuteSql<GastosTO>(sqlQuery.ToString()).ToList();
+                    return retorno;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
 
@@ -68,42 +91,6 @@ namespace Piagg.AutoQuery.DAL
             }
         }
 
-        /*
-        public List<GastosTO> getSomatorioPorTipo(FiltroTelaTO filtroGastos)
-        {
-
-            using (var contexto = new Context())
-            {
-                StringBuilder sql = new StringBuilder();
-
-                sql.Append(@"  SELECT
-                	                TG.Tipo,
-                	                SUM(G.valor) VALOR,
-                	                TG.id_tipo_gastos,
-                                    
-                                    null local,
-                                    CAST(NOW() AS DATE) data,
-                                    0 id_gastos
-                                FROM GASTOS G
-                                JOIN TIPO_GASTOS TG ON TG.id_tipo_gastos = G.id_tipo_gastos
-                                WHERE G.id_tipo_gastos is not null 
-                                    AND G.data >= @DataInicio
-                                    AND G.data <= @DataFim 
-                                GROUP BY TIPO ");
-
-                List<MySqlParameter> parametros = new List<MySqlParameter>();
-
-                MySqlParameter DataInicio = new MySqlParameter("@DataInicio", filtroGastos.DataInicio);
-                parametros.Add(DataInicio);
-
-                MySqlParameter DataFim = new MySqlParameter("@DataFim", filtroGastos.DataFim);
-                parametros.Add(DataFim);
-                
-                var retorno = contexto.Database.SqlQuery<GastosTO>(sql.ToString(), parametros.ToArray()).ToList();
-
-                return retorno;
-            }
-        }
-        */
     }
 }
+

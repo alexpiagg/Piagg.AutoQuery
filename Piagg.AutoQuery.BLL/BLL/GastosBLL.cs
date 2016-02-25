@@ -40,25 +40,14 @@ namespace Piagg.AutoQuery.BLL
             {
                 List<GastosTO> retorno = gastosDAL.SelectAll(filtroGastos);
 
-                var listaAgrupada = retorno.GroupBy(x => x.TIPO).Select(g => new
+                var listaAgrupada = retorno.GroupBy(x => x.TIPO).Select(g => new GastosTO()
                                                                                     {
                                                                                         TIPO = g.First().TIPO,
                                                                                         ID_TIPO_GASTOS = g.First().ID_TIPO_GASTOS,
                                                                                         VALOR = g.Sum(s => s.VALOR),                           
                                                                                     }).ToList();
 
-                retorno.Clear();
-                foreach (var linha in listaAgrupada)
-                {
-                    GastosTO gastoTO = new GastosTO();
-                    gastoTO.TIPO = linha.TIPO;
-                    gastoTO.VALOR = linha.VALOR;
-                    gastoTO.ID_TIPO_GASTOS = linha.ID_TIPO_GASTOS;
-
-                    retorno.Add(gastoTO);
-                }
-
-                return retorno;
+                return listaAgrupada;
             }
             catch (Exception ex)
             {

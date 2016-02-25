@@ -11,28 +11,28 @@ namespace Piagg.AutoQuery.Model
     public class GastosTO : BaseModel
     {
         [Key]
-        //[Column("id_gastos")]
+        [Column("id_gastos")]
         public int ID_GASTOS { get; set; }
 
-        //[Column("local")]
+        [Column("local")]
         public string LOCAL { get; set; }
 
-        //[Column("valor")]
+        [Column("valor")]
         public decimal VALOR { get; set; }
 
-        //[Column("data")]
+        [Column("data")]
         public DateTime DATA { get; set; }
 
-        //[Column("id_tipo_gastos")]
+        [Column("id_tipo_gastos")]
         public int? ID_TIPO_GASTOS { get; set; }
 
-        //[ForeignKey("ID_TIPO_GASTOS")]
+        [ForeignKey("ID_TIPO_GASTOS")]
         public virtual TipoGastosTO FK_ID_TIPO_GASTOS { get; set; }
 
         /*
          * Não Mapeados
          */
-        //[NotMapped]
+        [NotMapped]
         public string TIPO { get; set; }
 
     }

@@ -22,8 +22,7 @@ namespace Piagg.AutoQuery.DAL.DAL
                                     t.tipo
                                 FROM tipo_gastos t");
 
-                var retorno = contexto.Database.SqlQuery<TipoGastosTO>(sqlQuery.ToString()).ToList();
-
+                var retorno = ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
                 return retorno;
             }
         }

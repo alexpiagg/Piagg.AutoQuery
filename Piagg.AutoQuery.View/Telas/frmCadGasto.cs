@@ -35,6 +35,12 @@ namespace Piagg.AutoQuery.View.Telas
                 MessageBox.Show("Existem campos não preenchidos"); 
                 return;
             }
+
+            DialogResult dialogResult = MessageBox.Show("Deseja salvar?", "Salvando...", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
             List<GastosTO> gastoListaTO = new List<GastosTO>();
 
             if (gastosTO != null)
@@ -67,10 +73,11 @@ namespace Piagg.AutoQuery.View.Telas
                 }
                 else if (dialogResult == DialogResult.No)
                 {
+                    MessageBox.Show("Dados salvos com sucesso :)");
                     this.Close();
                 }
             }
-            else if (gastosTO.StatusBD == StatusTransacao.Update)
+            else if (gastosTO.StatusBD == StatusTransacao.Update || gastosTO.StatusBD == StatusTransacao.Delete)
             {
                 MessageBox.Show("Dados salvos com sucesso :)");
                 this.Close();
@@ -127,14 +134,11 @@ namespace Piagg.AutoQuery.View.Telas
             return true;
         }
 
-        private void frmCadGasto_Load(object sender, EventArgs e)
-        {
-            carregarCombos();
-        }
-
 
         public void Incluir()
         {
+            carregarCombos();
+
             gastosTO = new GastosTO();
             gastosTO.StatusBD = StatusTransacao.Insert;
             this.ShowDialog();
@@ -182,8 +186,9 @@ namespace Piagg.AutoQuery.View.Telas
             if (gastosTO != null)
             {
                 PreencherValoresTela(gastosTO);
+                gastosTO.StatusBD = StatusTransacao.Update;
             }
-
+            
             this.ShowDialog();
         }
 
@@ -193,12 +198,38 @@ namespace Piagg.AutoQuery.View.Telas
         private void PreencherValoresTela(GastosTO gastosTO)
         {
 
+            carregarCombos();
+
             txtLocal.Text = gastosTO.LOCAL.Trim();
             txtValor.Text = gastosTO.VALOR.ToString();
             dtpData.Value = gastosTO.DATA;
-            cbxTipoGasto.ValueMember = gastosTO.ID_TIPO_GASTOS.ToString();
-            gastosTO.StatusBD = StatusTransacao.Update;
+            cbxTipoGasto.SelectedValue = gastosTO.ID_TIPO_GASTOS;            
         }
 
+        /*
+         * Desabilita todos os componentes de tela para o modo de delete
+         */
+        private void DesabilitarComponentes()
+        {
+            txtLocal.Enabled = false;
+            txtValor.Enabled = false;
+            dtpData.Enabled = false;
+            cbxTipoGasto.Enabled = false;
+        }
+
+        public void Excluir(GastosTO objGastosTO)
+        {
+            GastosBLL gastoBLL = new GastosBLL();
+            this.gastosTO = gastoBLL.SelectScalar(objGastosTO.ID_GASTOS);
+
+            if (gastosTO != null)
+            {
+                PreencherValoresTela(gastosTO);
+                gastosTO.StatusBD = StatusTransacao.Delete;
+            }
+            
+            DesabilitarComponentes();
+            this.ShowDialog();
+        }
     }
 }

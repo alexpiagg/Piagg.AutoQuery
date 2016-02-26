@@ -100,7 +100,7 @@ namespace Piagg.AutoQuery.View
             filtro.DataInicio = dtpDataIni.Value;
             filtro.DataFim = dtpDataFim.Value;
             filtro.IdTipoGasto = Convert.ToInt32(cbxTipoGasto.SelectedValue);
-
+            filtro.Local = txtLocal.Text.Trim();
 
             return filtro;
         }
@@ -132,5 +132,28 @@ namespace Piagg.AutoQuery.View
 
             BuscarDados();
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            frmCadGasto frmCadGasto = new frmCadGasto();
+
+            GastosTO gastosTO = new GastosTO();
+            if (dgvListaGastos.CurrentRow != null)
+            {
+                DataGridViewRow row = this.dgvListaGastos.SelectedRows[0];
+                int idGastos = (int)row.Cells["codlIdGastos"].Value;
+
+                gastosTO.ID_GASTOS = idGastos;
+                frmCadGasto.Excluir(gastosTO);
+            }
+            else
+            {
+                MessageBox.Show("Selecionar um item na lista :)");
+            }
+
+            BuscarDados();
+        }
+
+
     }
 }

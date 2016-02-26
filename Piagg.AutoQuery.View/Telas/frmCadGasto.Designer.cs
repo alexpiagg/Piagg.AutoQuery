@@ -154,7 +154,6 @@
             this.Name = "frmCadGasto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Gasto";
-            this.Load += new System.EventHandler(this.frmCadGasto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -49,10 +49,17 @@ namespace Piagg.AutoQuery.View.Telas
                 gastoListaTO.Add(gastosTO);
             }
 
-            GastosBLL gastosBLL = new GastosBLL();
-            gastosBLL.Save(gastoListaTO);
+            try
+            {
+                GastosBLL gastosBLL = new GastosBLL();
+                gastosBLL.Save(gastoListaTO);
 
-            VerificarProcessoDepoisSalvar();
+                VerificarProcessoDepoisSalvar();
+            }
+            catch (Exception ex)
+            {
+                //Loggar
+            }            
         }
 
         /*
@@ -66,14 +73,14 @@ namespace Piagg.AutoQuery.View.Telas
              */
             if (gastosTO.StatusBD == StatusTransacao.Insert)
             {
-                DialogResult dialogResult = MessageBox.Show("Deseja incluir um novo gasto?", "Incluir", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(@"Dados salvos com sucesso! " + Environment.NewLine + 
+                                                             "Deseja incluir um novo gasto?", "Incluir", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     LimparTela();
                 }
                 else if (dialogResult == DialogResult.No)
                 {
-                    MessageBox.Show("Dados salvos com sucesso :)");
                     this.Close();
                 }
             }

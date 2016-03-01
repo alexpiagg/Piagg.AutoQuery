@@ -52,8 +52,15 @@ namespace Piagg.AutoQuery.View
                 return;
             }
 
-            //Busca dos dados da grid de detalhes com o filtro de tela, para permanecer em memória
-            listaGastosDetalhe = gastosBLL.SelectAll(filtro);
+            try
+            {
+                //Busca dos dados da grid de detalhes com o filtro de tela, para permanecer em memória
+                listaGastosDetalhe = gastosBLL.SelectAll(filtro);
+            }
+            catch (Exception ex)
+            {
+                //Loggar
+            }
 
             //Popula a grid master
             PreencherGridMaster(listaGastosMaster);

@@ -46,6 +46,7 @@
             // txtLocal
             // 
             this.txtLocal.Location = new System.Drawing.Point(12, 118);
+            this.txtLocal.MaxLength = 100;
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(484, 20);
             this.txtLocal.TabIndex = 7;

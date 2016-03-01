@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGastoListar));
             this.gpbCadGasto = new System.Windows.Forms.GroupBox();
+            this.txtLocal = new System.Windows.Forms.TextBox();
             this.lblLocal = new System.Windows.Forms.Label();
             this.lblFim = new System.Windows.Forms.Label();
             this.dtpDataFim = new System.Windows.Forms.DateTimePicker();
@@ -49,7 +50,6 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.txtLocal = new System.Windows.Forms.TextBox();
             this.gpbCadGasto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaGastos)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,13 @@
             this.gpbCadGasto.TabIndex = 0;
             this.gpbCadGasto.TabStop = false;
             this.gpbCadGasto.Text = "Cadastrar";
+            // 
+            // txtLocal
+            // 
+            this.txtLocal.Location = new System.Drawing.Point(6, 74);
+            this.txtLocal.Name = "txtLocal";
+            this.txtLocal.Size = new System.Drawing.Size(441, 20);
+            this.txtLocal.TabIndex = 8;
             // 
             // lblLocal
             // 
@@ -252,15 +259,9 @@
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // txtLocal
-            // 
-            this.txtLocal.Location = new System.Drawing.Point(6, 74);
-            this.txtLocal.Name = "txtLocal";
-            this.txtLocal.Size = new System.Drawing.Size(441, 20);
-            this.txtLocal.TabIndex = 8;
-            // 
             // frmCadGastoListar
             // 
+            this.AcceptButton = this.btnBuscar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 491);

@@ -22,8 +22,15 @@ namespace Piagg.AutoQuery.DAL.DAL
                                     t.tipo
                                 FROM tipo_gastos t");
 
-                var retorno = ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
-                return retorno;
+                try
+                {
+                    var retorno = ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
+                    return retorno;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
 
@@ -31,9 +38,15 @@ namespace Piagg.AutoQuery.DAL.DAL
         {
             using (var contexto = new Context())
             {
-                return contexto.tipo_gastos.Where(x => x.ID_TIPO_GASTOS == id).Single();
+                try
+                {
+                    return contexto.tipo_gastos.Where(x => x.ID_TIPO_GASTOS == id).Single();
+                }                
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
-
-        }
+       }
     }
 }

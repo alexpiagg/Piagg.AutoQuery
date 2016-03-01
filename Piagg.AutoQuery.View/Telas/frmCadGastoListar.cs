@@ -56,15 +56,22 @@ namespace Piagg.AutoQuery.View
             GastosBLL gastosBLL = new GastosBLL();
             var filtro = Filtro();
 
-            var listaGastos = gastosBLL.SelectAll(filtro);
-
-            if (listaGastos.Count == 0)
+            try
             {
-                MessageBox.Show("Nenhum gasto encontrado nesse período");
-                return;
-            }
+                var listaGastos = gastosBLL.SelectAll(filtro);
+                
+                if (listaGastos.Count == 0)
+                {
+                    MessageBox.Show("Nenhum gasto encontrado nesse período");
+                    return;
+                }
 
-            preencherGrid(listaGastos);
+                preencherGrid(listaGastos);
+            }
+            catch (Exception ex)
+            {
+                //Loggar
+            }
         }
 
         /*

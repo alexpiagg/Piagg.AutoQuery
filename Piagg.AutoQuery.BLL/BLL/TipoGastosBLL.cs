@@ -14,9 +14,15 @@ namespace Piagg.AutoQuery.BLL.BLL
 
         public List<TipoGastosTO> SelectAll(TipoGastosTO filtro)
         {
-            TipoGastosDAL tipoGastosDAL = new TipoGastosDAL();
-
-            return tipoGastosDAL.SelectAll(filtro);
+            try
+            {
+                TipoGastosDAL tipoGastosDAL = new TipoGastosDAL();
+                return tipoGastosDAL.SelectAll(filtro);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }            
         }
 
         public override TipoGastosTO SelectScalar(int id)

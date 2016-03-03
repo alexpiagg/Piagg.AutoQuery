@@ -65,6 +65,12 @@ namespace Piagg.AutoQuery.View
             cadGasto.Show();
         }
 
+        private void cadTipoGastosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadTipoGastoListar cadTipoGasto = new frmCadTipoGastoListar();
+            cadTipoGasto.Show();
+        }
+
 
     }
 }

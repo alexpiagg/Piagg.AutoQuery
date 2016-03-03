@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadGasto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadTipoGasto));
             this.txtLocal = new System.Windows.Forms.TextBox();
             this.cbxTipoGasto = new System.Windows.Forms.ComboBox();
             this.dtpData = new System.Windows.Forms.DateTimePicker();

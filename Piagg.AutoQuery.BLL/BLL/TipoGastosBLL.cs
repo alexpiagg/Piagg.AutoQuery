@@ -25,14 +25,43 @@ namespace Piagg.AutoQuery.BLL.BLL
             }            
         }
 
+        public List<TipoGastosTO> SelectAll(FiltroTelaTO filtro)
+        {
+            try
+            {
+                TipoGastosDAL tipoGastosDAL = new TipoGastosDAL();
+                return tipoGastosDAL.SelectAll(filtro);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public override TipoGastosTO SelectScalar(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoGastosDAL tipoGastoDAL = new TipoGastosDAL();
+                return tipoGastoDAL.SelectScalar(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         
         public override void Save(List<TipoGastosTO> objetoModel)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoGastosDAL tipoGastoDAL = new TipoGastosDAL();
+                tipoGastoDAL.Save(objetoModel);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
 

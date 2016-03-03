@@ -72,7 +72,7 @@
             this.gpbCadGasto.Size = new System.Drawing.Size(565, 100);
             this.gpbCadGasto.TabIndex = 0;
             this.gpbCadGasto.TabStop = false;
-            this.gpbCadGasto.Text = "Cadastrar";
+            this.gpbCadGasto.Text = "Filtros";
             // 
             // txtLocal
             // 
@@ -117,7 +117,7 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(494, 32);
+            this.btnBuscar.Location = new System.Drawing.Point(490, 44);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(50, 50);
             this.btnBuscar.TabIndex = 6;

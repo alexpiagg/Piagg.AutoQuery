@@ -19,12 +19,54 @@ namespace Piagg.AutoQuery.DAL.DAL
 
                 sqlQuery.Append(@"SELECT 
                                     t.id_tipo_gastos,
-                                    t.tipo
-                                FROM tipo_gastos t");
+                                    t.tipo,
+                                    t.excluido
+                                  FROM tipo_gastos t");
 
                 try
                 {
-                    var retorno = ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
+                    var retorno = contexto.Database.SqlQuery<TipoGastosTO>(sqlQuery.ToString()).ToList();
+                    return retorno;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
+        public List<TipoGastosTO> SelectAll(FiltroTelaTO filtroTela)
+        {
+            using (var contexto = new Context())
+            {
+
+                StringBuilder sqlQuery = new StringBuilder();
+
+                sqlQuery.Append(@"SELECT 
+                                    t.id_tipo_gastos,
+                                    t.tipo,
+                                    t.excluido
+                                  FROM tipo_gastos t
+                                  WHERE 1 = 1 ");
+
+                if (filtroTela.IdTipoGasto > 0)
+                {
+                    sqlQuery.AppendFormat(" AND t.id_tipo_gastos = {0} ", filtroTela.IdTipoGasto);
+                }
+
+                if (!String.IsNullOrEmpty(filtroTela.TipoGasto))
+                {
+                    sqlQuery.AppendFormat(" AND t.tipo LIKE '%{0}%' ", filtroTela.TipoGasto);
+                }
+
+                if (filtroTela.Excluido)
+                {
+                    sqlQuery.Append(" AND IFNULL(t.excluido, false) = true ");
+                }
+
+                try
+                {
+                    var retorno = contexto.Database.SqlQuery<TipoGastosTO>(sqlQuery.ToString()).ToList();
                     return retorno;
                 }
                 catch (Exception ex)

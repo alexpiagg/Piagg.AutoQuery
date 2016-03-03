@@ -15,5 +15,10 @@ namespace Piagg.AutoQuery.Model
         public int IdTipoGasto { get; set; }
 
         public string Local { get; set; }
+
+        public string TipoGasto { get; set; }
+
+        public bool Excluido { get; set; }
+
     }
 }

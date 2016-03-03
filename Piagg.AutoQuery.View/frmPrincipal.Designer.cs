@@ -42,6 +42,7 @@
             this.statusInferior = new System.Windows.Forms.StatusStrip();
             this.statusLbBanco = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLbNomeBanco = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cadTipoGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.statusInferior.SuspendLayout();
             this.SuspendLayout();
@@ -71,21 +72,22 @@
             // menuSubControle
             // 
             this.menuSubControle.Name = "menuSubControle";
-            this.menuSubControle.Size = new System.Drawing.Size(120, 22);
+            this.menuSubControle.Size = new System.Drawing.Size(152, 22);
             this.menuSubControle.Text = "Controle";
             this.menuSubControle.Click += new System.EventHandler(this.menuSubControle_Click);
             // 
             // menuSubSair
             // 
             this.menuSubSair.Name = "menuSubSair";
-            this.menuSubSair.Size = new System.Drawing.Size(120, 22);
+            this.menuSubSair.Size = new System.Drawing.Size(152, 22);
             this.menuSubSair.Text = "Sair";
             this.menuSubSair.Click += new System.EventHandler(this.menuSubSair_Click);
             // 
             // cadToolStripMenuItem
             // 
             this.cadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuSubCadGasto});
+            this.menuSubCadGasto,
+            this.cadTipoGastosToolStripMenuItem});
             this.cadToolStripMenuItem.Name = "cadToolStripMenuItem";
             this.cadToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadToolStripMenuItem.Text = "Cadastros";
@@ -93,7 +95,7 @@
             // menuSubCadGasto
             // 
             this.menuSubCadGasto.Name = "menuSubCadGasto";
-            this.menuSubCadGasto.Size = new System.Drawing.Size(136, 22);
+            this.menuSubCadGasto.Size = new System.Drawing.Size(163, 22);
             this.menuSubCadGasto.Text = "Cad. Gastos";
             this.menuSubCadGasto.Click += new System.EventHandler(this.menuSubCadGasto_Click);
             // 
@@ -108,7 +110,7 @@
             // menuSubImportador
             // 
             this.menuSubImportador.Name = "menuSubImportador";
-            this.menuSubImportador.Size = new System.Drawing.Size(134, 22);
+            this.menuSubImportador.Size = new System.Drawing.Size(152, 22);
             this.menuSubImportador.Text = "Importador";
             this.menuSubImportador.Click += new System.EventHandler(this.menuSubImportador_Click);
             // 
@@ -123,7 +125,7 @@
             // menuSubSobre
             // 
             this.menuSubSobre.Name = "menuSubSobre";
-            this.menuSubSobre.Size = new System.Drawing.Size(104, 22);
+            this.menuSubSobre.Size = new System.Drawing.Size(152, 22);
             this.menuSubSobre.Text = "Sobre";
             this.menuSubSobre.Click += new System.EventHandler(this.menuSubSobre_Click);
             // 
@@ -150,6 +152,13 @@
             this.statusLbNomeBanco.Name = "statusLbNomeBanco";
             this.statusLbNomeBanco.Size = new System.Drawing.Size(71, 17);
             this.statusLbNomeBanco.Text = "Banco Atual";
+            // 
+            // cadTipoGastosToolStripMenuItem
+            // 
+            this.cadTipoGastosToolStripMenuItem.Name = "cadTipoGastosToolStripMenuItem";
+            this.cadTipoGastosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.cadTipoGastosToolStripMenuItem.Text = "Cad. Tipo Gastos";
+            this.cadTipoGastosToolStripMenuItem.Click += new System.EventHandler(this.cadTipoGastosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -191,5 +200,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuSubSobre;
         private System.Windows.Forms.ToolStripMenuItem cadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuSubCadGasto;
+        private System.Windows.Forms.ToolStripMenuItem cadTipoGastosToolStripMenuItem;
     }
 }

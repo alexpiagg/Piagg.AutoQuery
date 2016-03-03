@@ -61,6 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telas\frmCadTipoGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmCadTipoGasto.Designer.cs">
+      <DependentUpon>frmCadTipoGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmCadTipoGastoListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmCadTipoGastoListar.Designer.cs">
+      <DependentUpon>frmCadTipoGastoListar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +116,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Telas\frmCadTipoGasto.resx">
+      <DependentUpon>frmCadTipoGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmCadTipoGastoListar.resx">
+      <DependentUpon>frmCadTipoGastoListar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmCadGasto.resx">
       <DependentUpon>frmCadGasto.cs</DependentUpon>
     </EmbeddedResource>

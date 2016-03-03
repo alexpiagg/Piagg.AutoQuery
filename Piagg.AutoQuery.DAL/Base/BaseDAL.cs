@@ -34,8 +34,8 @@ namespace Piagg.AutoQuery.DAL
                     cmd.CommandText = selectSQL;
                     cmd.CommandType = System.Data.CommandType.Text;
 
-                    if (context.Database.CurrentTransaction != null)
-                        cmd.Transaction = context.Database.CurrentTransaction.UnderlyingTransaction;
+                    //if (context.Database.CurrentTransaction != null)
+                    //    cmd.Transaction = context.Database.CurrentTransaction.UnderlyingTransaction;
 
                     cmd.CommandTimeout = 60;
 
@@ -47,7 +47,10 @@ namespace Piagg.AutoQuery.DAL
                     while (dataReader.Read())
                     {
 
-                        if (!dataReader.HasRows) continue;
+                        if (!dataReader.HasRows)
+                        {
+                            continue;
+                        }
 
                         var obj = Activator.CreateInstance<Y>();
 
@@ -57,10 +60,17 @@ namespace Piagg.AutoQuery.DAL
                             var columnName = dataReader.GetName(i);
                             var propObj = props.Find(p => p.Name.Equals(columnName, StringComparison.CurrentCultureIgnoreCase));
 
-                            if (propObj == null) continue;
+                            if (propObj == null)
+                            {
+                                continue;
+                            }
+
                             var valor = dataReader[columnName];
 
-                            propObj.SetValue(obj, valor, null);
+                            if (!String.IsNullOrEmpty(valor.ToString()))
+                            {
+                                propObj.SetValue(obj, valor, null);
+                            }                            
                         }
 
                         retorno.Add(obj);

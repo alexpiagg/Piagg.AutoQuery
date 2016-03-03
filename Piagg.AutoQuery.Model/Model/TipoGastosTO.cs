@@ -17,6 +17,9 @@ namespace Piagg.AutoQuery.Model
         [Column("tipo")]
         public string TIPO { get; set; }
 
+        [Column("excluido")]
+        public bool? EXCLUIDO { get; set; }
+
         public virtual List<GastosTO> LISTA_GASTOS_MODEL { get; set; }
 
     }

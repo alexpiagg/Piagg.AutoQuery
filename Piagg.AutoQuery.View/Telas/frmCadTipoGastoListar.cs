@@ -22,10 +22,6 @@ namespace Piagg.AutoQuery.View
             InitializeComponent();
         }
 
-        private void frmCadGasto_Load(object sender, EventArgs e)
-        {
-            //carregarCombos();
-        }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -70,7 +66,12 @@ namespace Piagg.AutoQuery.View
             {
                 //Alinhando texto à esquerda
                 this.dgvListaTipoGastos.Columns["codlIdTipoGastos"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-                bool MarcarExcluido = (tipoGasto.EXCLUIDO != null ? tipoGasto.EXCLUIDO.Value : false);
+                bool MarcarExcluido = false;
+
+                if (tipoGasto.EXCLUIDO != null)
+                {
+                    MarcarExcluido = (tipoGasto.EXCLUIDO == 0 ? false : true);
+                }
 
                 dgvListaTipoGastos.Rows.Add(tipoGasto.ID_TIPO_GASTOS,
                                             tipoGasto.TIPO,
@@ -89,7 +90,7 @@ namespace Piagg.AutoQuery.View
 
             filtro.IdTipoGasto = (int) txtCodigo.Value;
             filtro.TipoGasto = txtLocal.Text.Trim();
-            filtro.Excluido = chkExcluido.Checked;
+            filtro.Excluido = (chkExcluido.Checked ? 1 : 0);
 
             return filtro;
         }

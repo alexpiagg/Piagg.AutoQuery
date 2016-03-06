@@ -7,6 +7,7 @@ using System.Data.Entity.Infrastructure;
 using System.Reflection;
 using System.Data;
 using Piagg.AutoQuery.Model;
+using MySql.Data.MySqlClient;
 
 namespace Piagg.AutoQuery.DAL
 {
@@ -33,9 +34,6 @@ namespace Piagg.AutoQuery.DAL
                     var cmd = context.Database.Connection.CreateCommand();
                     cmd.CommandText = selectSQL;
                     cmd.CommandType = System.Data.CommandType.Text;
-
-                    //if (context.Database.CurrentTransaction != null)
-                    //    cmd.Transaction = context.Database.CurrentTransaction.UnderlyingTransaction;
 
                     cmd.CommandTimeout = 60;
 

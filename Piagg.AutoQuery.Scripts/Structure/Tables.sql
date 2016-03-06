@@ -13,7 +13,7 @@ CREATE TABLE gastos (
 CREATE TABLE tipo_gastos (
   id_tipo_gastos int(11) NOT NULL AUTO_INCREMENT,
   tipo varchar(20) NOT NULL,
-  excluido tinyint(1) DEFAULT NULL,
+  excluido int(1) DEFAULT NULL,
   PRIMARY KEY (id_tipo_gastos)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 

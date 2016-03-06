@@ -206,7 +206,6 @@
             this.Name = "frmCadTipoGastoListar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Tipo de Gastos";
-            this.Load += new System.EventHandler(this.frmCadGasto_Load);
             this.gpbCadTipoGasto.ResumeLayout(false);
             this.gpbCadTipoGasto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo)).EndInit();

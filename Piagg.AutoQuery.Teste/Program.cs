@@ -1,5 +1,6 @@
 ﻿using Piagg.AutoQuery.BLL;
 using Piagg.AutoQuery.DAL;
+using Piagg.AutoQuery.DAL.DAL;
 using Piagg.AutoQuery.Helpers;
 using Piagg.AutoQuery.Model;
 using System;
@@ -15,7 +16,9 @@ namespace Piagg.AutoQuery.Teste
         static void Main(string[] args)
         {
 
-            GastosDAL g = new GastosDAL();
+            TipoGastosDAL t = new TipoGastosDAL();
+
+            var x = t.SelectAll(new FiltroTelaTO());
 
             
         }

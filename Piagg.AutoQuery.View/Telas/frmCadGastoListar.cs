@@ -33,7 +33,7 @@ namespace Piagg.AutoQuery.View
             cbxTipoGasto.DropDownStyle = ComboBoxStyle.DropDownList;
 
             TipoGastosBLL tipoGastoBLL = new TipoGastosBLL();
-            var listaTipoGastos = tipoGastoBLL.SelectAll(new TipoGastosTO());
+            var listaTipoGastos = tipoGastoBLL.SelectAll(new FiltroTelaTO());
 
             listaTipoGastos.Insert(0, new TipoGastosTO());
             

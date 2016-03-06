@@ -96,7 +96,7 @@ namespace Piagg.AutoQuery.View.Telas
          */
         private void PreencherValoresSalvar()
         {
-            tipoGastoTO.EXCLUIDO = chkExcluir.Checked;
+            tipoGastoTO.EXCLUIDO = (chkExcluir.Checked ? 1 : 0);
             tipoGastoTO.TIPO = txtDescricao.Text.Trim();
         }
 
@@ -154,7 +154,12 @@ namespace Piagg.AutoQuery.View.Telas
         private void PreencherValoresTela(TipoGastosTO objTipoGastosTO)
         {
             txtDescricao.Text = objTipoGastosTO.TIPO.Trim();
-            chkExcluir.Checked = (objTipoGastosTO.EXCLUIDO != null ? objTipoGastosTO.EXCLUIDO.Value : false);
+
+            if (objTipoGastosTO.EXCLUIDO != null)
+            {
+                chkExcluir.Checked = (objTipoGastosTO.EXCLUIDO == 0 ? false : true);
+            }
+            
         }
 
         /*

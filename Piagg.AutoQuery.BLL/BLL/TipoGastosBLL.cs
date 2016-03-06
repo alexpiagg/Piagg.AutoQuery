@@ -11,20 +11,6 @@ namespace Piagg.AutoQuery.BLL.BLL
     public class TipoGastosBLL : BaseBLL<TipoGastosTO>
     {
 
-
-        public List<TipoGastosTO> SelectAll(TipoGastosTO filtro)
-        {
-            try
-            {
-                TipoGastosDAL tipoGastosDAL = new TipoGastosDAL();
-                return tipoGastosDAL.SelectAll(filtro);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }            
-        }
-
         public List<TipoGastosTO> SelectAll(FiltroTelaTO filtro)
         {
             try

@@ -108,7 +108,7 @@ namespace Piagg.AutoQuery.View.Telas
             cbxTipoGasto.DropDownStyle = ComboBoxStyle.DropDownList;
 
             TipoGastosBLL tipoGastoBLL = new TipoGastosBLL();
-            var listaTipoGastos = tipoGastoBLL.SelectAll(new TipoGastosTO());
+            var listaTipoGastos = tipoGastoBLL.SelectAll(new FiltroTelaTO());
 
             cbxTipoGasto.DisplayMember = "TIPO";
             cbxTipoGasto.ValueMember = "ID_TIPO_GASTOS";

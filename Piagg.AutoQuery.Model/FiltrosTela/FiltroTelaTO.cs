@@ -18,7 +18,7 @@ namespace Piagg.AutoQuery.Model
 
         public string TipoGasto { get; set; }
 
-        public bool Excluido { get; set; }
+        public int Excluido { get; set; }
 
     }
 }

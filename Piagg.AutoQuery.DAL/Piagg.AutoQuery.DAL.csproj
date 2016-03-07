@@ -63,6 +63,7 @@
     <Compile Include="Helper\Context.cs" />
     <Compile Include="Helper\DBUtil.cs" />
     <Compile Include="DAL\GastosDAL.cs" />
+    <Compile Include="Helper\EFUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

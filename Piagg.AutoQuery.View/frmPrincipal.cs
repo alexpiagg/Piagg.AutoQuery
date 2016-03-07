@@ -1,4 +1,5 @@
-﻿using Piagg.AutoQuery.Helpers;
+﻿using Piagg.AutoQuery.BLL.BLL;
+using Piagg.AutoQuery.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,6 +34,21 @@ namespace Piagg.AutoQuery.View
 
         private void inicializar()
         {
+
+            PrincipalBLL principalBLL = new PrincipalBLL();
+
+            try
+            {
+                principalBLL.TestarConexaoBD();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro! " + 
+                                Environment.NewLine +
+                                ex.Message);
+                this.Close();
+            }
+
             preencherRodape();
         }
 

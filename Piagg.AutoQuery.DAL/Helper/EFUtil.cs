@@ -55,7 +55,7 @@ namespace Piagg.AutoQuery.DAL.Helper
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                LoggerUtil.ErrorLog(ex.Message, ex);
                 throw ex;
             } //fim
         }
@@ -76,7 +76,7 @@ namespace Piagg.AutoQuery.DAL.Helper
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                LoggerUtil.ErrorLog(ex.Message, ex);
                 throw ex;
             }
         }
@@ -96,7 +96,7 @@ namespace Piagg.AutoQuery.DAL.Helper
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                LoggerUtil.ErrorLog(ex.Message, ex);
                 throw ex;
             } //fim
         }
@@ -164,7 +164,7 @@ namespace Piagg.AutoQuery.DAL.Helper
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                LoggerUtil.ErrorLog(ex.Message, ex);
                 throw ex;
             }
         }

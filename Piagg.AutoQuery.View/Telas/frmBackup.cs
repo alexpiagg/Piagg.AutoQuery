@@ -74,7 +74,7 @@ namespace Piagg.AutoQuery.View
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                LoggerUtil.ErrorLog(ex.Message, ex);
                 MessageBox.Show("Erro ao efetuar o backup/restore");
 
             }

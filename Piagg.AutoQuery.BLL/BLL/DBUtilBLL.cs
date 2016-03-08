@@ -22,7 +22,7 @@ namespace Piagg.AutoQuery.BLL.BLL
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                throw ex;
             }
         }
 
@@ -37,7 +37,7 @@ namespace Piagg.AutoQuery.BLL.BLL
             }
             catch (Exception ex)
             {
-                LoggerUtil.ErrorLog(ex.Message);
+                throw ex;
             }
         }
     }

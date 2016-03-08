@@ -14,9 +14,9 @@ namespace Piagg.AutoQuery.Helpers
 
         private static Logger logger = LogManager.GetCurrentClassLogger();
         
-        public static void ErrorLog(string erro)
+        public static void ErrorLog(string erro, Exception ex)
         {
-            logger.Error(erro);
+            logger.Error(erro, ex);
         }
 
     }

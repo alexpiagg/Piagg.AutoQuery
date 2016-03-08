@@ -60,7 +60,7 @@ namespace Piagg.AutoQuery.DAL
                 }
                 catch (Exception ex)
                 {
-                    LoggerUtil.ErrorLog(ex.Message);
+                    LoggerUtil.ErrorLog(ex.Message, ex);
                     throw ex;
                 }
 

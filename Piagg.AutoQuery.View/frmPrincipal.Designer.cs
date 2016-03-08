@@ -35,6 +35,7 @@
             this.menuSubSair = new System.Windows.Forms.ToolStripMenuItem();
             this.cadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSubCadGasto = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadTipoGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemFerramentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSubImportador = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +43,7 @@
             this.statusInferior = new System.Windows.Forms.StatusStrip();
             this.statusLbBanco = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLbNomeBanco = new System.Windows.Forms.ToolStripStatusLabel();
-            this.cadTipoGastosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSubBackRestore = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.statusInferior.SuspendLayout();
             this.SuspendLayout();
@@ -72,14 +73,14 @@
             // menuSubControle
             // 
             this.menuSubControle.Name = "menuSubControle";
-            this.menuSubControle.Size = new System.Drawing.Size(152, 22);
+            this.menuSubControle.Size = new System.Drawing.Size(120, 22);
             this.menuSubControle.Text = "Controle";
             this.menuSubControle.Click += new System.EventHandler(this.menuSubControle_Click);
             // 
             // menuSubSair
             // 
             this.menuSubSair.Name = "menuSubSair";
-            this.menuSubSair.Size = new System.Drawing.Size(152, 22);
+            this.menuSubSair.Size = new System.Drawing.Size(120, 22);
             this.menuSubSair.Text = "Sair";
             this.menuSubSair.Click += new System.EventHandler(this.menuSubSair_Click);
             // 
@@ -99,10 +100,18 @@
             this.menuSubCadGasto.Text = "Cad. Gastos";
             this.menuSubCadGasto.Click += new System.EventHandler(this.menuSubCadGasto_Click);
             // 
+            // cadTipoGastosToolStripMenuItem
+            // 
+            this.cadTipoGastosToolStripMenuItem.Name = "cadTipoGastosToolStripMenuItem";
+            this.cadTipoGastosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.cadTipoGastosToolStripMenuItem.Text = "Cad. Tipo Gastos";
+            this.cadTipoGastosToolStripMenuItem.Click += new System.EventHandler(this.cadTipoGastosToolStripMenuItem_Click);
+            // 
             // menuItemFerramentas
             // 
             this.menuItemFerramentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuSubImportador});
+            this.menuSubImportador,
+            this.menuSubBackRestore});
             this.menuItemFerramentas.Name = "menuItemFerramentas";
             this.menuItemFerramentas.Size = new System.Drawing.Size(84, 20);
             this.menuItemFerramentas.Text = "Ferramentas";
@@ -110,7 +119,7 @@
             // menuSubImportador
             // 
             this.menuSubImportador.Name = "menuSubImportador";
-            this.menuSubImportador.Size = new System.Drawing.Size(152, 22);
+            this.menuSubImportador.Size = new System.Drawing.Size(163, 22);
             this.menuSubImportador.Text = "Importador";
             this.menuSubImportador.Click += new System.EventHandler(this.menuSubImportador_Click);
             // 
@@ -125,7 +134,7 @@
             // menuSubSobre
             // 
             this.menuSubSobre.Name = "menuSubSobre";
-            this.menuSubSobre.Size = new System.Drawing.Size(152, 22);
+            this.menuSubSobre.Size = new System.Drawing.Size(104, 22);
             this.menuSubSobre.Text = "Sobre";
             this.menuSubSobre.Click += new System.EventHandler(this.menuSubSobre_Click);
             // 
@@ -153,12 +162,12 @@
             this.statusLbNomeBanco.Size = new System.Drawing.Size(71, 17);
             this.statusLbNomeBanco.Text = "Banco Atual";
             // 
-            // cadTipoGastosToolStripMenuItem
+            // menuSubBackRestore
             // 
-            this.cadTipoGastosToolStripMenuItem.Name = "cadTipoGastosToolStripMenuItem";
-            this.cadTipoGastosToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.cadTipoGastosToolStripMenuItem.Text = "Cad. Tipo Gastos";
-            this.cadTipoGastosToolStripMenuItem.Click += new System.EventHandler(this.cadTipoGastosToolStripMenuItem_Click);
+            this.menuSubBackRestore.Name = "menuSubBackRestore";
+            this.menuSubBackRestore.Size = new System.Drawing.Size(163, 22);
+            this.menuSubBackRestore.Text = "Backup / Restore";
+            this.menuSubBackRestore.Click += new System.EventHandler(this.menuSubBackRestore_Click);
             // 
             // frmPrincipal
             // 
@@ -201,5 +210,6 @@
         private System.Windows.Forms.ToolStripMenuItem cadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuSubCadGasto;
         private System.Windows.Forms.ToolStripMenuItem cadTipoGastosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuSubBackRestore;
     }
 }

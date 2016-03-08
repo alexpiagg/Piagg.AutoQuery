@@ -87,6 +87,11 @@ namespace Piagg.AutoQuery.View
             cadTipoGasto.Show();
         }
 
+        private void menuSubBackRestore_Click(object sender, EventArgs e)
+        {
+            frmBackup back = new frmBackup();
+            back.Show();
+        }
 
     }
 }

@@ -51,6 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telas\frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\frmCadTipoGasto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +123,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Telas\frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmCadTipoGasto.resx">
       <DependentUpon>frmCadTipoGasto.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Principal.ico" />
+    <Content Include="Resources\backup_32_x_32.png" />
     <None Include="Resources\cancelar_32_x_32.png" />
     <None Include="Resources\salvar_32_x_32.png" />
     <None Include="Resources\Principal.png" />

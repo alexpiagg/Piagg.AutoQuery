@@ -18,8 +18,7 @@ namespace Piagg.AutoQuery.Teste
 
         static void Main(string[] args)
         {
-            //var x = Excluido.Sim;
-
+            
         }
     }
 }

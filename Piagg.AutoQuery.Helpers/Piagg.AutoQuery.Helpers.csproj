@@ -55,6 +55,7 @@
     <Compile Include="ConfigHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\backup_32_x_32.png" />
     <Content Include="Images\buscar_32_x_32.png" />
     <Content Include="Images\cadGasto.ico" />
     <Content Include="Images\cancelar_32_x_32.png" />

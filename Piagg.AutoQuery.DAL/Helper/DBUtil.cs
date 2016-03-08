@@ -60,12 +60,75 @@ namespace Piagg.AutoQuery.DAL
                 }
                 catch (Exception ex)
                 {
-                    //Logger.LogError(ex.Message);
+                    LoggerUtil.ErrorLog(ex.Message);
                     throw ex;
                 }
 
             }
         }
 
+        /*
+         * Efetua o backup da base de dados
+         */
+        public static void Backup(string pathComplete)
+        {
+            string constring = ConfigHelper.GetStringConnection();
+            string file = pathComplete;
+
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        try
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+
+                            mb.ExportToFile(file);
+
+                            conn.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            throw ex;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*
+         * Inicia os processos de restore da base de dados
+         */
+        public static void Restore(string pathComplete)
+        {
+            string constring = ConfigHelper.GetStringConnection();
+            string file = pathComplete;
+
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        try
+                        {
+                            cmd.Connection = conn;
+                            conn.Open();
+
+                            mb.ImportFromFile(pathComplete);
+
+                            conn.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            throw ex;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

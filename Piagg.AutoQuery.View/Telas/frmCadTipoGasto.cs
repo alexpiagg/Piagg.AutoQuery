@@ -1,5 +1,6 @@
 ﻿using Piagg.AutoQuery.BLL;
 using Piagg.AutoQuery.BLL.BLL;
+using Piagg.AutoQuery.Helpers;
 using Piagg.AutoQuery.Model;
 using System;
 using System.Collections.Generic;
@@ -58,7 +59,8 @@ namespace Piagg.AutoQuery.View.Telas
             }
             catch (Exception ex)
             {
-                //Loggar
+                LoggerUtil.ErrorLog(ex.Message);
+                MessageBox.Show("Erro ao salvar os dados.");
             }            
         }
 
@@ -96,7 +98,7 @@ namespace Piagg.AutoQuery.View.Telas
          */
         private void PreencherValoresSalvar()
         {
-            tipoGastoTO.EXCLUIDO = (chkExcluir.Checked ? 1 : 0);
+            tipoGastoTO.EXCLUIDO = (chkExcluir.Checked ? (int)Excluido.Sim : (int)Excluido.Nao);
             tipoGastoTO.TIPO = txtDescricao.Text.Trim();
         }
 

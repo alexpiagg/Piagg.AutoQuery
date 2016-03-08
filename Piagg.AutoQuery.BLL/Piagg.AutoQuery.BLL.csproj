@@ -74,6 +74,10 @@
       <Project>{87d2e078-152f-4701-a3a9-bdb3b534a24d}</Project>
       <Name>Piagg.AutoQuery.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Piagg.AutoQuery.Helpers\Piagg.AutoQuery.Helpers.csproj">
+      <Project>{9baf2b64-5e29-4b1f-ac75-1e21bc67c0f3}</Project>
+      <Name>Piagg.AutoQuery.Helpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Piagg.AutoQuery.Model\Piagg.AutoQuery.Model.csproj">
       <Project>{da3f13d1-40f5-475c-ad33-83d60547b4c8}</Project>
       <Name>Piagg.AutoQuery.Model</Name>

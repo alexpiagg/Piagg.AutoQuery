@@ -1,4 +1,5 @@
-﻿using Piagg.AutoQuery.Model;
+﻿using Piagg.AutoQuery.DAL.Helper;
+using Piagg.AutoQuery.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,7 +42,7 @@ namespace Piagg.AutoQuery.DAL.DAL
 
                 try
                 {
-                    var retorno = ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
+                    var retorno = EFUtil.ExecuteSql<TipoGastosTO>(sqlQuery.ToString()).ToList();
                     return retorno;
                 }
                 catch (Exception ex)

@@ -7,6 +7,7 @@ using LinqKit;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using Piagg.AutoQuery.DAL.Helper;
 
 namespace Piagg.AutoQuery.DAL
 {
@@ -55,7 +56,7 @@ namespace Piagg.AutoQuery.DAL
 
                 try
                 {
-                    var retorno = ExecuteSql<GastosTO>(sqlQuery.ToString()).ToList();
+                    var retorno = EFUtil.ExecuteSql<GastosTO>(sqlQuery.ToString()).ToList();
                     return retorno;
                 }
                 catch (Exception ex)

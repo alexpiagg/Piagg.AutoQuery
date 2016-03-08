@@ -228,6 +228,7 @@
             // 
             // btnIncluir
             // 
+            this.btnIncluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnIncluir.Image = ((System.Drawing.Image)(resources.GetObject("btnIncluir.Image")));
             this.btnIncluir.Location = new System.Drawing.Point(527, 434);
             this.btnIncluir.Name = "btnIncluir";
@@ -239,6 +240,7 @@
             // 
             // btnExcluir
             // 
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.Location = new System.Drawing.Point(357, 434);
             this.btnExcluir.Name = "btnExcluir";
@@ -250,6 +252,7 @@
             // 
             // btnAlterar
             // 
+            this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
             this.btnAlterar.Location = new System.Drawing.Point(443, 434);
             this.btnAlterar.Name = "btnAlterar";

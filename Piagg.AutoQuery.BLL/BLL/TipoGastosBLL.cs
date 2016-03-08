@@ -11,7 +11,7 @@ namespace Piagg.AutoQuery.BLL.BLL
     public class TipoGastosBLL : BaseBLL<TipoGastosTO>
     {
 
-        public List<TipoGastosTO> SelectAll(FiltroTelaTO filtro)
+        public override List<TipoGastosTO> SelectAll(FiltroTelaTO filtro)
         {
             try
             {

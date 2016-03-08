@@ -24,7 +24,7 @@ namespace Piagg.AutoQuery.BLL
             }
         }
 
-        public List<GastosTO> SelectAll(FiltroTelaTO filtroGastos)
+        public override List<GastosTO> SelectAll(FiltroTelaTO filtroGastos)
         {
             GastosDAL gastosDAL = new GastosDAL();
             try

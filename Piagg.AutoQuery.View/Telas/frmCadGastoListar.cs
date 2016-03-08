@@ -70,7 +70,8 @@ namespace Piagg.AutoQuery.View
             }
             catch (Exception ex)
             {
-                //Loggar
+                LoggerUtil.ErrorLog(ex.Message);
+                MessageBox.Show("Erro ao buscar os dados.");
             }
         }
 

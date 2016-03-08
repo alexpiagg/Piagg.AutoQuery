@@ -51,7 +51,8 @@ namespace Piagg.AutoQuery.View
             }
             catch (Exception ex)
             {
-                //Loggar
+                LoggerUtil.ErrorLog(ex.Message);
+                MessageBox.Show("Erro ao buscar os dados.");
             }
         }
 
@@ -90,7 +91,7 @@ namespace Piagg.AutoQuery.View
 
             filtro.IdTipoGasto = (int) txtCodigo.Value;
             filtro.TipoGasto = txtLocal.Text.Trim();
-            filtro.Excluido = (chkExcluido.Checked ? 1 : 0);
+            filtro.Excluido = (chkExcluido.Checked ? (int)Excluido.Sim : (int)Excluido.Nao);
 
             return filtro;
         }

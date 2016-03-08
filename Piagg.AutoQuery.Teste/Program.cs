@@ -13,14 +13,13 @@ namespace Piagg.AutoQuery.Teste
 {
     class Program
     {
+
+
+
         static void Main(string[] args)
         {
+            //var x = Excluido.Sim;
 
-            TipoGastosDAL t = new TipoGastosDAL();
-
-            var x = t.SelectAll(new FiltroTelaTO());
-
-            
         }
     }
 }

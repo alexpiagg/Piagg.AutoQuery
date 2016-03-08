@@ -1,4 +1,5 @@
 ﻿using Piagg.AutoQuery.DAL.Helper;
+using Piagg.AutoQuery.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace Piagg.AutoQuery.BLL.BLL
             }
             catch (Exception ex)
             {
+                LoggerUtil.ErrorLog(ex.Message);
                 throw ex;
             }
         }

@@ -1,0 +1,15 @@
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate stub for MySql.Data.MySqlClient.RowsDataExportMode: type is a value type.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{F0A61FF1-C39F-49C0-8AA7-E1A1BC0AEA8D}: type is not supported because of internal limitations.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.ImportCompleteArgs+CompleteType: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.RowsDataExportMode: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+NextImportAction: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+ProcessEndType: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+ProcessType: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+exportComplete: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+exportProgressChange: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+getTotalRowsProgressChange: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+importComplete: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlBackup+importProgressChange: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlColumn+DataWrapper: type is an enum.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for MySql.Data.MySqlClient.MySqlDatabase+getTotalRowsProgressChange: type is a delegate.
+C:\Projetos\CSharp\Piagg.AutoQuery\Piagg.AutoQuery.View\Fakes\MySqlBackup.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{F0A61FF1-C39F-49C0-8AA7-E1A1BC0AEA8D}: type is not supported because of internal limitations.

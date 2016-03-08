@@ -1,0 +1,2648 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MySqlBackup.2.0.9.2.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs">
+            <summary>Shim type of MySql.Data.MySqlClient.ExportCompleteArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.#ctor(MySql.Data.MySqlClient.ExportCompleteArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.CompletionTypeGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_CompletionType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.ConstructorDateTimeDateTimeMySqlBackupProcessEndTypeException">
+            <summary>Sets the shim of ExportCompleteArgs.ExportCompleteArgs(DateTime timeStart, DateTime timeEnd, ProcessEndType endType, Exception exception)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.HasErrorGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_HasError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.LastErrorGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_LastError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.TimeEndGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeEnd()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.TimeStartGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeStart()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.TimeUsedGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeUsed()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.CompletionTypeGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_CompletionType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.HasErrorGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_HasError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.LastErrorGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_LastError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.TimeEndGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeEnd()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.TimeStartGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeStart()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportCompleteArgs.AllInstances.TimeUsedGet">
+            <summary>Sets the shim of ExportCompleteArgs.get_TimeUsed()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportInformations">
+            <summary>Shim type of MySql.Data.MySqlClient.ExportInformations</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportInformations.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportInformations.#ctor(MySql.Data.MySqlClient.ExportInformations)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportInformations.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportInformations.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.Constructor">
+            <summary>Sets the shim of ExportInformations.ExportInformations()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.ExcludeTablesGet">
+            <summary>Sets the shim of ExportInformations.get_ExcludeTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.ExcludeTablesSetListOfString">
+            <summary>Sets the shim of ExportInformations.set_ExcludeTables(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.GetDocumentFooters">
+            <summary>Sets the shim of ExportInformations.GetDocumentFooters()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.GetDocumentHeadersMySqlCommand">
+            <summary>Sets the shim of ExportInformations.GetDocumentHeaders(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.IntervalForProgressReportGet">
+            <summary>Sets the shim of ExportInformations.get_IntervalForProgressReport()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.IntervalForProgressReportSetInt32">
+            <summary>Sets the shim of ExportInformations.set_IntervalForProgressReport(Int32 value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.ScriptsDelimiterGet">
+            <summary>Sets the shim of ExportInformations.get_ScriptsDelimiter()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.ScriptsDelimiterSetString">
+            <summary>Sets the shim of ExportInformations.set_ScriptsDelimiter(String value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.SetDocumentFootersListOfString">
+            <summary>Sets the shim of ExportInformations.SetDocumentFooters(List`1&lt;String&gt; lstFooters)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.SetDocumentHeadersListOfString">
+            <summary>Sets the shim of ExportInformations.SetDocumentHeaders(List`1&lt;String&gt; lstHeaders)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.TablesToBeExportedDicGet">
+            <summary>Sets the shim of ExportInformations.get_TablesToBeExportedDic()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.TablesToBeExportedDicSetDictionaryOfStringString">
+            <summary>Sets the shim of ExportInformations.set_TablesToBeExportedDic(Dictionary`2&lt;String,String&gt; value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.TablesToBeExportedListGet">
+            <summary>Sets the shim of ExportInformations.get_TablesToBeExportedList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.TablesToBeExportedListSetListOfString">
+            <summary>Sets the shim of ExportInformations.set_TablesToBeExportedList(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.ExcludeTablesGet">
+            <summary>Sets the shim of ExportInformations.get_ExcludeTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.ExcludeTablesSetListOfString">
+            <summary>Sets the shim of ExportInformations.set_ExcludeTables(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.GetDocumentFooters">
+            <summary>Sets the shim of ExportInformations.GetDocumentFooters()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.GetDocumentHeadersMySqlCommand">
+            <summary>Sets the shim of ExportInformations.GetDocumentHeaders(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.IntervalForProgressReportGet">
+            <summary>Sets the shim of ExportInformations.get_IntervalForProgressReport()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.IntervalForProgressReportSetInt32">
+            <summary>Sets the shim of ExportInformations.set_IntervalForProgressReport(Int32 value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.ScriptsDelimiterGet">
+            <summary>Sets the shim of ExportInformations.get_ScriptsDelimiter()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.ScriptsDelimiterSetString">
+            <summary>Sets the shim of ExportInformations.set_ScriptsDelimiter(String value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.SetDocumentFootersListOfString">
+            <summary>Sets the shim of ExportInformations.SetDocumentFooters(List`1&lt;String&gt; lstFooters)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.SetDocumentHeadersListOfString">
+            <summary>Sets the shim of ExportInformations.SetDocumentHeaders(List`1&lt;String&gt; lstHeaders)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.TablesToBeExportedDicGet">
+            <summary>Sets the shim of ExportInformations.get_TablesToBeExportedDic()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.TablesToBeExportedDicSetDictionaryOfStringString">
+            <summary>Sets the shim of ExportInformations.set_TablesToBeExportedDic(Dictionary`2&lt;String,String&gt; value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.TablesToBeExportedListGet">
+            <summary>Sets the shim of ExportInformations.get_TablesToBeExportedList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportInformations.AllInstances.TablesToBeExportedListSetListOfString">
+            <summary>Sets the shim of ExportInformations.set_TablesToBeExportedList(List`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs">
+            <summary>Shim type of MySql.Data.MySqlClient.ExportProgressArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.#ctor(MySql.Data.MySqlClient.ExportProgressArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.ConstructorStringInt64Int64Int64Int64Int32Int32">
+            <summary>Sets the shim of ExportProgressArgs.ExportProgressArgs(String currentTableName, Int64 totalRowsInCurrentTable, Int64 totalRowsInAllTables, Int64 currentRowIndexInCurrentTable, Int64 currentRowIndexInAllTable, Int32 totalTables, Int32 currentTableIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.CurrentRowIndexInAllTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentRowIndexInAllTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.CurrentRowIndexInCurrentTableGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentRowIndexInCurrentTable()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.CurrentTableIndexGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentTableIndex()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.CurrentTableNameGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentTableName()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.TotalRowsInAllTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalRowsInAllTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.TotalRowsInCurrentTableGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalRowsInCurrentTable()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.TotalTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalTables()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.CurrentRowIndexInAllTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentRowIndexInAllTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.CurrentRowIndexInCurrentTableGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentRowIndexInCurrentTable()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.CurrentTableIndexGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentTableIndex()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.CurrentTableNameGet">
+            <summary>Sets the shim of ExportProgressArgs.get_CurrentTableName()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.TotalRowsInAllTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalRowsInAllTables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.TotalRowsInCurrentTableGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalRowsInCurrentTable()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimExportProgressArgs.AllInstances.TotalTablesGet">
+            <summary>Sets the shim of ExportProgressArgs.get_TotalTables()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs">
+            <summary>Shim type of MySql.Data.MySqlClient.GetTotalRowsArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.#ctor(MySql.Data.MySqlClient.GetTotalRowsArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.ConstructorInt32Int32">
+            <summary>Sets the shim of GetTotalRowsArgs.GetTotalRowsArgs(Int32 totalTables, Int32 curTable)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimGetTotalRowsArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs">
+            <summary>Shim type of MySql.Data.MySqlClient.ImportCompleteArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.#ctor(MySql.Data.MySqlClient.ImportCompleteArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.Constructor">
+            <summary>Sets the shim of ImportCompleteArgs.ImportCompleteArgs()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.HasErrorsGet">
+            <summary>Sets the shim of ImportCompleteArgs.get_HasErrors()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.TimeUsedGet">
+            <summary>Sets the shim of ImportCompleteArgs.get_TimeUsed()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.AllInstances.HasErrorsGet">
+            <summary>Sets the shim of ImportCompleteArgs.get_HasErrors()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportCompleteArgs.AllInstances.TimeUsedGet">
+            <summary>Sets the shim of ImportCompleteArgs.get_TimeUsed()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportInformations">
+            <summary>Shim type of MySql.Data.MySqlClient.ImportInformations</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportInformations.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportInformations.#ctor(MySql.Data.MySqlClient.ImportInformations)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportInformations.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportInformations.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.Constructor">
+            <summary>Sets the shim of ImportInformations.ImportInformations()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.DatabaseDefaultCharSetGet">
+            <summary>Sets the shim of ImportInformations.get_DatabaseDefaultCharSet()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.DatabaseDefaultCharSetSetString">
+            <summary>Sets the shim of ImportInformations.set_DatabaseDefaultCharSet(String value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.IntervalForProgressReportGet">
+            <summary>Sets the shim of ImportInformations.get_IntervalForProgressReport()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.IntervalForProgressReportSetInt32">
+            <summary>Sets the shim of ImportInformations.set_IntervalForProgressReport(Int32 value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.TargetDatabaseGet">
+            <summary>Sets the shim of ImportInformations.get_TargetDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.TargetDatabaseSetString">
+            <summary>Sets the shim of ImportInformations.set_TargetDatabase(String value)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.DatabaseDefaultCharSetGet">
+            <summary>Sets the shim of ImportInformations.get_DatabaseDefaultCharSet()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.DatabaseDefaultCharSetSetString">
+            <summary>Sets the shim of ImportInformations.set_DatabaseDefaultCharSet(String value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.IntervalForProgressReportGet">
+            <summary>Sets the shim of ImportInformations.get_IntervalForProgressReport()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.IntervalForProgressReportSetInt32">
+            <summary>Sets the shim of ImportInformations.set_IntervalForProgressReport(Int32 value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.TargetDatabaseGet">
+            <summary>Sets the shim of ImportInformations.get_TargetDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportInformations.AllInstances.TargetDatabaseSetString">
+            <summary>Sets the shim of ImportInformations.set_TargetDatabase(String value)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs">
+            <summary>Shim type of MySql.Data.MySqlClient.ImportProgressArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.#ctor(MySql.Data.MySqlClient.ImportProgressArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.ConstructorInt64Int64">
+            <summary>Sets the shim of ImportProgressArgs.ImportProgressArgs(Int64 currentBytes, Int64 totalBytes)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.CurrentBytesGet">
+            <summary>Sets the shim of ImportProgressArgs.get_CurrentBytes()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.PercentageCompletedGet">
+            <summary>Sets the shim of ImportProgressArgs.get_PercentageCompleted()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.TotalBytesGet">
+            <summary>Sets the shim of ImportProgressArgs.get_TotalBytes()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.AllInstances.CurrentBytesGet">
+            <summary>Sets the shim of ImportProgressArgs.get_CurrentBytes()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.AllInstances.PercentageCompletedGet">
+            <summary>Sets the shim of ImportProgressArgs.get_PercentageCompleted()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimImportProgressArgs.AllInstances.TotalBytesGet">
+            <summary>Sets the shim of ImportProgressArgs.get_TotalBytes()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlBackup</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.#ctor(MySql.Data.MySqlClient.MySqlBackup)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.CommandGet">
+            <summary>Sets the shim of MySqlBackup.get_Command()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.CommandSetMySqlCommand">
+            <summary>Sets the shim of MySqlBackup.set_Command(MySqlCommand value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Constructor">
+            <summary>Sets the shim of MySqlBackup.MySqlBackup()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlBackup.MySqlBackup(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.DatabaseGet">
+            <summary>Sets the shim of MySqlBackup.get_Database()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.DecryptDumpFileStringStringString">
+            <summary>Sets the shim of MySqlBackup.DecryptDumpFile(String sourceFile, String outputFile, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.DecryptDumpFileTextReaderTextWriterString">
+            <summary>Sets the shim of MySqlBackup.DecryptDumpFile(TextReader trSource, TextWriter twOutput, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.DecryptString">
+            <summary>Sets the shim of MySqlBackup.Decrypt(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Dispose">
+            <summary>Sets the shim of MySqlBackup.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.EncryptDumpFileStringStringString">
+            <summary>Sets the shim of MySqlBackup.EncryptDumpFile(String sourceFile, String outputFile, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.EncryptDumpFileTextReaderTextWriterString">
+            <summary>Sets the shim of MySqlBackup.EncryptDumpFile(TextReader trSource, TextWriter twOutput, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.EncryptString">
+            <summary>Sets the shim of MySqlBackup.Encrypt(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportCompletedAddMySqlBackupexportComplete">
+            <summary>Sets the shim of MySqlBackup.add_ExportCompleted(exportComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportCompletedRemoveMySqlBackupexportComplete">
+            <summary>Sets the shim of MySqlBackup.remove_ExportCompleted(exportComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportProgressChangedAddMySqlBackupexportProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_ExportProgressChanged(exportProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportProgressChangedRemoveMySqlBackupexportProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_ExportProgressChanged(exportProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportStart">
+            <summary>Sets the shim of MySqlBackup.ExportStart()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportToFileString">
+            <summary>Sets the shim of MySqlBackup.ExportToFile(String filePath)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportToMemoryStreamMemoryStream">
+            <summary>Sets the shim of MySqlBackup.ExportToMemoryStream(MemoryStream ms)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportToMemoryStreamMemoryStreamBoolean">
+            <summary>Sets the shim of MySqlBackup.ExportToMemoryStream(MemoryStream ms, Boolean resetMemoryStreamPosition)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportToString">
+            <summary>Sets the shim of MySqlBackup.ExportToString()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ExportToTextWriterTextWriter">
+            <summary>Sets the shim of MySqlBackup.ExportToTextWriter(TextWriter tw)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_BasicInfo">
+            <summary>Sets the shim of MySqlBackup.Export_BasicInfo()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_CreateDatabase">
+            <summary>Sets the shim of MySqlBackup.Export_CreateDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_DocumentFooter">
+            <summary>Sets the shim of MySqlBackup.Export_DocumentFooter()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_DocumentHeader">
+            <summary>Sets the shim of MySqlBackup.Export_DocumentHeader()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_Events">
+            <summary>Sets the shim of MySqlBackup.Export_Events()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_Functions">
+            <summary>Sets the shim of MySqlBackup.Export_Functions()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_GetConditionStringMySqlDataReaderMySqlTableStringBuilder">
+            <summary>Sets the shim of MySqlBackup.Export_GetConditionString(MySqlDataReader rdr, MySqlTable table, StringBuilder sb)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_GetInsertStatementHeaderRowsDataExportModeStringMySqlDataReader">
+            <summary>Sets the shim of MySqlBackup.Export_GetInsertStatementHeader(RowsDataExportMode rowsExportMode, String tableName, MySqlDataReader rdr)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_GetTablesToBeExported">
+            <summary>Sets the shim of MySqlBackup.Export_GetTablesToBeExported()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_GetUpdateStringMySqlDataReaderMySqlTableStringBuilder">
+            <summary>Sets the shim of MySqlBackup.Export_GetUpdateString(MySqlDataReader rdr, MySqlTable table, StringBuilder sb)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_GetValueStringMySqlDataReaderMySqlTable">
+            <summary>Sets the shim of MySqlBackup.Export_GetValueString(MySqlDataReader rdr, MySqlTable table)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_InitializeVariables">
+            <summary>Sets the shim of MySqlBackup.Export_InitializeVariables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_Procedures">
+            <summary>Sets the shim of MySqlBackup.Export_Procedures()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_RowsDataStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_RowsData_Insert_Ignore_ReplaceStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_Insert_Ignore_Replace(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_RowsData_OnDuplicateKeyUpdateStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_OnDuplicateKeyUpdate(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_RowsData_UpdateStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_Update(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_RowsStringString">
+            <summary>Sets the shim of MySqlBackup.Export_Rows(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_TableRows">
+            <summary>Sets the shim of MySqlBackup.Export_TableRows()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_TableStructureString">
+            <summary>Sets the shim of MySqlBackup.Export_TableStructure(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_ThisTableIsExcludedString">
+            <summary>Sets the shim of MySqlBackup.Export_ThisTableIsExcluded(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_Triggers">
+            <summary>Sets the shim of MySqlBackup.Export_Triggers()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_Views">
+            <summary>Sets the shim of MySqlBackup.Export_Views()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_WriteCommentString">
+            <summary>Sets the shim of MySqlBackup.Export_WriteComment(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Export_WriteLineString">
+            <summary>Sets the shim of MySqlBackup.Export_WriteLine(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.GetSHA512HashFromPasswordString">
+            <summary>Sets the shim of MySqlBackup.GetSHA512HashFromPassword(String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.GetTotalRowsProgressChangedAddMySqlBackupgetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.GetTotalRowsProgressChangedRemoveMySqlBackupgetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportCompletedAddMySqlBackupimportComplete">
+            <summary>Sets the shim of MySqlBackup.add_ImportCompleted(importComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportCompletedRemoveMySqlBackupimportComplete">
+            <summary>Sets the shim of MySqlBackup.remove_ImportCompleted(importComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportFromFileString">
+            <summary>Sets the shim of MySqlBackup.ImportFromFile(String filePath)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportFromMemoryStreamMemoryStream">
+            <summary>Sets the shim of MySqlBackup.ImportFromMemoryStream(MemoryStream ms)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportFromStringString">
+            <summary>Sets the shim of MySqlBackup.ImportFromString(String sqldumptext)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportFromTextReaderStreamTextReaderFileInfo">
+            <summary>Sets the shim of MySqlBackup.ImportFromTextReaderStream(TextReader tr, FileInfo fileInfo)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportFromTextReaderTextReader">
+            <summary>Sets the shim of MySqlBackup.ImportFromTextReader(TextReader tr)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportProgressChangedAddMySqlBackupimportProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_ImportProgressChanged(importProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ImportProgressChangedRemoveMySqlBackupimportProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_ImportProgressChanged(importProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_AppendLineAndExecuteString">
+            <summary>Sets the shim of MySqlBackup.Import_AppendLineAndExecute(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_AppendLineString">
+            <summary>Sets the shim of MySqlBackup.Import_AppendLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_ChangeDelimiterString">
+            <summary>Sets the shim of MySqlBackup.Import_ChangeDelimiter(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_CreateNewDatabase">
+            <summary>Sets the shim of MySqlBackup.Import_CreateNewDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_GetLine">
+            <summary>Sets the shim of MySqlBackup.Import_GetLine()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_InitializeVariables">
+            <summary>Sets the shim of MySqlBackup.Import_InitializeVariables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_IsEmptyLineString">
+            <summary>Sets the shim of MySqlBackup.Import_IsEmptyLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_ProcessLineString">
+            <summary>Sets the shim of MySqlBackup.Import_ProcessLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_SetNames">
+            <summary>Sets the shim of MySqlBackup.Import_SetNames()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.Import_Start">
+            <summary>Sets the shim of MySqlBackup.Import_Start()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.InitializeComponents">
+            <summary>Sets the shim of MySqlBackup.InitializeComponents()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.LastErrorGet">
+            <summary>Sets the shim of MySqlBackup.get_LastError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ReportEndProcess">
+            <summary>Sets the shim of MySqlBackup.ReportEndProcess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ReportProgress">
+            <summary>Sets the shim of MySqlBackup.ReportProgress()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.ServerGet">
+            <summary>Sets the shim of MySqlBackup.get_Server()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.StopAllProcess">
+            <summary>Sets the shim of MySqlBackup.StopAllProcess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup._database_GetTotalRowsProgressChangedObjectGetTotalRowsArgs">
+            <summary>Sets the shim of MySqlBackup._database_GetTotalRowsProgressChanged(Object sender, GetTotalRowsArgs e)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.timerReport_ElapsedObjectElapsedEventArgs">
+            <summary>Sets the shim of MySqlBackup.timerReport_Elapsed(Object sender, ElapsedEventArgs e)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.CommandGet">
+            <summary>Sets the shim of MySqlBackup.get_Command()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.CommandSetMySqlCommand">
+            <summary>Sets the shim of MySqlBackup.set_Command(MySqlCommand value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.DatabaseGet">
+            <summary>Sets the shim of MySqlBackup.get_Database()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.DecryptDumpFileStringStringString">
+            <summary>Sets the shim of MySqlBackup.DecryptDumpFile(String sourceFile, String outputFile, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.DecryptDumpFileTextReaderTextWriterString">
+            <summary>Sets the shim of MySqlBackup.DecryptDumpFile(TextReader trSource, TextWriter twOutput, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.DecryptString">
+            <summary>Sets the shim of MySqlBackup.Decrypt(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlBackup.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.EncryptDumpFileStringStringString">
+            <summary>Sets the shim of MySqlBackup.EncryptDumpFile(String sourceFile, String outputFile, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.EncryptDumpFileTextReaderTextWriterString">
+            <summary>Sets the shim of MySqlBackup.EncryptDumpFile(TextReader trSource, TextWriter twOutput, String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.EncryptString">
+            <summary>Sets the shim of MySqlBackup.Encrypt(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportCompletedAddMySqlBackupexportComplete">
+            <summary>Sets the shim of MySqlBackup.add_ExportCompleted(exportComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportCompletedRemoveMySqlBackupexportComplete">
+            <summary>Sets the shim of MySqlBackup.remove_ExportCompleted(exportComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportProgressChangedAddMySqlBackupexportProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_ExportProgressChanged(exportProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportProgressChangedRemoveMySqlBackupexportProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_ExportProgressChanged(exportProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportStart">
+            <summary>Sets the shim of MySqlBackup.ExportStart()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportToFileString">
+            <summary>Sets the shim of MySqlBackup.ExportToFile(String filePath)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportToMemoryStreamMemoryStream">
+            <summary>Sets the shim of MySqlBackup.ExportToMemoryStream(MemoryStream ms)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportToMemoryStreamMemoryStreamBoolean">
+            <summary>Sets the shim of MySqlBackup.ExportToMemoryStream(MemoryStream ms, Boolean resetMemoryStreamPosition)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportToString">
+            <summary>Sets the shim of MySqlBackup.ExportToString()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ExportToTextWriterTextWriter">
+            <summary>Sets the shim of MySqlBackup.ExportToTextWriter(TextWriter tw)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_BasicInfo">
+            <summary>Sets the shim of MySqlBackup.Export_BasicInfo()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_CreateDatabase">
+            <summary>Sets the shim of MySqlBackup.Export_CreateDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_DocumentFooter">
+            <summary>Sets the shim of MySqlBackup.Export_DocumentFooter()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_DocumentHeader">
+            <summary>Sets the shim of MySqlBackup.Export_DocumentHeader()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_Events">
+            <summary>Sets the shim of MySqlBackup.Export_Events()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_Functions">
+            <summary>Sets the shim of MySqlBackup.Export_Functions()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_GetConditionStringMySqlDataReaderMySqlTableStringBuilder">
+            <summary>Sets the shim of MySqlBackup.Export_GetConditionString(MySqlDataReader rdr, MySqlTable table, StringBuilder sb)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_GetInsertStatementHeaderRowsDataExportModeStringMySqlDataReader">
+            <summary>Sets the shim of MySqlBackup.Export_GetInsertStatementHeader(RowsDataExportMode rowsExportMode, String tableName, MySqlDataReader rdr)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_GetTablesToBeExported">
+            <summary>Sets the shim of MySqlBackup.Export_GetTablesToBeExported()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_GetUpdateStringMySqlDataReaderMySqlTableStringBuilder">
+            <summary>Sets the shim of MySqlBackup.Export_GetUpdateString(MySqlDataReader rdr, MySqlTable table, StringBuilder sb)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_GetValueStringMySqlDataReaderMySqlTable">
+            <summary>Sets the shim of MySqlBackup.Export_GetValueString(MySqlDataReader rdr, MySqlTable table)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_InitializeVariables">
+            <summary>Sets the shim of MySqlBackup.Export_InitializeVariables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_Procedures">
+            <summary>Sets the shim of MySqlBackup.Export_Procedures()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_RowsDataStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_RowsData_Insert_Ignore_ReplaceStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_Insert_Ignore_Replace(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_RowsData_OnDuplicateKeyUpdateStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_OnDuplicateKeyUpdate(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_RowsData_UpdateStringString">
+            <summary>Sets the shim of MySqlBackup.Export_RowsData_Update(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_RowsStringString">
+            <summary>Sets the shim of MySqlBackup.Export_Rows(String tableName, String selectSQL)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_TableRows">
+            <summary>Sets the shim of MySqlBackup.Export_TableRows()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_TableStructureString">
+            <summary>Sets the shim of MySqlBackup.Export_TableStructure(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_ThisTableIsExcludedString">
+            <summary>Sets the shim of MySqlBackup.Export_ThisTableIsExcluded(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_Triggers">
+            <summary>Sets the shim of MySqlBackup.Export_Triggers()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_Views">
+            <summary>Sets the shim of MySqlBackup.Export_Views()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_WriteCommentString">
+            <summary>Sets the shim of MySqlBackup.Export_WriteComment(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Export_WriteLineString">
+            <summary>Sets the shim of MySqlBackup.Export_WriteLine(String text)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.GetSHA512HashFromPasswordString">
+            <summary>Sets the shim of MySqlBackup.GetSHA512HashFromPassword(String password)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.GetTotalRowsProgressChangedAddMySqlBackupgetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.GetTotalRowsProgressChangedRemoveMySqlBackupgetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportCompletedAddMySqlBackupimportComplete">
+            <summary>Sets the shim of MySqlBackup.add_ImportCompleted(importComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportCompletedRemoveMySqlBackupimportComplete">
+            <summary>Sets the shim of MySqlBackup.remove_ImportCompleted(importComplete value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportFromFileString">
+            <summary>Sets the shim of MySqlBackup.ImportFromFile(String filePath)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportFromMemoryStreamMemoryStream">
+            <summary>Sets the shim of MySqlBackup.ImportFromMemoryStream(MemoryStream ms)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportFromStringString">
+            <summary>Sets the shim of MySqlBackup.ImportFromString(String sqldumptext)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportFromTextReaderStreamTextReaderFileInfo">
+            <summary>Sets the shim of MySqlBackup.ImportFromTextReaderStream(TextReader tr, FileInfo fileInfo)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportFromTextReaderTextReader">
+            <summary>Sets the shim of MySqlBackup.ImportFromTextReader(TextReader tr)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportProgressChangedAddMySqlBackupimportProgressChange">
+            <summary>Sets the shim of MySqlBackup.add_ImportProgressChanged(importProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ImportProgressChangedRemoveMySqlBackupimportProgressChange">
+            <summary>Sets the shim of MySqlBackup.remove_ImportProgressChanged(importProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_AppendLineAndExecuteString">
+            <summary>Sets the shim of MySqlBackup.Import_AppendLineAndExecute(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_AppendLineString">
+            <summary>Sets the shim of MySqlBackup.Import_AppendLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_ChangeDelimiterString">
+            <summary>Sets the shim of MySqlBackup.Import_ChangeDelimiter(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_CreateNewDatabase">
+            <summary>Sets the shim of MySqlBackup.Import_CreateNewDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_GetLine">
+            <summary>Sets the shim of MySqlBackup.Import_GetLine()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_InitializeVariables">
+            <summary>Sets the shim of MySqlBackup.Import_InitializeVariables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_IsEmptyLineString">
+            <summary>Sets the shim of MySqlBackup.Import_IsEmptyLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_ProcessLineString">
+            <summary>Sets the shim of MySqlBackup.Import_ProcessLine(String line)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_SetNames">
+            <summary>Sets the shim of MySqlBackup.Import_SetNames()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.Import_Start">
+            <summary>Sets the shim of MySqlBackup.Import_Start()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.InitializeComponents">
+            <summary>Sets the shim of MySqlBackup.InitializeComponents()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.LastErrorGet">
+            <summary>Sets the shim of MySqlBackup.get_LastError()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ReportEndProcess">
+            <summary>Sets the shim of MySqlBackup.ReportEndProcess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ReportProgress">
+            <summary>Sets the shim of MySqlBackup.ReportProgress()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.ServerGet">
+            <summary>Sets the shim of MySqlBackup.get_Server()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.StopAllProcess">
+            <summary>Sets the shim of MySqlBackup.StopAllProcess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances._database_GetTotalRowsProgressChangedObjectGetTotalRowsArgs">
+            <summary>Sets the shim of MySqlBackup._database_GetTotalRowsProgressChanged(Object sender, GetTotalRowsArgs e)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlBackup.AllInstances.timerReport_ElapsedObjectElapsedEventArgs">
+            <summary>Sets the shim of MySqlBackup.timerReport_Elapsed(Object sender, ElapsedEventArgs e)</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlColumn</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.#ctor(MySql.Data.MySqlClient.MySqlColumn)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllowNullGet">
+            <summary>Sets the shim of MySqlColumn.get_AllowNull()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.CollationGet">
+            <summary>Sets the shim of MySqlColumn.get_Collation()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.CommentGet">
+            <summary>Sets the shim of MySqlColumn.get_Comment()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.ConstructorStringTypeStringStringBooleanStringStringStringStringString">
+            <summary>Sets the shim of MySqlColumn.MySqlColumn(String name, Type type, String mySqlDataType, String collation, Boolean allowNull, String key, String defaultValue, String extra, String privileges, String comment)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.DataTypeGet">
+            <summary>Sets the shim of MySqlColumn.get_DataType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.DefaultValueGet">
+            <summary>Sets the shim of MySqlColumn.get_DefaultValue()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.ExtraGet">
+            <summary>Sets the shim of MySqlColumn.get_Extra()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.IsPrimaryKeyGet">
+            <summary>Sets the shim of MySqlColumn.get_IsPrimaryKey()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.KeyGet">
+            <summary>Sets the shim of MySqlColumn.get_Key()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.MySqlDataTypeGet">
+            <summary>Sets the shim of MySqlColumn.get_MySqlDataType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.NameGet">
+            <summary>Sets the shim of MySqlColumn.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.PrivilegesGet">
+            <summary>Sets the shim of MySqlColumn.get_Privileges()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.TimeFractionLengthGet">
+            <summary>Sets the shim of MySqlColumn.get_TimeFractionLength()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.AllowNullGet">
+            <summary>Sets the shim of MySqlColumn.get_AllowNull()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.CollationGet">
+            <summary>Sets the shim of MySqlColumn.get_Collation()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.CommentGet">
+            <summary>Sets the shim of MySqlColumn.get_Comment()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.DataTypeGet">
+            <summary>Sets the shim of MySqlColumn.get_DataType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.DefaultValueGet">
+            <summary>Sets the shim of MySqlColumn.get_DefaultValue()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.ExtraGet">
+            <summary>Sets the shim of MySqlColumn.get_Extra()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.IsPrimaryKeyGet">
+            <summary>Sets the shim of MySqlColumn.get_IsPrimaryKey()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.KeyGet">
+            <summary>Sets the shim of MySqlColumn.get_Key()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.MySqlDataTypeGet">
+            <summary>Sets the shim of MySqlColumn.get_MySqlDataType()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlColumn.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.PrivilegesGet">
+            <summary>Sets the shim of MySqlColumn.get_Privileges()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumn.AllInstances.TimeFractionLengthGet">
+            <summary>Sets the shim of MySqlColumn.get_TimeFractionLength()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlColumnList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.#ctor(MySql.Data.MySqlClient.MySqlColumnList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.Constructor">
+            <summary>Sets the shim of MySqlColumnList.MySqlColumnList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.ConstructorMySqlCommandString">
+            <summary>Sets the shim of MySqlColumnList.MySqlColumnList(MySqlCommand cmd, String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.ContainsString">
+            <summary>Sets the shim of MySqlColumnList.Contains(String columnName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.CountGet">
+            <summary>Sets the shim of MySqlColumnList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.Dispose">
+            <summary>Sets the shim of MySqlColumnList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.GetEnumerator">
+            <summary>Sets the shim of MySqlColumnList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.ItemGetInt32">
+            <summary>Sets the shim of MySqlColumnList.get_Item(Int32 columnIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.ItemGetString">
+            <summary>Sets the shim of MySqlColumnList.get_Item(String columnName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.SqlShowFullColumnsGet">
+            <summary>Sets the shim of MySqlColumnList.get_SqlShowFullColumns()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlColumnList.Contains(String columnName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlColumnList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlColumnList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlColumnList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlColumnList.get_Item(Int32 columnIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlColumnList.get_Item(String columnName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlColumnList.AllInstances.SqlShowFullColumnsGet">
+            <summary>Sets the shim of MySqlColumnList.get_SqlShowFullColumns()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlDatabase</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.#ctor(MySql.Data.MySqlClient.MySqlDatabase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.Constructor">
+            <summary>Sets the shim of MySqlDatabase.MySqlDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.CreateDatabaseSQLGet">
+            <summary>Sets the shim of MySqlDatabase.get_CreateDatabaseSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.DefaultCharacterSetGet">
+            <summary>Sets the shim of MySqlDatabase.get_DefaultCharacterSet()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.Dispose">
+            <summary>Sets the shim of MySqlDatabase.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.DropDatabaseSQLGet">
+            <summary>Sets the shim of MySqlDatabase.get_DropDatabaseSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.EventsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Events()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.FunctionsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Functions()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.GetDatabaseInfoMySqlCommandBoolean">
+            <summary>Sets the shim of MySqlDatabase.GetDatabaseInfo(MySqlCommand cmd, Boolean getTotalRowsForEachTable)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.GetTotalRowsMySqlCommand">
+            <summary>Sets the shim of MySqlDatabase.GetTotalRows(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.GetTotalRowsProgressChangedAddMySqlDatabasegetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlDatabase.add_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.GetTotalRowsProgressChangedRemoveMySqlDatabasegetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlDatabase.remove_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.NameGet">
+            <summary>Sets the shim of MySqlDatabase.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.ProceduresGet">
+            <summary>Sets the shim of MySqlDatabase.get_Procedures()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.TablesGet">
+            <summary>Sets the shim of MySqlDatabase.get_Tables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.TotalRowsGet">
+            <summary>Sets the shim of MySqlDatabase.get_TotalRows()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.TriggersGet">
+            <summary>Sets the shim of MySqlDatabase.get_Triggers()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.ViewsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Views()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.CreateDatabaseSQLGet">
+            <summary>Sets the shim of MySqlDatabase.get_CreateDatabaseSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.DefaultCharacterSetGet">
+            <summary>Sets the shim of MySqlDatabase.get_DefaultCharacterSet()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlDatabase.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.DropDatabaseSQLGet">
+            <summary>Sets the shim of MySqlDatabase.get_DropDatabaseSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.EventsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Events()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.FunctionsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Functions()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.GetDatabaseInfoMySqlCommandBoolean">
+            <summary>Sets the shim of MySqlDatabase.GetDatabaseInfo(MySqlCommand cmd, Boolean getTotalRowsForEachTable)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.GetTotalRowsMySqlCommand">
+            <summary>Sets the shim of MySqlDatabase.GetTotalRows(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.GetTotalRowsProgressChangedAddMySqlDatabasegetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlDatabase.add_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.GetTotalRowsProgressChangedRemoveMySqlDatabasegetTotalRowsProgressChange">
+            <summary>Sets the shim of MySqlDatabase.remove_GetTotalRowsProgressChanged(getTotalRowsProgressChange value)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlDatabase.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.ProceduresGet">
+            <summary>Sets the shim of MySqlDatabase.get_Procedures()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.TablesGet">
+            <summary>Sets the shim of MySqlDatabase.get_Tables()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.TotalRowsGet">
+            <summary>Sets the shim of MySqlDatabase.get_TotalRows()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.TriggersGet">
+            <summary>Sets the shim of MySqlDatabase.get_Triggers()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlDatabase.AllInstances.ViewsGet">
+            <summary>Sets the shim of MySqlDatabase.get_Views()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlEvent</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.#ctor(MySql.Data.MySqlClient.MySqlEvent)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.ConstructorMySqlCommandStringString">
+            <summary>Sets the shim of MySqlEvent.MySqlEvent(MySqlCommand cmd, String eventName, String definer)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.CreateEventSqlGet">
+            <summary>Sets the shim of MySqlEvent.get_CreateEventSql()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.CreateEventSqlWithoutDefinerGet">
+            <summary>Sets the shim of MySqlEvent.get_CreateEventSqlWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.NameGet">
+            <summary>Sets the shim of MySqlEvent.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.AllInstances.CreateEventSqlGet">
+            <summary>Sets the shim of MySqlEvent.get_CreateEventSql()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.AllInstances.CreateEventSqlWithoutDefinerGet">
+            <summary>Sets the shim of MySqlEvent.get_CreateEventSqlWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEvent.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlEvent.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlEventList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.#ctor(MySql.Data.MySqlClient.MySqlEventList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllowAccessGet">
+            <summary>Sets the shim of MySqlEventList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.Constructor">
+            <summary>Sets the shim of MySqlEventList.MySqlEventList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlEventList.MySqlEventList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.ContainsString">
+            <summary>Sets the shim of MySqlEventList.Contains(String eventName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.CountGet">
+            <summary>Sets the shim of MySqlEventList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.Dispose">
+            <summary>Sets the shim of MySqlEventList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.GetEnumerator">
+            <summary>Sets the shim of MySqlEventList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.ItemGetInt32">
+            <summary>Sets the shim of MySqlEventList.get_Item(Int32 eventIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.ItemGetString">
+            <summary>Sets the shim of MySqlEventList.get_Item(String eventName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.SqlShowEventGet">
+            <summary>Sets the shim of MySqlEventList.get_SqlShowEvent()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.AllowAccessGet">
+            <summary>Sets the shim of MySqlEventList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlEventList.Contains(String eventName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlEventList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlEventList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlEventList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlEventList.get_Item(Int32 eventIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlEventList.get_Item(String eventName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlEventList.AllInstances.SqlShowEventGet">
+            <summary>Sets the shim of MySqlEventList.get_SqlShowEvent()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlFunction</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.#ctor(MySql.Data.MySqlClient.MySqlFunction)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.ConstructorMySqlCommandStringString">
+            <summary>Sets the shim of MySqlFunction.MySqlFunction(MySqlCommand cmd, String functionName, String definer)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.CreateFunctionSQLGet">
+            <summary>Sets the shim of MySqlFunction.get_CreateFunctionSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.CreateFunctionSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlFunction.get_CreateFunctionSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.NameGet">
+            <summary>Sets the shim of MySqlFunction.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.AllInstances.CreateFunctionSQLGet">
+            <summary>Sets the shim of MySqlFunction.get_CreateFunctionSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.AllInstances.CreateFunctionSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlFunction.get_CreateFunctionSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunction.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlFunction.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlFunctionList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.#ctor(MySql.Data.MySqlClient.MySqlFunctionList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllowAccessGet">
+            <summary>Sets the shim of MySqlFunctionList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.Constructor">
+            <summary>Sets the shim of MySqlFunctionList.MySqlFunctionList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlFunctionList.MySqlFunctionList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.ContainsString">
+            <summary>Sets the shim of MySqlFunctionList.Contains(String functionName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.CountGet">
+            <summary>Sets the shim of MySqlFunctionList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.Dispose">
+            <summary>Sets the shim of MySqlFunctionList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.GetEnumerator">
+            <summary>Sets the shim of MySqlFunctionList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.ItemGetInt32">
+            <summary>Sets the shim of MySqlFunctionList.get_Item(Int32 functionIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.ItemGetString">
+            <summary>Sets the shim of MySqlFunctionList.get_Item(String functionName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.SqlShowFunctionsGet">
+            <summary>Sets the shim of MySqlFunctionList.get_SqlShowFunctions()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.AllowAccessGet">
+            <summary>Sets the shim of MySqlFunctionList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlFunctionList.Contains(String functionName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlFunctionList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlFunctionList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlFunctionList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlFunctionList.get_Item(Int32 functionIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlFunctionList.get_Item(String functionName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlFunctionList.AllInstances.SqlShowFunctionsGet">
+            <summary>Sets the shim of MySqlFunctionList.get_SqlShowFunctions()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlProcedure</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.#ctor(MySql.Data.MySqlClient.MySqlProcedure)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.ConstructorMySqlCommandStringString">
+            <summary>Sets the shim of MySqlProcedure.MySqlProcedure(MySqlCommand cmd, String procedureName, String definer)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.CreateProcedureSQLGet">
+            <summary>Sets the shim of MySqlProcedure.get_CreateProcedureSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.CreateProcedureSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlProcedure.get_CreateProcedureSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.NameGet">
+            <summary>Sets the shim of MySqlProcedure.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.AllInstances.CreateProcedureSQLGet">
+            <summary>Sets the shim of MySqlProcedure.get_CreateProcedureSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.AllInstances.CreateProcedureSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlProcedure.get_CreateProcedureSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedure.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlProcedure.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlProcedureList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.#ctor(MySql.Data.MySqlClient.MySqlProcedureList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllowAccessGet">
+            <summary>Sets the shim of MySqlProcedureList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.Constructor">
+            <summary>Sets the shim of MySqlProcedureList.MySqlProcedureList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlProcedureList.MySqlProcedureList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.ContainsString">
+            <summary>Sets the shim of MySqlProcedureList.Contains(String procedureName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.CountGet">
+            <summary>Sets the shim of MySqlProcedureList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.Dispose">
+            <summary>Sets the shim of MySqlProcedureList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.GetEnumerator">
+            <summary>Sets the shim of MySqlProcedureList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.ItemGetInt32">
+            <summary>Sets the shim of MySqlProcedureList.get_Item(Int32 indexProcedure)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.ItemGetString">
+            <summary>Sets the shim of MySqlProcedureList.get_Item(String procedureName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.SqlShowProceduresGet">
+            <summary>Sets the shim of MySqlProcedureList.get_SqlShowProcedures()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.AllowAccessGet">
+            <summary>Sets the shim of MySqlProcedureList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlProcedureList.Contains(String procedureName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlProcedureList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlProcedureList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlProcedureList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlProcedureList.get_Item(Int32 indexProcedure)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlProcedureList.get_Item(String procedureName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlProcedureList.AllInstances.SqlShowProceduresGet">
+            <summary>Sets the shim of MySqlProcedureList.get_SqlShowProcedures()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlServer">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlServer</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.#ctor(MySql.Data.MySqlClient.MySqlServer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CharacterSetConnectionGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetConnection()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CharacterSetDatabaseGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CharacterSetServerGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetServer()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CharacterSetSystemGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetSystem()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.Constructor">
+            <summary>Sets the shim of MySqlServer.MySqlServer()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CurrentClientHostGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentClientHost()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CurrentUserClientHostGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentUserClientHost()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.CurrentUserGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentUser()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.EditionGet">
+            <summary>Sets the shim of MySqlServer.get_Edition()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.GetMajorVersionNumber">
+            <summary>Sets the shim of MySqlServer.GetMajorVersionNumber()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.GetServerInfoMySqlCommand">
+            <summary>Sets the shim of MySqlServer.GetServerInfo(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.MajorVersionNumberGet">
+            <summary>Sets the shim of MySqlServer.get_MajorVersionNumber()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.VersionGet">
+            <summary>Sets the shim of MySqlServer.get_Version()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.VersionNumberGet">
+            <summary>Sets the shim of MySqlServer.get_VersionNumber()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CharacterSetConnectionGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetConnection()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CharacterSetDatabaseGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetDatabase()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CharacterSetServerGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetServer()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CharacterSetSystemGet">
+            <summary>Sets the shim of MySqlServer.get_CharacterSetSystem()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CurrentClientHostGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentClientHost()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CurrentUserClientHostGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentUserClientHost()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.CurrentUserGet">
+            <summary>Sets the shim of MySqlServer.get_CurrentUser()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.EditionGet">
+            <summary>Sets the shim of MySqlServer.get_Edition()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.GetMajorVersionNumber">
+            <summary>Sets the shim of MySqlServer.GetMajorVersionNumber()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.GetServerInfoMySqlCommand">
+            <summary>Sets the shim of MySqlServer.GetServerInfo(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.MajorVersionNumberGet">
+            <summary>Sets the shim of MySqlServer.get_MajorVersionNumber()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.VersionGet">
+            <summary>Sets the shim of MySqlServer.get_Version()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlServer.AllInstances.VersionNumberGet">
+            <summary>Sets the shim of MySqlServer.get_VersionNumber()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTable">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlTable</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.#ctor(MySql.Data.MySqlClient.MySqlTable)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.ColumnsGet">
+            <summary>Sets the shim of MySqlTable.get_Columns()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.ConstructorMySqlCommandString">
+            <summary>Sets the shim of MySqlTable.MySqlTable(MySqlCommand cmd, String name)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.CreateTableSqlGet">
+            <summary>Sets the shim of MySqlTable.get_CreateTableSql()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.CreateTableSqlWithoutAutoIncrementGet">
+            <summary>Sets the shim of MySqlTable.get_CreateTableSqlWithoutAutoIncrement()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.Dispose">
+            <summary>Sets the shim of MySqlTable.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.GetInsertStatementHeaders">
+            <summary>Sets the shim of MySqlTable.GetInsertStatementHeaders()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.InsertStatementHeaderGet">
+            <summary>Sets the shim of MySqlTable.get_InsertStatementHeader()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.InsertStatementHeaderWithoutColumnsGet">
+            <summary>Sets the shim of MySqlTable.get_InsertStatementHeaderWithoutColumns()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.NameGet">
+            <summary>Sets the shim of MySqlTable.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.RemoveAutoIncrementString">
+            <summary>Sets the shim of MySqlTable.RemoveAutoIncrement(String sql)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.SetTotalRowsInt64">
+            <summary>Sets the shim of MySqlTable.SetTotalRows(Int64 _trows)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.TotalRowsGet">
+            <summary>Sets the shim of MySqlTable.get_TotalRows()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.ColumnsGet">
+            <summary>Sets the shim of MySqlTable.get_Columns()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.CreateTableSqlGet">
+            <summary>Sets the shim of MySqlTable.get_CreateTableSql()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.CreateTableSqlWithoutAutoIncrementGet">
+            <summary>Sets the shim of MySqlTable.get_CreateTableSqlWithoutAutoIncrement()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlTable.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.GetInsertStatementHeaders">
+            <summary>Sets the shim of MySqlTable.GetInsertStatementHeaders()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.InsertStatementHeaderGet">
+            <summary>Sets the shim of MySqlTable.get_InsertStatementHeader()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.InsertStatementHeaderWithoutColumnsGet">
+            <summary>Sets the shim of MySqlTable.get_InsertStatementHeaderWithoutColumns()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlTable.get_Name()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.RemoveAutoIncrementString">
+            <summary>Sets the shim of MySqlTable.RemoveAutoIncrement(String sql)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.SetTotalRowsInt64">
+            <summary>Sets the shim of MySqlTable.SetTotalRows(Int64 _trows)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTable.AllInstances.TotalRowsGet">
+            <summary>Sets the shim of MySqlTable.get_TotalRows()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlTableList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.#ctor(MySql.Data.MySqlClient.MySqlTableList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.Constructor">
+            <summary>Sets the shim of MySqlTableList.MySqlTableList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlTableList.MySqlTableList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.CountGet">
+            <summary>Sets the shim of MySqlTableList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.Dispose">
+            <summary>Sets the shim of MySqlTableList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.GetEnumerator">
+            <summary>Sets the shim of MySqlTableList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.ItemGetInt32">
+            <summary>Sets the shim of MySqlTableList.get_Item(Int32 tableIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.ItemGetString">
+            <summary>Sets the shim of MySqlTableList.get_Item(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.SqlShowFullTablesGet">
+            <summary>Sets the shim of MySqlTableList.get_SqlShowFullTables()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlTableList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlTableList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlTableList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlTableList.get_Item(Int32 tableIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlTableList.get_Item(String tableName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTableList.AllInstances.SqlShowFullTablesGet">
+            <summary>Sets the shim of MySqlTableList.get_SqlShowFullTables()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlTrigger</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.#ctor(MySql.Data.MySqlClient.MySqlTrigger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.ConstructorMySqlCommandStringString">
+            <summary>Sets the shim of MySqlTrigger.MySqlTrigger(MySqlCommand cmd, String triggerName, String definer)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.CreateTriggerSQLGet">
+            <summary>Sets the shim of MySqlTrigger.get_CreateTriggerSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.CreateTriggerSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlTrigger.get_CreateTriggerSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.NameGet">
+            <summary>Sets the shim of MySqlTrigger.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.AllInstances.CreateTriggerSQLGet">
+            <summary>Sets the shim of MySqlTrigger.get_CreateTriggerSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.AllInstances.CreateTriggerSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlTrigger.get_CreateTriggerSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTrigger.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlTrigger.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlTriggerList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.#ctor(MySql.Data.MySqlClient.MySqlTriggerList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllowAccessGet">
+            <summary>Sets the shim of MySqlTriggerList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.Constructor">
+            <summary>Sets the shim of MySqlTriggerList.MySqlTriggerList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlTriggerList.MySqlTriggerList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.ContainsString">
+            <summary>Sets the shim of MySqlTriggerList.Contains(String triggerName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.CountGet">
+            <summary>Sets the shim of MySqlTriggerList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.Dispose">
+            <summary>Sets the shim of MySqlTriggerList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.GetEnumerator">
+            <summary>Sets the shim of MySqlTriggerList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.ItemGetInt32">
+            <summary>Sets the shim of MySqlTriggerList.get_Item(Int32 triggerIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.ItemGetString">
+            <summary>Sets the shim of MySqlTriggerList.get_Item(String triggerName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.SqlShowTriggersGet">
+            <summary>Sets the shim of MySqlTriggerList.get_SqlShowTriggers()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.AllowAccessGet">
+            <summary>Sets the shim of MySqlTriggerList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlTriggerList.Contains(String triggerName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlTriggerList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlTriggerList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlTriggerList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlTriggerList.get_Item(Int32 triggerIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlTriggerList.get_Item(String triggerName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlTriggerList.AllInstances.SqlShowTriggersGet">
+            <summary>Sets the shim of MySqlTriggerList.get_SqlShowTriggers()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlView">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlView</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlView.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlView.#ctor(MySql.Data.MySqlClient.MySqlView)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlView.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlView.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.ConstructorMySqlCommandString">
+            <summary>Sets the shim of MySqlView.MySqlView(MySqlCommand cmd, String viewName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.CreateViewSQLGet">
+            <summary>Sets the shim of MySqlView.get_CreateViewSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.CreateViewSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlView.get_CreateViewSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.NameGet">
+            <summary>Sets the shim of MySqlView.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlView.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.AllInstances.CreateViewSQLGet">
+            <summary>Sets the shim of MySqlView.get_CreateViewSQL()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.AllInstances.CreateViewSQLWithoutDefinerGet">
+            <summary>Sets the shim of MySqlView.get_CreateViewSQLWithoutDefiner()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlView.AllInstances.NameGet">
+            <summary>Sets the shim of MySqlView.get_Name()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList">
+            <summary>Shim type of MySql.Data.MySqlClient.MySqlViewList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.#ctor(MySql.Data.MySqlClient.MySqlViewList)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllowAccessGet">
+            <summary>Sets the shim of MySqlViewList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.Constructor">
+            <summary>Sets the shim of MySqlViewList.MySqlViewList()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.ConstructorMySqlCommand">
+            <summary>Sets the shim of MySqlViewList.MySqlViewList(MySqlCommand cmd)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.ContainsString">
+            <summary>Sets the shim of MySqlViewList.Contains(String viewName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.CountGet">
+            <summary>Sets the shim of MySqlViewList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.Dispose">
+            <summary>Sets the shim of MySqlViewList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.GetEnumerator">
+            <summary>Sets the shim of MySqlViewList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.ItemGetInt32">
+            <summary>Sets the shim of MySqlViewList.get_Item(Int32 viewIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.ItemGetString">
+            <summary>Sets the shim of MySqlViewList.get_Item(String viewName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.SqlShowViewListGet">
+            <summary>Sets the shim of MySqlViewList.get_SqlShowViewList()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.AllowAccessGet">
+            <summary>Sets the shim of MySqlViewList.get_AllowAccess()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.ContainsString">
+            <summary>Sets the shim of MySqlViewList.Contains(String viewName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.CountGet">
+            <summary>Sets the shim of MySqlViewList.get_Count()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.Dispose">
+            <summary>Sets the shim of MySqlViewList.Dispose()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.GetEnumerator">
+            <summary>Sets the shim of MySqlViewList.GetEnumerator()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of MySqlViewList.get_Item(Int32 viewIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.ItemGetString">
+            <summary>Sets the shim of MySqlViewList.get_Item(String viewName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimMySqlViewList.AllInstances.SqlShowViewListGet">
+            <summary>Sets the shim of MySqlViewList.get_SqlShowViewList()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimQueryExpress">
+            <summary>Shim type of MySql.Data.MySqlClient.QueryExpress</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.#ctor(MySql.Data.MySqlClient.QueryExpress)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.Constructor">
+            <summary>Sets the shim of QueryExpress.QueryExpress()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ConvertToSqlFormatMySqlDataReaderInt32BooleanBooleanMySqlColumn">
+            <summary>Sets the shim of QueryExpress.ConvertToSqlFormat(MySqlDataReader rdr, Int32 colIndex, Boolean wrapStringWithSingleQuote, Boolean escapeStringSequence, MySqlColumn col)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ConvertToSqlFormatObjectBooleanBooleanMySqlColumn">
+            <summary>Sets the shim of QueryExpress.ConvertToSqlFormat(Object ob, Boolean wrapStringWithSingleQuote, Boolean escapeStringSequence, MySqlColumn col)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.EraseDefinerString">
+            <summary>Sets the shim of QueryExpress.EraseDefiner(String input)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.EscapeStringSequenceString">
+            <summary>Sets the shim of QueryExpress.EscapeStringSequence(String data)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ExecuteScalarLongMySqlCommandString">
+            <summary>Sets the shim of QueryExpress.ExecuteScalarLong(MySqlCommand cmd, String sql)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ExecuteScalarStrMySqlCommandString">
+            <summary>Sets the shim of QueryExpress.ExecuteScalarStr(MySqlCommand cmd, String sql)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ExecuteScalarStrMySqlCommandStringInt32">
+            <summary>Sets the shim of QueryExpress.ExecuteScalarStr(MySqlCommand cmd, String sql, Int32 columnIndex)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.ExecuteScalarStrMySqlCommandStringString">
+            <summary>Sets the shim of QueryExpress.ExecuteScalarStr(MySqlCommand cmd, String sql, String columnName)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.GetTableMySqlCommandString">
+            <summary>Sets the shim of QueryExpress.GetTable(MySqlCommand cmd, String sql)</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.MySqlDateTimeFormatGet">
+            <summary>Sets the shim of QueryExpress.get_MySqlDateTimeFormat()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.MySqlNumberFormatGet">
+            <summary>Sets the shim of QueryExpress.get_MySqlNumberFormat()</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.StaticConstructor">
+            <summary>Sets the shim of QueryExpress.QueryExpress()</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.ShimQueryExpress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs">
+            <summary>Stub type of MySql.Data.MySqlClient.ExportCompleteArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs.#ctor(System.DateTime,System.DateTime,MySql.Data.MySqlClient.MySqlBackup.ProcessEndType,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubExportCompleteArgs</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportCompleteArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubExportInformations">
+            <summary>Stub type of MySql.Data.MySqlClient.ExportInformations</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportInformations.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportInformations.InitializeStub">
+            <summary>Initializes a new instance of type StubExportInformations</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportInformations.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportInformations.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportInformations.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs">
+            <summary>Stub type of MySql.Data.MySqlClient.ExportProgressArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs.#ctor(System.String,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubExportProgressArgs</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubExportProgressArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs">
+            <summary>Stub type of MySql.Data.MySqlClient.GetTotalRowsArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs.#ctor(System.Int32,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubGetTotalRowsArgs</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubGetTotalRowsArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs">
+            <summary>Stub type of MySql.Data.MySqlClient.ImportCompleteArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubImportCompleteArgs</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportCompleteArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubImportInformations">
+            <summary>Stub type of MySql.Data.MySqlClient.ImportInformations</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportInformations.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportInformations.InitializeStub">
+            <summary>Initializes a new instance of type StubImportInformations</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportInformations.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportInformations.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportInformations.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs">
+            <summary>Stub type of MySql.Data.MySqlClient.ImportProgressArgs</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs.#ctor(System.Int64,System.Int64)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubImportProgressArgs</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubImportProgressArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlBackup">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlBackup</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlBackup</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlBackup.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlColumn">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlColumn</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlColumn.#ctor(System.String,System.Type,System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlColumn.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlColumn</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumn.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumn.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumn.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlColumnList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlColumnList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlColumnList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlDatabase</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlDatabase</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlDatabase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlEvent">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlEvent</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlEvent.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlEvent.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlEvent</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEvent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEvent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEvent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlEventList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlEventList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlEventList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlEventList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlFunction">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlFunction</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlFunction.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlFunction.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlFunction</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunction.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunction.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunction.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlFunctionList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlFunctionList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlFunctionList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlProcedure</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlProcedure</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedure.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlProcedureList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlProcedureList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlProcedureList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlServer">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlServer</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlServer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlServer.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlServer</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlServer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlServer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlServer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlTable">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlTable</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTable.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTable.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlTable</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTable.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTable.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTable.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlTableList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlTableList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlTableList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTableList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlTrigger</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlTrigger</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTrigger.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlTriggerList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlTriggerList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlTriggerList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlView">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlView</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlView.#ctor(MySql.Data.MySqlClient.MySqlCommand,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlView.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlView</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlView.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlView.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlView.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubMySqlViewList">
+            <summary>Stub type of MySql.Data.MySqlClient.MySqlViewList</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.#ctor(MySql.Data.MySqlClient.MySqlCommand)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.InitializeStub">
+            <summary>Initializes a new instance of type StubMySqlViewList</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubMySqlViewList.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MySql.Data.MySqlClient.Fakes.StubQueryExpress">
+            <summary>Stub type of MySql.Data.MySqlClient.QueryExpress</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubQueryExpress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MySql.Data.MySqlClient.Fakes.StubQueryExpress.InitializeStub">
+            <summary>Initializes a new instance of type StubQueryExpress</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubQueryExpress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubQueryExpress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MySql.Data.MySqlClient.Fakes.StubQueryExpress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:System.Security.Cryptography.Fakes.ShimCryptoExpress">
+            <summary>Shim type of System.Security.Cryptography.CryptoExpress</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.ShimCryptoExpress.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.ShimCryptoExpress.#ctor(System.Security.Cryptography.CryptoExpress)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.ShimCryptoExpress.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.ShimCryptoExpress.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_DecryptByteArrayByteArrayByteArray">
+            <summary>Sets the shim of CryptoExpress.AES_Decrypt(Byte[] cipherData, Byte[] Key, Byte[] IV)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_DecryptByteArrayString">
+            <summary>Sets the shim of CryptoExpress.AES_Decrypt(Byte[] input, String password)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_DecryptStringString">
+            <summary>Sets the shim of CryptoExpress.AES_Decrypt(String input, String password)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_EncryptByteArrayByteArrayByteArray">
+            <summary>Sets the shim of CryptoExpress.AES_Encrypt(Byte[] clearData, Byte[] Key, Byte[] IV)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_EncryptByteArrayString">
+            <summary>Sets the shim of CryptoExpress.AES_Encrypt(Byte[] input, String password)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.AES_EncryptStringString">
+            <summary>Sets the shim of CryptoExpress.AES_Encrypt(String input, String password)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Constructor">
+            <summary>Sets the shim of CryptoExpress.CryptoExpress()</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.ConvertByteArrayToHexStringByteArray">
+            <summary>Sets the shim of CryptoExpress.ConvertByteArrayToHexString(Byte[] ba)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.RandomStringInt32">
+            <summary>Sets the shim of CryptoExpress.RandomString(Int32 size)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Sha128HashString">
+            <summary>Sets the shim of CryptoExpress.Sha128Hash(String input)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Sha256HashByteArray">
+            <summary>Sets the shim of CryptoExpress.Sha256Hash(Byte[] ba)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Sha256HashString">
+            <summary>Sets the shim of CryptoExpress.Sha256Hash(String input)</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.ShimCryptoExpress.Sha512HashString">
+            <summary>Sets the shim of CryptoExpress.Sha512Hash(String input)</summary>
+        </member>
+        <member name="T:System.Security.Cryptography.Fakes.ShimCryptoExpress.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:System.Security.Cryptography.Fakes.StubCryptoExpress">
+            <summary>Stub type of System.Security.Cryptography.CryptoExpress</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.StubCryptoExpress.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:System.Security.Cryptography.Fakes.StubCryptoExpress.InitializeStub">
+            <summary>Initializes a new instance of type StubCryptoExpress</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.StubCryptoExpress.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.StubCryptoExpress.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:System.Security.Cryptography.Fakes.StubCryptoExpress.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

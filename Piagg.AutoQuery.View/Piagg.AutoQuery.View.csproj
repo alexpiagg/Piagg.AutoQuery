@@ -189,6 +189,8 @@
   <ItemGroup>
     <Content Include="Principal.ico" />
     <Content Include="Resources\backup_32_x_32.png" />
+    <None Include="Resources\backup_32_x_321.png" />
+    <None Include="Resources\pasta_32_x_32.png" />
     <None Include="Resources\cancelar_32_x_32.png" />
     <None Include="Resources\salvar_32_x_32.png" />
     <None Include="Resources\Principal.png" />

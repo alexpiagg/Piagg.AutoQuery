@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBackup));
             this.gpbConfigBackup = new System.Windows.Forms.GroupBox();
+            this.brnCancelar = new System.Windows.Forms.Button();
+            this.btnIniciarBkp = new System.Windows.Forms.Button();
+            this.btnPathDir = new System.Windows.Forms.Button();
             this.txtPathDir = new System.Windows.Forms.TextBox();
             this.gpbTipoBkp = new System.Windows.Forms.GroupBox();
             this.rdbRestore = new System.Windows.Forms.RadioButton();
@@ -38,9 +41,7 @@
             this.fbdDiretorio = new System.Windows.Forms.FolderBrowserDialog();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.ofdDiretorio = new System.Windows.Forms.OpenFileDialog();
-            this.brnCancelar = new System.Windows.Forms.Button();
-            this.btnIniciarBkp = new System.Windows.Forms.Button();
-            this.btnPathDir = new System.Windows.Forms.Button();
+            this.lblDiretorio = new System.Windows.Forms.Label();
             this.gpbConfigBackup.SuspendLayout();
             this.gpbTipoBkp.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             this.gpbConfigBackup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpbConfigBackup.Controls.Add(this.lblDiretorio);
             this.gpbConfigBackup.Controls.Add(this.brnCancelar);
             this.gpbConfigBackup.Controls.Add(this.btnIniciarBkp);
             this.gpbConfigBackup.Controls.Add(this.btnPathDir);
@@ -62,9 +64,42 @@
             this.gpbConfigBackup.TabStop = false;
             this.gpbConfigBackup.Text = "Configurar";
             // 
+            // brnCancelar
+            // 
+            this.brnCancelar.Image = global::Piagg.AutoQuery.View.Properties.Resources.cancelar_32_x_32;
+            this.brnCancelar.Location = new System.Drawing.Point(467, 115);
+            this.brnCancelar.Name = "brnCancelar";
+            this.brnCancelar.Size = new System.Drawing.Size(50, 50);
+            this.brnCancelar.TabIndex = 9;
+            this.toolTip.SetToolTip(this.brnCancelar, "Cancelar");
+            this.brnCancelar.UseVisualStyleBackColor = true;
+            this.brnCancelar.Click += new System.EventHandler(this.brnCancelar_Click);
+            // 
+            // btnIniciarBkp
+            // 
+            this.btnIniciarBkp.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciarBkp.Image")));
+            this.btnIniciarBkp.Location = new System.Drawing.Point(404, 115);
+            this.btnIniciarBkp.Name = "btnIniciarBkp";
+            this.btnIniciarBkp.Size = new System.Drawing.Size(50, 50);
+            this.btnIniciarBkp.TabIndex = 8;
+            this.toolTip.SetToolTip(this.btnIniciarBkp, "Iniciar Backup / Restore");
+            this.btnIniciarBkp.UseVisualStyleBackColor = true;
+            this.btnIniciarBkp.Click += new System.EventHandler(this.btnIniciarBkp_Click);
+            // 
+            // btnPathDir
+            // 
+            this.btnPathDir.Image = global::Piagg.AutoQuery.View.Properties.Resources.pasta_32_x_32;
+            this.btnPathDir.Location = new System.Drawing.Point(6, 34);
+            this.btnPathDir.Name = "btnPathDir";
+            this.btnPathDir.Size = new System.Drawing.Size(50, 50);
+            this.btnPathDir.TabIndex = 7;
+            this.toolTip.SetToolTip(this.btnPathDir, "Localizar Destino do Arquivo");
+            this.btnPathDir.UseVisualStyleBackColor = true;
+            this.btnPathDir.Click += new System.EventHandler(this.btnPathDir_Click);
+            // 
             // txtPathDir
             // 
-            this.txtPathDir.Location = new System.Drawing.Point(62, 35);
+            this.txtPathDir.Location = new System.Drawing.Point(62, 50);
             this.txtPathDir.Name = "txtPathDir";
             this.txtPathDir.Size = new System.Drawing.Size(355, 20);
             this.txtPathDir.TabIndex = 5;
@@ -106,38 +141,14 @@
             // 
             this.ofdDiretorio.FileName = "openFileDialog1";
             // 
-            // brnCancelar
+            // lblDiretorio
             // 
-            this.brnCancelar.Image = global::Piagg.AutoQuery.View.Properties.Resources.cancelar_32_x_32;
-            this.brnCancelar.Location = new System.Drawing.Point(467, 115);
-            this.brnCancelar.Name = "brnCancelar";
-            this.brnCancelar.Size = new System.Drawing.Size(50, 50);
-            this.brnCancelar.TabIndex = 9;
-            this.toolTip.SetToolTip(this.brnCancelar, "Cancelar");
-            this.brnCancelar.UseVisualStyleBackColor = true;
-            this.brnCancelar.Click += new System.EventHandler(this.brnCancelar_Click);
-            // 
-            // btnIniciarBkp
-            // 
-            this.btnIniciarBkp.Image = ((System.Drawing.Image)(resources.GetObject("btnIniciarBkp.Image")));
-            this.btnIniciarBkp.Location = new System.Drawing.Point(404, 115);
-            this.btnIniciarBkp.Name = "btnIniciarBkp";
-            this.btnIniciarBkp.Size = new System.Drawing.Size(50, 50);
-            this.btnIniciarBkp.TabIndex = 8;
-            this.toolTip.SetToolTip(this.btnIniciarBkp, "Iniciar Backup / Restore");
-            this.btnIniciarBkp.UseVisualStyleBackColor = true;
-            this.btnIniciarBkp.Click += new System.EventHandler(this.btnIniciarBkp_Click);
-            // 
-            // btnPathDir
-            // 
-            this.btnPathDir.Image = global::Piagg.AutoQuery.View.Properties.Resources.pasta_32_x_32;
-            this.btnPathDir.Location = new System.Drawing.Point(6, 19);
-            this.btnPathDir.Name = "btnPathDir";
-            this.btnPathDir.Size = new System.Drawing.Size(50, 50);
-            this.btnPathDir.TabIndex = 7;
-            this.toolTip.SetToolTip(this.btnPathDir, "Localizar Destino do Arquivo");
-            this.btnPathDir.UseVisualStyleBackColor = true;
-            this.btnPathDir.Click += new System.EventHandler(this.btnPathDir_Click);
+            this.lblDiretorio.AutoSize = true;
+            this.lblDiretorio.Location = new System.Drawing.Point(62, 34);
+            this.lblDiretorio.Name = "lblDiretorio";
+            this.lblDiretorio.Size = new System.Drawing.Size(100, 13);
+            this.lblDiretorio.TabIndex = 10;
+            this.lblDiretorio.Text = "Diretório do Arquivo";
             // 
             // frmBackup
             // 
@@ -172,5 +183,6 @@
         private System.Windows.Forms.OpenFileDialog ofdDiretorio;
         private System.Windows.Forms.Button brnCancelar;
         private System.Windows.Forms.Button btnIniciarBkp;
+        private System.Windows.Forms.Label lblDiretorio;
     }
 }

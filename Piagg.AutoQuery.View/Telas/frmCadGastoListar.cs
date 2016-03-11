@@ -83,13 +83,14 @@ namespace Piagg.AutoQuery.View
 
             dgvListaGastos.Rows.Clear();
 
-            //Alinhando texto à esquerda
+            //Alinhando texto à direita
             this.dgvListaGastos.Columns["colValor"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            this.dgvListaGastos.Columns["colData"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
             foreach (var gasto in listaGastos)
             {
                 dgvListaGastos.Rows.Add(gasto.ID_GASTOS,
-                                        gasto.DATA,
+                                        gasto.DATA.ToString("dd/MM/yyyy"),
                                         gasto.LOCAL,
                                         Convert.ToDecimal(OutrosUtil.FormatarDecimal(gasto.VALOR)),
                                         gasto.TIPO

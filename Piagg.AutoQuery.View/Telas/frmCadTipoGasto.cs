@@ -80,6 +80,9 @@ namespace Piagg.AutoQuery.View.Telas
                 if (dialogResult == DialogResult.Yes)
                 {
                     LimparTela();
+
+                    //Prepara o objeto para uma nova inserção
+                    tipoGastoTO.StatusBD = StatusTransacao.Insert;
                 }
                 else if (dialogResult == DialogResult.No)
                 {
